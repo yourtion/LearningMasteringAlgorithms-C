@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CB3173211E94E1BA001E6998 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB3173221E94E1E0001E6998 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3172E01E94DD89001E6998 /* main.c */; };
+		CB9EA9171EA5F4DD00D9C05E /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
+		CB9EA91D1EA5F50000D9C05E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9EA9101EA5F4D500D9C05E /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +22,13 @@
 			remoteInfo = Algorithms;
 		};
 		CB31731F1E94E1B6001E6998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3172EF1E94DDDB001E6998;
+			remoteInfo = Algorithms;
+		};
+		CB9EA9131EA5F4DD00D9C05E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
 			proxyType = 1;
@@ -38,12 +47,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		CB9EA9181EA5F4DD00D9C05E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CB3172E01E94DD89001E6998 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Algorithms.xcodeproj; sourceTree = "<group>"; };
 		CB3173071E94E056001E6998 /* Template */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Template; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9EA9101EA5F4D500D9C05E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CB9EA91C1EA5F4DD00D9C05E /* C05-List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C05-List"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +72,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3173211E94E1BA001E6998 /* libAlgorithms.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9EA9161EA5F4DD00D9C05E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9EA9171EA5F4DD00D9C05E /* libAlgorithms.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				CB3173071E94E056001E6998 /* Template */,
+				CB9EA91C1EA5F4DD00D9C05E /* C05-List */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +107,7 @@
 		CB3172DF1E94DD89001E6998 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				CB9EA90F1EA5F4BA00D9C05E /* list */,
 				CB3172E01E94DD89001E6998 /* main.c */,
 			);
 			path = Example;
@@ -89,6 +119,14 @@
 				CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CB9EA90F1EA5F4BA00D9C05E /* list */ = {
+			isa = PBXGroup;
+			children = (
+				CB9EA9101EA5F4D500D9C05E /* main.c */,
+			);
+			path = list;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +148,24 @@
 			name = Template;
 			productName = Template;
 			productReference = CB3173071E94E056001E6998 /* Template */;
+			productType = "com.apple.product-type.tool";
+		};
+		CB9EA9111EA5F4DD00D9C05E /* C05-List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB9EA9191EA5F4DD00D9C05E /* Build configuration list for PBXNativeTarget "C05-List" */;
+			buildPhases = (
+				CB9EA9141EA5F4DD00D9C05E /* Sources */,
+				CB9EA9161EA5F4DD00D9C05E /* Frameworks */,
+				CB9EA9181EA5F4DD00D9C05E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB9EA9121EA5F4DD00D9C05E /* PBXTargetDependency */,
+			);
+			name = "C05-List";
+			productName = Template;
+			productReference = CB9EA91C1EA5F4DD00D9C05E /* C05-List */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -146,6 +202,7 @@
 			projectRoot = "";
 			targets = (
 				CB3173061E94E056001E6998 /* Template */,
+				CB9EA9111EA5F4DD00D9C05E /* C05-List */,
 			);
 		};
 /* End PBXProject section */
@@ -169,6 +226,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB9EA9141EA5F4DD00D9C05E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9EA91D1EA5F50000D9C05E /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -176,6 +241,11 @@
 			isa = PBXTargetDependency;
 			name = Algorithms;
 			targetProxy = CB31731F1E94E1B6001E6998 /* PBXContainerItemProxy */;
+		};
+		CB9EA9121EA5F4DD00D9C05E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Algorithms;
+			targetProxy = CB9EA9131EA5F4DD00D9C05E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -285,6 +355,22 @@
 			};
 			name = Release;
 		};
+		CB9EA91A1EA5F4DD00D9C05E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Debug;
+		};
+		CB9EA91B1EA5F4DD00D9C05E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -302,6 +388,15 @@
 			buildConfigurations = (
 				CB31730C1E94E056001E6998 /* Debug */,
 				CB31730D1E94E056001E6998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB9EA9191EA5F4DD00D9C05E /* Build configuration list for PBXNativeTarget "C05-List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9EA91A1EA5F4DD00D9C05E /* Debug */,
+				CB9EA91B1EA5F4DD00D9C05E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
