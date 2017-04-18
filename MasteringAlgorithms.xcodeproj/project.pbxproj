@@ -304,6 +304,7 @@
 				CB31730D1E94E056001E6998 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
