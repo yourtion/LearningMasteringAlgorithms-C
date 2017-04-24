@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		CB3173281E94E42F001E6998 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3173271E94E42F001E6998 /* list.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB31732A1E94EC2E001E6998 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3173291E94EC2E001E6998 /* list.c */; };
+		CB9594141EADD0BC0006D375 /* frames.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9594131EADD0BC0006D375 /* frames.h */; };
+		CB9594161EADD0CD0006D375 /* frames.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9594151EADD0CD0006D375 /* frames.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB3172F01E94DDDB001E6998 /* libAlgorithms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlgorithms.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3173271E94E42F001E6998 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
 		CB3173291E94EC2E001E6998 /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
+		CB9594131EADD0BC0006D375 /* frames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frames.h; sourceTree = "<group>"; };
+		CB9594151EADD0CD0006D375 /* frames.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = frames.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				CB3173271E94E42F001E6998 /* list.h */,
+				CB9594131EADD0BC0006D375 /* frames.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -57,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				CB3173291E94EC2E001E6998 /* list.c */,
+				CB9594151EADD0CD0006D375 /* frames.c */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -68,6 +74,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9594141EADD0BC0006D375 /* frames.h in Headers */,
 				CB3173281E94E42F001E6998 /* list.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB31732A1E94EC2E001E6998 /* list.c in Sources */,
+				CB9594161EADD0CD0006D375 /* frames.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
