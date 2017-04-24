@@ -13,6 +13,8 @@
 		CB9594161EADD0CD0006D375 /* frames.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9594151EADD0CD0006D375 /* frames.c */; };
 		CB9594181EADD6BF0006D375 /* dlist.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9594171EADD6BF0006D375 /* dlist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB95941A1EADD6CE0006D375 /* dlist.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9594191EADD6CE0006D375 /* dlist.c */; };
+		CB95943A1EADEFED0006D375 /* clist.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9594391EADEFED0006D375 /* clist.c */; };
+		CB95943B1EADEFF90006D375 /* clist.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9594381EADEFDE0006D375 /* clist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		CB9594151EADD0CD0006D375 /* frames.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = frames.c; sourceTree = "<group>"; };
 		CB9594171EADD6BF0006D375 /* dlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dlist.h; sourceTree = "<group>"; };
 		CB9594191EADD6CE0006D375 /* dlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dlist.c; sourceTree = "<group>"; };
+		CB9594381EADEFDE0006D375 /* clist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clist.h; sourceTree = "<group>"; };
+		CB9594391EADEFED0006D375 /* clist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = clist.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 				CB3173271E94E42F001E6998 /* list.h */,
 				CB9594131EADD0BC0006D375 /* frames.h */,
 				CB9594171EADD6BF0006D375 /* dlist.h */,
+				CB9594381EADEFDE0006D375 /* clist.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -69,6 +74,7 @@
 				CB3173291E94EC2E001E6998 /* list.c */,
 				CB9594151EADD0CD0006D375 /* frames.c */,
 				CB9594191EADD6CE0006D375 /* dlist.c */,
+				CB9594391EADEFED0006D375 /* clist.c */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -80,6 +86,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB95943B1EADEFF90006D375 /* clist.h in Headers */,
 				CB9594181EADD6BF0006D375 /* dlist.h in Headers */,
 				CB9594141EADD0BC0006D375 /* frames.h in Headers */,
 				CB3173281E94E42F001E6998 /* list.h in Headers */,
@@ -146,6 +153,7 @@
 				CB95941A1EADD6CE0006D375 /* dlist.c in Sources */,
 				CB31732A1E94EC2E001E6998 /* list.c in Sources */,
 				CB9594161EADD0CD0006D375 /* frames.c in Sources */,
+				CB95943A1EADEFED0006D375 /* clist.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
