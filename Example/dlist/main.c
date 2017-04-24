@@ -1,7 +1,7 @@
 //
 //  main.c
 //  MasteringAlgorithms
-//  Illustrates using a linked list (see Chapter 5).
+//  Illustrates using a doubly-linked list (see Chapter 5).
 //
 //  Created by YourtionGuo on 24/04/2017.
 //  Copyright © 2017 Yourtion. All rights reserved.
@@ -12,20 +12,13 @@
 
 #include "dlist.h"
 
-/*****************************************************************************
- *                                                                            *
- *  ------------------------------ print_list ------------------------------  *
- *                                                                            *
- *****************************************************************************/
-
 void print_list(const DList *list)
 {
   DListElmt *element;
-  
   int*data,i;
   
   /// 显示链表
-  fprintf(stdout, "DList size is %d\n", dlist_size(list));
+  fprintf(stdout, "-> DList size is %d\n", dlist_size(list));
   
   i = 0;
   element = dlist_head(list);
@@ -33,7 +26,7 @@ void print_list(const DList *list)
   while (1) {
     
     data = dlist_data(element);
-    fprintf(stdout, "-> list[%03d]=%03d\n", i, *data);
+    fprintf(stdout, "--> list[%03d]=%03d\n", i, *data);
     
     i++;
     
@@ -50,7 +43,6 @@ void print_list(const DList *list)
 
 int main(int argc, char **argv)
 {
-  
   DList list;
   DListElmt *element;
   

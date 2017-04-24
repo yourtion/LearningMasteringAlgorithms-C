@@ -158,7 +158,6 @@ int dlist_ins_prev(DList *list, DListElmt *element, const void *data)
 
 int dlist_remove(DList *list, DListElmt *element, void **data)
 {
-  
   /// 禁止删除 element 为空或空链表的数据
   if (element == NULL || dlist_size(list) == 0) return -1;
 

@@ -14,8 +14,8 @@
 /**
  双向链表结点
  */
-typedef struct DListElmt_ {
-  
+typedef struct DListElmt_
+{
   void               *data;
   struct DListElmt_  *prev;
   struct DListElmt_  *next;
@@ -26,13 +26,11 @@ typedef struct DListElmt_ {
 /**
  双向链表
  */
-typedef struct DList_ {
-  
+typedef struct DList_
+{
   int         size;
-  
   int         (*match)(const void *key1, const void *key2);
   void        (*destroy)(void *data);
-  
   DListElmt   *head;
   DListElmt   *tail;
   
