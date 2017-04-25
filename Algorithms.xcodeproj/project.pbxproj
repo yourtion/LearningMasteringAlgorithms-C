@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CB3173281E94E42F001E6998 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3173271E94E42F001E6998 /* list.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB31732A1E94EC2E001E6998 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3173291E94EC2E001E6998 /* list.c */; };
+		CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = CB618EBB1EAF3CE4005BC240 /* stack.h */; };
+		CB618EBE1EAF3CF8005BC240 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = CB618EBD1EAF3CF8005BC240 /* stack.c */; };
 		CB9594141EADD0BC0006D375 /* frames.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9594131EADD0BC0006D375 /* frames.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB9594161EADD0CD0006D375 /* frames.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9594151EADD0CD0006D375 /* frames.c */; };
 		CB9594181EADD6BF0006D375 /* dlist.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9594171EADD6BF0006D375 /* dlist.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,8 @@
 		CB3172F01E94DDDB001E6998 /* libAlgorithms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlgorithms.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3173271E94E42F001E6998 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
 		CB3173291E94EC2E001E6998 /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
+		CB618EBB1EAF3CE4005BC240 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		CB618EBD1EAF3CF8005BC240 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
 		CB9594131EADD0BC0006D375 /* frames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frames.h; sourceTree = "<group>"; };
 		CB9594151EADD0CD0006D375 /* frames.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = frames.c; sourceTree = "<group>"; };
 		CB9594171EADD6BF0006D375 /* dlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dlist.h; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				CB618EB31EAF3C33005BC240 /* chapter05 */,
+				CB618EB81EAF3C9E005BC240 /* chapter06 */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -73,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				CB618EB51EAF3C5B005BC240 /* chapter05 */,
+				CB618EB91EAF3CB6005BC240 /* chapter06 */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -101,6 +107,22 @@
 			name = chapter05;
 			sourceTree = "<group>";
 		};
+		CB618EB81EAF3C9E005BC240 /* chapter06 */ = {
+			isa = PBXGroup;
+			children = (
+				CB618EBB1EAF3CE4005BC240 /* stack.h */,
+			);
+			name = chapter06;
+			sourceTree = "<group>";
+		};
+		CB618EB91EAF3CB6005BC240 /* chapter06 */ = {
+			isa = PBXGroup;
+			children = (
+				CB618EBD1EAF3CF8005BC240 /* stack.c */,
+			);
+			name = chapter06;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -111,6 +133,7 @@
 				CB9594501EADF93E0006D375 /* page.h in Headers */,
 				CB95943B1EADEFF90006D375 /* clist.h in Headers */,
 				CB9594181EADD6BF0006D375 /* dlist.h in Headers */,
+				CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */,
 				CB9594141EADD0BC0006D375 /* frames.h in Headers */,
 				CB3173281E94E42F001E6998 /* list.h in Headers */,
 			);
@@ -173,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB618EBE1EAF3CF8005BC240 /* stack.c in Sources */,
 				CB95944F1EADF9380006D375 /* page.c in Sources */,
 				CB95941A1EADD6CE0006D375 /* dlist.c in Sources */,
 				CB31732A1E94EC2E001E6998 /* list.c in Sources */,
