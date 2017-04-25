@@ -1,6 +1,6 @@
 //
 //  clist.h
-//  Algorithms
+//  Algorithms - circular list 
 //
 //  Created by YourtionGuo on 24/04/2017.
 //  Copyright © 2017 Yourtion. All rights reserved.
@@ -58,7 +58,7 @@ void clist_destroy(CList *list);
  @param list 指定的循环链表
  @param element 指定的元素
  @param data 元素数据
- @return 成功返回 1，否则返回 -1
+ @return 成功返回 0，否则返回 -1
  */
 int clist_ins_next(CList *list, CListElmt *element, const void *data);
 
@@ -69,7 +69,7 @@ int clist_ins_next(CList *list, CListElmt *element, const void *data);
  @param list 指定的循环链表
  @param element 待移除元素，如果为 NULL 则移除头部
  @param data 已移除元素的存储数据
- @return 成功返回 1，否则返回 -1
+ @return 成功返回 0，否则返回 -1
  */
 int clist_rem_next(CList *list, CListElmt *element, void **data);
 

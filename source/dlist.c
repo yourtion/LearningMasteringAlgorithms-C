@@ -1,6 +1,6 @@
 //
 //  dlist.c
-//  Algorithms
+//  Algorithms - doubly-linked list
 //
 //  Created by YourtionGuo on 24/04/2017.
 //  Copyright © 2017 Yourtion. All rights reserved.

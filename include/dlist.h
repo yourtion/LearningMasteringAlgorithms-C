@@ -1,6 +1,6 @@
 //
 //  dlist.h
-//  Algorithms
+//  Algorithms - doubly-linked list
 //
 //  Created by YourtionGuo on 24/04/2017.
 //  Copyright © 2017 Yourtion. All rights reserved.
@@ -59,7 +59,7 @@ void dlist_destroy(DList *list);
  @param list 指定的双向链表 - O(1)
  @param element 新元素，如果为 NULL 则插入空链表中
  @param data 元素数据
- @return 成功返回 1，否则返回 -1
+ @return 成功返回 0，否则返回 -1
  */
 int dlist_ins_next(DList *list, DListElmt *element, const void *data);
 
@@ -70,7 +70,7 @@ int dlist_ins_next(DList *list, DListElmt *element, const void *data);
  @param list 指定的双向链表 - O(1)
  @param element 新元素，如果为 NULL 则插入空链表中
  @param data 元素数据
- @return 成功返回 1，否则返回 -1
+ @return 成功返回 0，否则返回 -1
  */
 int dlist_ins_prev(DList *list, DListElmt *element, const void *data);
 
@@ -80,7 +80,7 @@ int dlist_ins_prev(DList *list, DListElmt *element, const void *data);
  @param list 指定的双向链表
  @param element 待移除元素
  @param data 已移除元素的存储数据
- @return 成功返回 1，否则返回 -1
+ @return 成功返回 0，否则返回 -1
  */
 int dlist_remove(DList *list, DListElmt *element, void **data);
 
@@ -116,7 +116,7 @@ int dlist_remove(DList *list, DListElmt *element, void **data);
  判断元素 element 是否为指定双向链表 list 的头节点 - O(1)
  
  @param element 待判断的元素
- @return 是返回 1，否则返回 -1
+ @return 是返回 1，否则返回 0
  */
 #define dlist_is_head(element) ((element)->prev == NULL ? 1 : 0)
 
@@ -125,7 +125,7 @@ int dlist_remove(DList *list, DListElmt *element, void **data);
  判断元素 element 是否为指定双向链表 list 的尾节点 - O(1)
  
  @param element 待判断的元素
- @return 是返回 1，否则返回 -1
+ @return 是返回 1，否则返回 0
  */
 #define dlist_is_tail(element) ((element)->next == NULL ? 1 : 0)
 

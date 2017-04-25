@@ -1,6 +1,6 @@
 //
 //  list.h
-//  Algorithms
+//  Algorithms - linked list
 //
 //  Created by YourtionGuo on 05/04/2017.
 //  Copyright © 2017 Yourtion. All rights reserved.
@@ -70,7 +70,7 @@ int list_ins_next(List *list, ListElmt *element, const void *data);
  @param list 指定的链表
  @param element 待移除元素，如果为 NULL 则移除头部
  @param data 已移除元素的存储数据
- @return 成功返回 1，否则返回 -1
+ @return 成功返回 0，否则返回 -1
  */
 int list_rem_next(List *list, ListElmt *element, void **data);
 
@@ -108,7 +108,7 @@ int list_rem_next(List *list, ListElmt *element, void **data);
 
  @param list 指定的链表
  @param element 待判断的元素
- @return 是返回 1，否则返回 -1
+ @return 是返回 1，否则返回 0
  */
 #define list_is_head(list, element) ((element) == (list)->head ? 1 : 0)
 
@@ -118,7 +118,7 @@ int list_rem_next(List *list, ListElmt *element, void **data);
  
  @param list 指定的链表
  @param element 待判断的元素
- @return 是返回 1，否则返回 -1
+ @return 是返回 1，否则返回 0
  */
 #define list_is_tail(element) ((element)->next == NULL ? 1 : 0)
 
