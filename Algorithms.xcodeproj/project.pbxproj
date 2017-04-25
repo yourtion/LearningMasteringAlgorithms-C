@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB3173281E94E42F001E6998 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3173271E94E42F001E6998 /* list.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB31732A1E94EC2E001E6998 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3173291E94EC2E001E6998 /* list.c */; };
-		CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = CB618EBB1EAF3CE4005BC240 /* stack.h */; };
+		CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = CB618EBB1EAF3CE4005BC240 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB618EBE1EAF3CF8005BC240 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = CB618EBD1EAF3CF8005BC240 /* stack.c */; };
 		CB9594141EADD0BC0006D375 /* frames.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9594131EADD0BC0006D375 /* frames.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB9594161EADD0CD0006D375 /* frames.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9594151EADD0CD0006D375 /* frames.c */; };
@@ -19,8 +19,10 @@
 		CB95943B1EADEFF90006D375 /* clist.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9594381EADEFDE0006D375 /* clist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB95944F1EADF9380006D375 /* page.c in Sources */ = {isa = PBXBuildFile; fileRef = CB95944E1EADF9380006D375 /* page.c */; };
 		CB9594501EADF93E0006D375 /* page.h in Headers */ = {isa = PBXBuildFile; fileRef = CB95944D1EADF92B0006D375 /* page.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBC6701D1EAF447900C0BDDF /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC6701C1EAF447900C0BDDF /* queue.h */; };
+		CBC6701D1EAF447900C0BDDF /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC6701C1EAF447900C0BDDF /* queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBC6701F1EAF448800C0BDDF /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC6701E1EAF448800C0BDDF /* queue.c */; };
+		CBC670341EAF4C6300C0BDDF /* events.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC670331EAF4C5700C0BDDF /* events.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBC670361EAF4C8900C0BDDF /* events.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC670351EAF4C8900C0BDDF /* events.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		CB95944E1EADF9380006D375 /* page.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = page.c; sourceTree = "<group>"; };
 		CBC6701C1EAF447900C0BDDF /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
 		CBC6701E1EAF448800C0BDDF /* queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = queue.c; sourceTree = "<group>"; };
+		CBC670331EAF4C5700C0BDDF /* events.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = events.h; sourceTree = "<group>"; };
+		CBC670351EAF4C8900C0BDDF /* events.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = events.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 			children = (
 				CB618EBB1EAF3CE4005BC240 /* stack.h */,
 				CBC6701C1EAF447900C0BDDF /* queue.h */,
+				CBC670331EAF4C5700C0BDDF /* events.h */,
 			);
 			name = chapter06;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			children = (
 				CB618EBD1EAF3CF8005BC240 /* stack.c */,
 				CBC6701E1EAF448800C0BDDF /* queue.c */,
+				CBC670351EAF4C8900C0BDDF /* events.c */,
 			);
 			name = chapter06;
 			sourceTree = "<group>";
@@ -136,11 +142,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC670341EAF4C6300C0BDDF /* events.h in Headers */,
+				CBC6701D1EAF447900C0BDDF /* queue.h in Headers */,
+				CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */,
 				CB9594501EADF93E0006D375 /* page.h in Headers */,
 				CB95943B1EADEFF90006D375 /* clist.h in Headers */,
 				CB9594181EADD6BF0006D375 /* dlist.h in Headers */,
-				CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */,
-				CBC6701D1EAF447900C0BDDF /* queue.h in Headers */,
 				CB9594141EADD0BC0006D375 /* frames.h in Headers */,
 				CB3173281E94E42F001E6998 /* list.h in Headers */,
 			);
@@ -209,6 +216,7 @@
 				CBC6701F1EAF448800C0BDDF /* queue.c in Sources */,
 				CB31732A1E94EC2E001E6998 /* list.c in Sources */,
 				CB9594161EADD0CD0006D375 /* frames.c in Sources */,
+				CBC670361EAF4C8900C0BDDF /* events.c in Sources */,
 				CB95943A1EADEFED0006D375 /* clist.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
