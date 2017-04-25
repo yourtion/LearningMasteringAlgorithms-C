@@ -194,10 +194,7 @@
 		CB3172DF1E94DD89001E6998 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				CB9EA90F1EA5F4BA00D9C05E /* list */,
-				CB9594321EADE0380006D375 /* dlist */,
-				CB9594471EADF6140006D375 /* clist */,
-				CB95945C1EADFB460006D375 /* page */,
+				CB618EB71EAF3C7E005BC240 /* chapter05 */,
 				CB3172E01E94DD89001E6998 /* main.c */,
 			);
 			path = Example;
@@ -209,6 +206,17 @@
 				CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CB618EB71EAF3C7E005BC240 /* chapter05 */ = {
+			isa = PBXGroup;
+			children = (
+				CB9EA90F1EA5F4BA00D9C05E /* list */,
+				CB9594321EADE0380006D375 /* dlist */,
+				CB9594471EADF6140006D375 /* clist */,
+				CB95945C1EADFB460006D375 /* page */,
+			);
+			name = chapter05;
 			sourceTree = "<group>";
 		};
 		CB9594321EADE0380006D375 /* dlist */ = {
@@ -669,6 +677,7 @@
 				CB9594311EADE00D0006D375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB9594441EADF6050006D375 /* Build configuration list for PBXNativeTarget "C05-CList" */ = {
 			isa = XCConfigurationList;
@@ -677,6 +686,7 @@
 				CB9594461EADF6050006D375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB9594591EADFB370006D375 /* Build configuration list for PBXNativeTarget "C05-Page" */ = {
 			isa = XCConfigurationList;
@@ -685,6 +695,7 @@
 				CB95945B1EADFB370006D375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB9EA9191EA5F4DD00D9C05E /* Build configuration list for PBXNativeTarget "C05-List" */ = {
 			isa = XCConfigurationList;

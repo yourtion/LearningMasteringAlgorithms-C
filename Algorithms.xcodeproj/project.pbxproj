@@ -64,16 +64,32 @@
 		CB3172F71E94DDEF001E6998 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				CB618EB31EAF3C33005BC240 /* chapter05 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		CB3172F81E94DDF6001E6998 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				CB618EB51EAF3C5B005BC240 /* chapter05 */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		CB618EB31EAF3C33005BC240 /* chapter05 */ = {
+			isa = PBXGroup;
+			children = (
 				CB3173271E94E42F001E6998 /* list.h */,
 				CB9594131EADD0BC0006D375 /* frames.h */,
 				CB9594171EADD6BF0006D375 /* dlist.h */,
 				CB9594381EADEFDE0006D375 /* clist.h */,
 				CB95944D1EADF92B0006D375 /* page.h */,
 			);
-			path = include;
+			name = chapter05;
 			sourceTree = "<group>";
 		};
-		CB3172F81E94DDF6001E6998 /* source */ = {
+		CB618EB51EAF3C5B005BC240 /* chapter05 */ = {
 			isa = PBXGroup;
 			children = (
 				CB3173291E94EC2E001E6998 /* list.c */,
@@ -82,7 +98,7 @@
 				CB9594391EADEFED0006D375 /* clist.c */,
 				CB95944E1EADF9380006D375 /* page.c */,
 			);
-			path = source;
+			name = chapter05;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
