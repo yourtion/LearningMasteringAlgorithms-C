@@ -19,6 +19,8 @@
 		CB9EA91D1EA5F50000D9C05E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9EA9101EA5F4D500D9C05E /* main.c */; };
 		CBC670181EAF423E00C0BDDF /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CBC6701B1EAF424C00C0BDDF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC6701A1EAF424C00C0BDDF /* main.c */; };
+		CBC6702D1EAF485F00C0BDDF /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
+		CBC670301EAF487000C0BDDF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC6702F1EAF487000C0BDDF /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,13 @@
 			remoteInfo = Algorithms;
 		};
 		CBC670161EAF423A00C0BDDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3172EF1E94DDDB001E6998;
+			remoteInfo = Algorithms;
+		};
+		CBC6702B1EAF485C00C0BDDF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
 			proxyType = 1;
@@ -128,6 +137,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		CBC670221EAF484700C0BDDF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +162,8 @@
 		CB9EA91C1EA5F4DD00D9C05E /* C05-List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C05-List"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC6700F1EAF423000C0BDDF /* C06-Stack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C06-Stack"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC6701A1EAF424C00C0BDDF /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CBC670241EAF484700C0BDDF /* C06-Queue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C06-Queue"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC6702F1EAF487000C0BDDF /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +215,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBC670211EAF484700C0BDDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC6702D1EAF485F00C0BDDF /* libAlgorithms.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -216,6 +244,7 @@
 				CB9594401EADF6050006D375 /* C05-CList */,
 				CB9594551EADFB370006D375 /* C05-Page */,
 				CBC6700F1EAF423000C0BDDF /* C06-Stack */,
+				CBC670241EAF484700C0BDDF /* C06-Queue */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				CBC670191EAF424C00C0BDDF /* stack */,
+				CBC6702E1EAF487000C0BDDF /* queue */,
 			);
 			name = chapter06;
 			sourceTree = "<group>";
@@ -295,6 +325,14 @@
 				CBC6701A1EAF424C00C0BDDF /* main.c */,
 			);
 			path = stack;
+			sourceTree = "<group>";
+		};
+		CBC6702E1EAF487000C0BDDF /* queue */ = {
+			isa = PBXGroup;
+			children = (
+				CBC6702F1EAF487000C0BDDF /* main.c */,
+			);
+			path = queue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,6 +446,24 @@
 			productReference = CBC6700F1EAF423000C0BDDF /* C06-Stack */;
 			productType = "com.apple.product-type.tool";
 		};
+		CBC670231EAF484700C0BDDF /* C06-Queue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC670281EAF484700C0BDDF /* Build configuration list for PBXNativeTarget "C06-Queue" */;
+			buildPhases = (
+				CBC670201EAF484700C0BDDF /* Sources */,
+				CBC670211EAF484700C0BDDF /* Frameworks */,
+				CBC670221EAF484700C0BDDF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBC6702C1EAF485C00C0BDDF /* PBXTargetDependency */,
+			);
+			name = "C06-Queue";
+			productName = "C06-Queue";
+			productReference = CBC670241EAF484700C0BDDF /* C06-Queue */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -437,6 +493,10 @@
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
+					CBC670231EAF484700C0BDDF = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = CB3172D81E94DD89001E6998 /* Build configuration list for PBXProject "MasteringAlgorithms" */;
@@ -463,6 +523,7 @@
 				CB95943F1EADF6050006D375 /* C05-CList */,
 				CB9594541EADFB370006D375 /* C05-Page */,
 				CBC6700E1EAF423000C0BDDF /* C06-Stack */,
+				CBC670231EAF484700C0BDDF /* C06-Queue */,
 			);
 		};
 /* End PBXProject section */
@@ -526,6 +587,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBC670201EAF484700C0BDDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC670301EAF487000C0BDDF /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -558,6 +627,11 @@
 			isa = PBXTargetDependency;
 			name = Algorithms;
 			targetProxy = CBC670161EAF423A00C0BDDF /* PBXContainerItemProxy */;
+		};
+		CBC6702C1EAF485C00C0BDDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Algorithms;
+			targetProxy = CBC6702B1EAF485C00C0BDDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -747,6 +821,22 @@
 			};
 			name = Release;
 		};
+		CBC670291EAF484700C0BDDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Debug;
+		};
+		CBC6702A1EAF484700C0BDDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -809,6 +899,14 @@
 			buildConfigurations = (
 				CBC670131EAF423000C0BDDF /* Debug */,
 				CBC670141EAF423000C0BDDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBC670281EAF484700C0BDDF /* Build configuration list for PBXNativeTarget "C06-Queue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC670291EAF484700C0BDDF /* Debug */,
+				CBC6702A1EAF484700C0BDDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
