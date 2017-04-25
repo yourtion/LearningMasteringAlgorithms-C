@@ -9,6 +9,8 @@
 #ifndef EVENTS_H
 #define EVENTS_H
 
+#include <stdlib.h>
+
 #include "queue.h"
 
 /**
@@ -40,4 +42,4 @@ int receive_event(Queue *events, const Event *event);
  */
 int process_event(Queue *events, int (*dispatch)(Event *event));
 
-#endif /* events_h */
+#endif /* EVENTS_H */
