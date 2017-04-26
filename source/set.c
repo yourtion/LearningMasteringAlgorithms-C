@@ -1,6 +1,6 @@
 //
 //  set.c
-//  Algorithms
+//  Algorithms - set
 //
 //  Created by YourtionGuo on 26/04/2017.
 //  Copyright © 2017 Yourtion. All rights reserved.
