@@ -11,6 +11,8 @@
 		CB3173221E94E1E0001E6998 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3172E01E94DD89001E6998 /* main.c */; };
 		CB3F0D8F1EB08474008396F8 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB3F0D931EB084A9008396F8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D921EB084A9008396F8 /* main.c */; };
+		CB3F0DA51EB09028008396F8 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
+		CB3F0DA81EB09059008396F8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0DA71EB09059008396F8 /* main.c */; };
 		CB9594341EADE0380006D375 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9594331EADE0380006D375 /* main.c */; };
 		CB9594371EADE0A30006D375 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB9594491EADF6140006D375 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9594481EADF6140006D375 /* main.c */; };
@@ -41,6 +43,13 @@
 			remoteInfo = Algorithms;
 		};
 		CB3F0D8D1EB0846E008396F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3172EF1E94DDDB001E6998;
+			remoteInfo = Algorithms;
+		};
+		CB3F0DA31EB09025008396F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
 			proxyType = 1;
@@ -102,6 +111,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		CB3F0D841EB08467008396F8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		CB3F0D9A1EB09016008396F8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -172,6 +190,8 @@
 		CB3173071E94E056001E6998 /* Template */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Template; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3F0D861EB08467008396F8 /* C07-Set */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C07-Set"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3F0D921EB084A9008396F8 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CB3F0D9C1EB09016008396F8 /* C07-Cover */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C07-Cover"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3F0DA71EB09059008396F8 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB95942B1EADE00D0006D375 /* C05-DList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C05-DList"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9594331EADE0380006D375 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB9594401EADF6050006D375 /* C05-CList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C05-CList"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +220,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3F0D8F1EB08474008396F8 /* libAlgorithms.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3F0D991EB09016008396F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3F0DA51EB09028008396F8 /* libAlgorithms.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +302,7 @@
 				CBC6700F1EAF423000C0BDDF /* C06-Stack */,
 				CBC670241EAF484700C0BDDF /* C06-Queue */,
 				CB3F0D861EB08467008396F8 /* C07-Set */,
+				CB3F0D9C1EB09016008396F8 /* C07-Cover */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -301,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				CB3F0D911EB084A9008396F8 /* set */,
+				CB3F0DA61EB09059008396F8 /* cover */,
 			);
 			name = chapter07;
 			sourceTree = "<group>";
@@ -311,6 +341,14 @@
 				CB3F0D921EB084A9008396F8 /* main.c */,
 			);
 			path = set;
+			sourceTree = "<group>";
+		};
+		CB3F0DA61EB09059008396F8 /* cover */ = {
+			isa = PBXGroup;
+			children = (
+				CB3F0DA71EB09059008396F8 /* main.c */,
+			);
+			path = cover;
 			sourceTree = "<group>";
 		};
 		CB618EB71EAF3C7E005BC240 /* chapter05 */ = {
@@ -418,6 +456,24 @@
 			name = "C07-Set";
 			productName = "C07-Set";
 			productReference = CB3F0D861EB08467008396F8 /* C07-Set */;
+			productType = "com.apple.product-type.tool";
+		};
+		CB3F0D9B1EB09016008396F8 /* C07-Cover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3F0DA01EB09017008396F8 /* Build configuration list for PBXNativeTarget "C07-Cover" */;
+			buildPhases = (
+				CB3F0D981EB09016008396F8 /* Sources */,
+				CB3F0D991EB09016008396F8 /* Frameworks */,
+				CB3F0D9A1EB09016008396F8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB3F0DA41EB09025008396F8 /* PBXTargetDependency */,
+			);
+			name = "C07-Cover";
+			productName = "C07-Covering";
+			productReference = CB3F0D9C1EB09016008396F8 /* C07-Cover */;
 			productType = "com.apple.product-type.tool";
 		};
 		CB95942A1EADE00D0006D375 /* C05-DList */ = {
@@ -545,6 +601,10 @@
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
+					CB3F0D9B1EB09016008396F8 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
 					CB95942A1EADE00D0006D375 = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
@@ -593,6 +653,7 @@
 				CBC6700E1EAF423000C0BDDF /* C06-Stack */,
 				CBC670231EAF484700C0BDDF /* C06-Queue */,
 				CB3F0D851EB08467008396F8 /* C07-Set */,
+				CB3F0D9B1EB09016008396F8 /* C07-Cover */,
 			);
 		};
 /* End PBXProject section */
@@ -621,6 +682,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3F0D931EB084A9008396F8 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3F0D981EB09016008396F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3F0DA81EB09059008396F8 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +753,11 @@
 			isa = PBXTargetDependency;
 			name = Algorithms;
 			targetProxy = CB3F0D8D1EB0846E008396F8 /* PBXContainerItemProxy */;
+		};
+		CB3F0DA41EB09025008396F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Algorithms;
+			targetProxy = CB3F0DA31EB09025008396F8 /* PBXContainerItemProxy */;
 		};
 		CB9594361EADE08B0006D375 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -839,6 +913,22 @@
 			};
 			name = Release;
 		};
+		CB3F0DA11EB09017008396F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Debug;
+		};
+		CB3F0DA21EB09017008396F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Release;
+		};
 		CB9594301EADE00D0006D375 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -961,6 +1051,14 @@
 			buildConfigurations = (
 				CB3F0D8B1EB08467008396F8 /* Debug */,
 				CB3F0D8C1EB08467008396F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB3F0DA01EB09017008396F8 /* Build configuration list for PBXNativeTarget "C07-Cover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3F0DA11EB09017008396F8 /* Debug */,
+				CB3F0DA21EB09017008396F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
