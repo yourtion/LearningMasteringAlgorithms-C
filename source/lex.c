@@ -1,6 +1,6 @@
 //
 //  lex.c
-//  Algorithms
+//  Algorithms - lex
 //
 //  Created by YourtionGuo on 28/04/2017.
 //  Copyright © 2017 Yourtion. All rights reserved.
@@ -24,8 +24,8 @@ Token lex(const char *istream, CHTbl *symtbl)
 {
   
   Token     token;
-  Symbol      *symbol;
-  int         length, retval, i;
+  Symbol    *symbol;
+  int       length, retval, i;
 
   /// 创建符号表的空间
   if ((symbol = (Symbol *)malloc(sizeof(Symbol))) == NULL) return error;
