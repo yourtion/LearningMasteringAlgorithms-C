@@ -1053,6 +1053,7 @@
 				CB3F0D8C1EB08467008396F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB3F0DA01EB09017008396F8 /* Build configuration list for PBXNativeTarget "C07-Cover" */ = {
 			isa = XCConfigurationList;
@@ -1061,6 +1062,7 @@
 				CB3F0DA21EB09017008396F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB95942F1EADE00D0006D375 /* Build configuration list for PBXNativeTarget "C05-DList" */ = {
 			isa = XCConfigurationList;
