@@ -1,6 +1,6 @@
 //
 //  chtbl.c
-//  Algorithms
+//  Algorithms - chained hash table 
 //
 //  Created by YourtionGuo on 28/04/2017.
 //  Copyright © 2017 Yourtion. All rights reserved.

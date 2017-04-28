@@ -39,7 +39,7 @@ static void print_set(const Set *set)
 
 static int match_int(const void *key1, const void *key2)
 {
-  /// 判断两个证书是否相等
+  /// 判断两个字符是否相等
   return !memcmp(key1, key2, sizeof(int));
 }
 

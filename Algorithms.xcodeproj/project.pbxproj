@@ -23,9 +23,9 @@
 		CB95943B1EADEFF90006D375 /* clist.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9594381EADEFDE0006D375 /* clist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB95944F1EADF9380006D375 /* page.c in Sources */ = {isa = PBXBuildFile; fileRef = CB95944E1EADF9380006D375 /* page.c */; };
 		CB9594501EADF93E0006D375 /* page.h in Headers */ = {isa = PBXBuildFile; fileRef = CB95944D1EADF92B0006D375 /* page.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBA147B51EB317B200765E81 /* hashpjw.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA147B41EB317B200765E81 /* hashpjw.h */; };
+		CBA147B51EB317B200765E81 /* hashpjw.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA147B41EB317B200765E81 /* hashpjw.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBA147B81EB3184400765E81 /* hashpjw.c in Sources */ = {isa = PBXBuildFile; fileRef = CBA147B71EB3184400765E81 /* hashpjw.c */; };
-		CBA147BA1EB3198B00765E81 /* chtbl.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA147B91EB3198B00765E81 /* chtbl.h */; };
+		CBA147BA1EB3198B00765E81 /* chtbl.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA147B91EB3198B00765E81 /* chtbl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBA147BC1EB3199400765E81 /* chtbl.c in Sources */ = {isa = PBXBuildFile; fileRef = CBA147BB1EB3199400765E81 /* chtbl.c */; };
 		CBC6701D1EAF447900C0BDDF /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC6701C1EAF447900C0BDDF /* queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBC6701F1EAF448800C0BDDF /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC6701E1EAF448800C0BDDF /* queue.c */; };
@@ -198,15 +198,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA147BA1EB3198B00765E81 /* chtbl.h in Headers */,
+				CBA147B51EB317B200765E81 /* hashpjw.h in Headers */,
 				CB3F0D951EB08BA5008396F8 /* cover.h in Headers */,
 				CB3F0D7F1EB079CC008396F8 /* set.h in Headers */,
 				CBC670341EAF4C6300C0BDDF /* events.h in Headers */,
 				CBC6701D1EAF447900C0BDDF /* queue.h in Headers */,
 				CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */,
 				CB9594501EADF93E0006D375 /* page.h in Headers */,
-				CBA147BA1EB3198B00765E81 /* chtbl.h in Headers */,
 				CB95943B1EADEFF90006D375 /* clist.h in Headers */,
-				CBA147B51EB317B200765E81 /* hashpjw.h in Headers */,
 				CB9594181EADD6BF0006D375 /* dlist.h in Headers */,
 				CB9594141EADD0BC0006D375 /* frames.h in Headers */,
 				CB3173281E94E42F001E6998 /* list.h in Headers */,
