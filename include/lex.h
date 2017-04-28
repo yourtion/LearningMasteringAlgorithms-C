@@ -1,13 +1,26 @@
 //
 //  lex.h
-//  Algorithms
+//  Algorithms - lex
 //
 //  Created by YourtionGuo on 28/04/2017.
 //  Copyright © 2017 Yourtion. All rights reserved.
 //
 
-#ifndef lex_h
-#define lex_h
+#ifndef LEX_H
+#define LEX_H
+
+#include "chtbl.h"
+
+typedef enum Token_ {lexit, error, digit, other} Token;
 
 
-#endif /* lex_h */
+/**
+ <#Description#>
+
+ @param istream 输入流
+ @param symtbl 符号表
+ @return 类型
+ */
+Token lex(const char *istream, CHTbl *symtbl);
+
+#endif /* LEX_H */
