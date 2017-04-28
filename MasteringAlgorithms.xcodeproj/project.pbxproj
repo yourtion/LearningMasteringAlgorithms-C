@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB3173211E94E1BA001E6998 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
-		CB3173221E94E1E0001E6998 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3172E01E94DD89001E6998 /* main.c */; };
 		CB3F0D8F1EB08474008396F8 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB3F0D931EB084A9008396F8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D921EB084A9008396F8 /* main.c */; };
 		CB3F0DA51EB09028008396F8 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
@@ -35,13 +33,6 @@
 			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = CB3172F01E94DDDB001E6998;
-			remoteInfo = Algorithms;
-		};
-		CB31731F1E94E1B6001E6998 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = CB3172EF1E94DDDB001E6998;
 			remoteInfo = Algorithms;
 		};
 		CB3F0D8D1EB0846E008396F8 /* PBXContainerItemProxy */ = {
@@ -110,15 +101,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CB3173051E94E056001E6998 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		CB3F0D841EB08467008396F8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,9 +185,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CB3172E01E94DD89001E6998 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Algorithms.xcodeproj; sourceTree = "<group>"; };
-		CB3173071E94E056001E6998 /* Template */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Template; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3F0D861EB08467008396F8 /* C07-Set */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C07-Set"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3F0D921EB084A9008396F8 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB3F0D9C1EB09016008396F8 /* C07-Cover */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C07-Cover"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,14 +207,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CB3173041E94E056001E6998 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB3173211E94E1BA001E6998 /* libAlgorithms.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CB3F0D831EB08467008396F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,7 +294,6 @@
 		CB3172DE1E94DD89001E6998 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB3173071E94E056001E6998 /* Template */,
 				CB9EA91C1EA5F4DD00D9C05E /* C05-List */,
 				CB95942B1EADE00D0006D375 /* C05-DList */,
 				CB9594401EADF6050006D375 /* C05-CList */,
@@ -343,7 +314,6 @@
 				CB618EBA1EAF3CBD005BC240 /* chapter06 */,
 				CB3F0D901EB08497008396F8 /* chapter07 */,
 				CBA147BD1EB3207D00765E81 /* chapter08 */,
-				CB3172E01E94DD89001E6998 /* main.c */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -468,24 +438,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB3173061E94E056001E6998 /* Template */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB31730B1E94E056001E6998 /* Build configuration list for PBXNativeTarget "Template" */;
-			buildPhases = (
-				CB3173031E94E056001E6998 /* Sources */,
-				CB3173041E94E056001E6998 /* Frameworks */,
-				CB3173051E94E056001E6998 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CB3173201E94E1B6001E6998 /* PBXTargetDependency */,
-			);
-			name = Template;
-			productName = Template;
-			productReference = CB3173071E94E056001E6998 /* Template */;
-			productType = "com.apple.product-type.tool";
-		};
 		CB3F0D851EB08467008396F8 /* C07-Set */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB3F0D8A1EB08467008396F8 /* Build configuration list for PBXNativeTarget "C07-Set" */;
@@ -657,10 +609,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Yourtion;
 				TargetAttributes = {
-					CB3173061E94E056001E6998 = {
-						CreatedOnToolsVersion = 8.3;
-						ProvisioningStyle = Automatic;
-					};
 					CB3F0D851EB08467008396F8 = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
@@ -713,7 +661,6 @@
 			);
 			projectRoot = "";
 			targets = (
-				CB3173061E94E056001E6998 /* Template */,
 				CB9EA9111EA5F4DD00D9C05E /* C05-List */,
 				CB95942A1EADE00D0006D375 /* C05-DList */,
 				CB95943F1EADF6050006D375 /* C05-CList */,
@@ -738,14 +685,6 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CB3173031E94E056001E6998 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB3173221E94E1E0001E6998 /* main.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CB3F0D821EB08467008396F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -821,11 +760,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CB3173201E94E1B6001E6998 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Algorithms;
-			targetProxy = CB31731F1E94E1B6001E6998 /* PBXContainerItemProxy */;
-		};
 		CB3F0D8E1EB0846E008396F8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Algorithms;
@@ -960,22 +894,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		CB31730C1E94E056001E6998 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
-			};
-			name = Debug;
-		};
-		CB31730D1E94E056001E6998 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
 			};
 			name = Release;
 		};
@@ -1131,15 +1049,6 @@
 			buildConfigurations = (
 				CB3172E21E94DD89001E6998 /* Debug */,
 				CB3172E31E94DD89001E6998 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB31730B1E94E056001E6998 /* Build configuration list for PBXNativeTarget "Template" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB31730C1E94E056001E6998 /* Debug */,
-				CB31730D1E94E056001E6998 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
