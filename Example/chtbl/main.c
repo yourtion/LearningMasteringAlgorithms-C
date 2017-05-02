@@ -58,20 +58,10 @@ int main(int argc, char **argv)
   char      *data, c;
   int       retval, i;
   
-  /*****************************************************************************
-   *                                                                            *
-   *  Initialize the chained hash table.                                        *
-   *                                                                            *
-   *****************************************************************************/
-  
+  /// 初始化链式哈希表
   if (chtbl_init(&htbl, TBLSIZ, h_char, match_char, free) != 0) return 1;
   
-  /*****************************************************************************
-   *                                                                            *
-   *  Perform some chained hash table operations.                               *
-   *                                                                            *
-   *****************************************************************************/
-  
+  /// 执行哈希表操作
   for (i = 0; i < TBLSIZ; i++) {
     
     if ((data = (char *)malloc(sizeof(char))) == NULL) return 1;
