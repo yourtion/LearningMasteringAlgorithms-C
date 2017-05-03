@@ -351,6 +351,7 @@
 				CB618EBA1EAF3CBD005BC240 /* chapter06 */,
 				CB3F0D901EB08497008396F8 /* chapter07 */,
 				CBA147BD1EB3207D00765E81 /* chapter08 */,
+				CB913EA31EB9ABC3005EDAEA /* chapter09 */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -406,6 +407,13 @@
 				CBC6702E1EAF487000C0BDDF /* queue */,
 			);
 			name = chapter06;
+			sourceTree = "<group>";
+		};
+		CB913EA31EB9ABC3005EDAEA /* chapter09 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = chapter09;
 			sourceTree = "<group>";
 		};
 		CB9594321EADE0380006D375 /* dlist */ = {
@@ -1141,6 +1149,7 @@
 				CB13B0AF1EB862B80091404B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB3172D81E94DD89001E6998 /* Build configuration list for PBXProject "MasteringAlgorithms" */ = {
 			isa = XCConfigurationList;
