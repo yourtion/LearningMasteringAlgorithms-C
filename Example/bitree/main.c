@@ -41,7 +41,7 @@ static void print_list(const List *list)
   return;
 }
 
-typedef enum {BiTreeOrderPre, BiTreeOrderIn, BiTreeOrderPost} BiTreeOrderType;
+typedef enum {BiTreePreOrder, BiTreeInOrder, BiTreePostOrder} BiTreeOrderType;
 
 static void print_tree(const BiTreeNode *node, BiTreeOrderType type)
 {
@@ -49,15 +49,15 @@ static void print_tree(const BiTreeNode *node, BiTreeOrderType type)
   List list;
   list_init(&list, free);
   switch (type) {
-    case BiTreeOrderPre:
+    case BiTreePreOrder:
       /// 前序遍历
       bitree_preorder(node, &list);
       break;
-    case BiTreeOrderIn:
+    case BiTreeInOrder:
       /// 中序遍历
       bitree_inorder(node, &list);
       break;
-    case BiTreeOrderPost:
+    case BiTreePostOrder:
       /// 后续遍历
       bitree_postorder(node, &list);
       break;
@@ -70,17 +70,17 @@ static void print_tree(const BiTreeNode *node, BiTreeOrderType type)
 
 static void print_preorder(const BiTreeNode *node)
 {
-  return print_tree(node, BiTreeOrderPre);
+  return print_tree(node, BiTreePreOrder);
 }
 
 static void print_inorder(const BiTreeNode *node)
 {
-  return print_tree(node, BiTreeOrderIn);
+  return print_tree(node, BiTreeInOrder);
 }
 
 static void print_postorder(const BiTreeNode *node)
 {
-  return print_tree(node, BiTreeOrderPost);
+  return print_tree(node, BiTreePostOrder);
 }
 
 static int insert_int(BiTree *tree, int i)
