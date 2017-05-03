@@ -13,64 +13,74 @@
 #include "bitree.h"
 #include "traverse.h"
 
-static void print_preorder(const BiTreeNode *node)
+static void print_list(const List *list)
 {
-  /// 前序遍历打印二叉树
-  if (!bitree_is_eob(node)) {
+  ListElmt           *element;
+  int                *data, i;
+  
+  /// 显示链表
+  fprintf(stdout, "-> List size is %d\n", list_size(list));
+  
+  i = 0;
+  element = list_head(list);
+  
+  while (1) {
     
-    fprintf(stdout, "-> Node=%03d\n", *(int *)bitree_data(node));
+    data = list_data(element);
+    fprintf(stdout, "--> Node[%03d]=%03d\n", i, *data);
     
-    if (!bitree_is_eob(bitree_left(node))) {
-      print_preorder(bitree_left(node));
+    i++;
+    
+    if (list_is_tail(element)) {
+      break;
+    } else {
+      element = list_next(element);
     }
-    
-    if (!bitree_is_eob(bitree_right(node))) {
-      print_preorder(bitree_right(node));
-    }
-    
   }
   
   return;
+}
+
+typedef enum {BiTreeOrderPre, BiTreeOrderIn, BiTreeOrderPost} BiTreeOrderType;
+
+static void print_tree(const BiTreeNode *node, BiTreeOrderType type)
+{
+  /// 使用 traverse 打印二叉树
+  List list;
+  list_init(&list, free);
+  switch (type) {
+    case BiTreeOrderPre:
+      /// 前序遍历
+      bitree_preorder(node, &list);
+      break;
+    case BiTreeOrderIn:
+      /// 中序遍历
+      bitree_inorder(node, &list);
+      break;
+    case BiTreeOrderPost:
+      /// 后续遍历
+      bitree_postorder(node, &list);
+      break;
+    default:
+      return;
+  }
+  return print_list(&list);
+}
+
+
+static void print_preorder(const BiTreeNode *node)
+{
+  return print_tree(node, BiTreeOrderPre);
 }
 
 static void print_inorder(const BiTreeNode *node)
 {
-  /// 中序遍历打印二叉树
-  if (!bitree_is_eob(node)) {
-    
-    if (!bitree_is_eob(bitree_left(node))) {
-      print_inorder(bitree_left(node));
-    }
-    
-    fprintf(stdout, "-> Node=%03d\n", *(int *)bitree_data(node));
-    
-    if (!bitree_is_eob(bitree_right(node))) {
-      print_inorder(bitree_right(node));
-    }
-    
-  }
-  
-  return;
+  return print_tree(node, BiTreeOrderIn);
 }
 
 static void print_postorder(const BiTreeNode *node)
 {
-  /// 后续遍历打印二叉树
-  if (!bitree_is_eob(node)) {
-    
-    if (!bitree_is_eob(bitree_left(node))) {
-      print_postorder(bitree_left(node));
-    }
-    
-    if (!bitree_is_eob(bitree_right(node))) {
-      print_postorder(bitree_right(node));
-    }
-    
-    fprintf(stdout, "-> Node=%03d\n", *(int *)bitree_data(node));
-    
-  }
-  
-  return;
+  return print_tree(node, BiTreeOrderPost);
 }
 
 static int insert_int(BiTree *tree, int i)
