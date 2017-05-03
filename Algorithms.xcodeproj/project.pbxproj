@@ -19,6 +19,8 @@
 		CB618EBE1EAF3CF8005BC240 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = CB618EBD1EAF3CF8005BC240 /* stack.c */; };
 		CB913EA51EB9AF91005EDAEA /* bitree.h in Headers */ = {isa = PBXBuildFile; fileRef = CB913EA41EB9AF91005EDAEA /* bitree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB913EA71EB9B3CC005EDAEA /* bitree.c in Sources */ = {isa = PBXBuildFile; fileRef = CB913EA61EB9B3CC005EDAEA /* bitree.c */; };
+		CB913EA91EB9BAB9005EDAEA /* traverse.h in Headers */ = {isa = PBXBuildFile; fileRef = CB913EA81EB9BAB9005EDAEA /* traverse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB913EAB1EB9BCC2005EDAEA /* traverse.c in Sources */ = {isa = PBXBuildFile; fileRef = CB913EAA1EB9BCC2005EDAEA /* traverse.c */; };
 		CB9594141EADD0BC0006D375 /* frames.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9594131EADD0BC0006D375 /* frames.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB9594161EADD0CD0006D375 /* frames.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9594151EADD0CD0006D375 /* frames.c */; };
 		CB9594181EADD6BF0006D375 /* dlist.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9594171EADD6BF0006D375 /* dlist.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +56,8 @@
 		CB618EBD1EAF3CF8005BC240 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
 		CB913EA41EB9AF91005EDAEA /* bitree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitree.h; sourceTree = "<group>"; };
 		CB913EA61EB9B3CC005EDAEA /* bitree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitree.c; sourceTree = "<group>"; };
+		CB913EA81EB9BAB9005EDAEA /* traverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = traverse.h; sourceTree = "<group>"; };
+		CB913EAA1EB9BCC2005EDAEA /* traverse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = traverse.c; sourceTree = "<group>"; };
 		CB9594131EADD0BC0006D375 /* frames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frames.h; sourceTree = "<group>"; };
 		CB9594151EADD0CD0006D375 /* frames.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = frames.c; sourceTree = "<group>"; };
 		CB9594171EADD6BF0006D375 /* dlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dlist.h; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				CB913EA41EB9AF91005EDAEA /* bitree.h */,
+				CB913EA81EB9BAB9005EDAEA /* traverse.h */,
 			);
 			name = chapter09;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				CB913EA61EB9B3CC005EDAEA /* bitree.c */,
+				CB913EAA1EB9BCC2005EDAEA /* traverse.c */,
 			);
 			name = chapter09;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB913EA91EB9BAB9005EDAEA /* traverse.h in Headers */,
 				CB913EA51EB9AF91005EDAEA /* bitree.h in Headers */,
 				CB13B0A21EB85D390091404B /* ohtbl.h in Headers */,
 				CBA147D21EB32B9100765E81 /* lex.h in Headers */,
@@ -318,6 +325,7 @@
 				CB95941A1EADD6CE0006D375 /* dlist.c in Sources */,
 				CBC6701F1EAF448800C0BDDF /* queue.c in Sources */,
 				CBA147B81EB3184400765E81 /* hashpjw.c in Sources */,
+				CB913EAB1EB9BCC2005EDAEA /* traverse.c in Sources */,
 				CB31732A1E94EC2E001E6998 /* list.c in Sources */,
 				CB9594161EADD0CD0006D375 /* frames.c in Sources */,
 				CBC670361EAF4C8900C0BDDF /* events.c in Sources */,
@@ -425,7 +433,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
 			};
 			name = Debug;
 		};
@@ -433,7 +443,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
 			};
 			name = Release;
 		};
