@@ -1275,6 +1275,7 @@
 				CB913EB61EB9BF43005EDAEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB95942F1EADE00D0006D375 /* Build configuration list for PBXNativeTarget "C05-DList" */ = {
 			isa = XCConfigurationList;
