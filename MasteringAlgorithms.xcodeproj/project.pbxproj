@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CB13B0B21EB863070091404B /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB13B0B51EB863250091404B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB13B0B41EB863250091404B /* main.c */; };
+		CB1BD51E1EBB152E00BCEE73 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB1BD51D1EBB152E00BCEE73 /* main.c */; };
+		CB1BD5211EBB154A00BCEE73 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB3F0D8F1EB08474008396F8 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB3F0D931EB084A9008396F8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D921EB084A9008396F8 /* main.c */; };
 		CB3F0DA51EB09028008396F8 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
@@ -33,6 +35,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		CB13B0B01EB862C90091404B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3172EF1E94DDDB001E6998;
+			remoteInfo = Algorithms;
+		};
+		CB1BD51F1EBB154400BCEE73 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
 			proxyType = 1;
@@ -120,6 +129,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CB13B0A71EB862B60091404B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		CB1BD5131EBB150B00BCEE73 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -223,6 +241,8 @@
 /* Begin PBXFileReference section */
 		CB13B0A91EB862B80091404B /* C08-OHTable */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C08-OHTable"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB13B0B41EB863250091404B /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CB1BD5151EBB150B00BCEE73 /* C09-BisTree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C09-BisTree"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1BD51D1EBB152E00BCEE73 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Algorithms.xcodeproj; sourceTree = "<group>"; };
 		CB3F0D861EB08467008396F8 /* C07-Set */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C07-Set"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3F0D921EB084A9008396F8 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
@@ -252,6 +272,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB13B0B21EB863070091404B /* libAlgorithms.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1BD5121EBB150B00BCEE73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1BD5211EBB154A00BCEE73 /* libAlgorithms.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +374,14 @@
 			path = ohtbl;
 			sourceTree = "<group>";
 		};
+		CB1BD51C1EBB152E00BCEE73 /* bistree */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BD51D1EBB152E00BCEE73 /* main.c */,
+			);
+			path = bistree;
+			sourceTree = "<group>";
+		};
 		CB3172D41E94DD89001E6998 = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +405,7 @@
 				CBA147C21EB320AF00765E81 /* C08-CHTable */,
 				CB13B0A91EB862B80091404B /* C08-OHTable */,
 				CB913EB01EB9BF43005EDAEA /* C09-BiTree */,
+				CB1BD5151EBB150B00BCEE73 /* C09-BisTree */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -442,6 +479,7 @@
 			isa = PBXGroup;
 			children = (
 				CB913EBA1EB9BF5A005EDAEA /* bitree */,
+				CB1BD51C1EBB152E00BCEE73 /* bistree */,
 			);
 			name = chapter09;
 			sourceTree = "<group>";
@@ -538,6 +576,24 @@
 			name = "C08-OHTable";
 			productName = "C08-OHTable";
 			productReference = CB13B0A91EB862B80091404B /* C08-OHTable */;
+			productType = "com.apple.product-type.tool";
+		};
+		CB1BD5141EBB150B00BCEE73 /* C09-BisTree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB1BD51B1EBB150B00BCEE73 /* Build configuration list for PBXNativeTarget "C09-BisTree" */;
+			buildPhases = (
+				CB1BD5111EBB150B00BCEE73 /* Sources */,
+				CB1BD5121EBB150B00BCEE73 /* Frameworks */,
+				CB1BD5131EBB150B00BCEE73 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB1BD5201EBB154400BCEE73 /* PBXTargetDependency */,
+			);
+			name = "C09-BisTree";
+			productName = "C09-BisTree";
+			productReference = CB1BD5151EBB150B00BCEE73 /* C09-BisTree */;
 			productType = "com.apple.product-type.tool";
 		};
 		CB3F0D851EB08467008396F8 /* C07-Set */ = {
@@ -733,6 +789,10 @@
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
+					CB1BD5141EBB150B00BCEE73 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
 					CB3F0D851EB08467008396F8 = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
@@ -800,6 +860,7 @@
 				CBA147C11EB320AF00765E81 /* C08-CHTable */,
 				CB13B0A81EB862B60091404B /* C08-OHTable */,
 				CB913EAF1EB9BF43005EDAEA /* C09-BiTree */,
+				CB1BD5141EBB150B00BCEE73 /* C09-BisTree */,
 			);
 		};
 /* End PBXProject section */
@@ -820,6 +881,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB13B0B51EB863250091404B /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1BD5111EBB150B00BCEE73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1BD51E1EBB152E00BCEE73 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -911,6 +980,11 @@
 			name = Algorithms;
 			targetProxy = CB13B0B01EB862C90091404B /* PBXContainerItemProxy */;
 		};
+		CB1BD5201EBB154400BCEE73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Algorithms;
+			targetProxy = CB1BD51F1EBB154400BCEE73 /* PBXContainerItemProxy */;
+		};
 		CB3F0D8E1EB0846E008396F8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Algorithms;
@@ -973,6 +1047,22 @@
 			name = Debug;
 		};
 		CB13B0AF1EB862B80091404B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Release;
+		};
+		CB1BD5191EBB150B00BCEE73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Debug;
+		};
+		CB1BD51A1EBB150B00BCEE73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1240,6 +1330,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CB1BD51B1EBB150B00BCEE73 /* Build configuration list for PBXNativeTarget "C09-BisTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB1BD5191EBB150B00BCEE73 /* Debug */,
+				CB1BD51A1EBB150B00BCEE73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		CB3172D81E94DD89001E6998 /* Build configuration list for PBXProject "MasteringAlgorithms" */ = {
 			isa = XCConfigurationList;
