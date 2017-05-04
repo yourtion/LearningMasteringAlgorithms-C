@@ -9,6 +9,9 @@
 #include "clist.h"
 #include "page.h"
 
+#pragma mark - Public
+
+
 /*****************************************************************************
  *                                                                            *
  *  ----------------------------- replace_page -----------------------------  *
@@ -17,7 +20,6 @@
 
 int replace_page(CListElmt **current)
 {
-  
   /// 循环整个链表直至找到结果
   
   while (((Page *)(*current)->data)->reference != 0) {
@@ -28,5 +30,4 @@ int replace_page(CListElmt **current)
   }
   
   return ((Page *)(*current)->data)->number;
-  
 }

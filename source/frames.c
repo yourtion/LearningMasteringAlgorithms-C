@@ -10,6 +10,9 @@
 #include "frames.h"
 #include "list.h"
 
+#pragma mark - Public
+
+
 int alloc_frame(List *frames)
 {
   int frame_number, *data;
@@ -28,6 +31,7 @@ int alloc_frame(List *frames)
   }
   return frame_number;
 }
+
 
 int free_frame(List *frames, int frame_number)
 {
