@@ -1,7 +1,7 @@
 //
 //  main.c
 //  MasteringAlgorithms
-//   Illustrates using a heap (see Chapter 10).
+//  Illustrates using a heap (see Chapter 10).
 //
 //  Created by YourtionGuo on 05/05/2017.
 //  Copyright © 2017 Yourtion. All rights reserved.
