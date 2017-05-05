@@ -17,7 +17,7 @@
 		CB3F0D811EB079DD008396F8 /* set.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D801EB079DD008396F8 /* set.c */; };
 		CB3F0D951EB08BA5008396F8 /* cover.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3F0D941EB08BA5008396F8 /* cover.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB3F0D971EB08BB5008396F8 /* cover.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D961EB08BB5008396F8 /* cover.c */; };
-		CB4B679B1EBC50C3001FCC1A /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4B679A1EBC50C3001FCC1A /* heap.h */; };
+		CB4B679B1EBC50C3001FCC1A /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4B679A1EBC50C3001FCC1A /* heap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB4B679D1EBC5294001FCC1A /* heap.c in Sources */ = {isa = PBXBuildFile; fileRef = CB4B679C1EBC5294001FCC1A /* heap.c */; };
 		CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = CB618EBB1EAF3CE4005BC240 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB618EBE1EAF3CF8005BC240 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = CB618EBD1EAF3CF8005BC240 /* stack.c */; };
@@ -269,6 +269,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB4B679B1EBC50C3001FCC1A /* heap.h in Headers */,
 				CB1BD50E1EBAFE1C00BCEE73 /* bistree.h in Headers */,
 				CB913EA91EB9BAB9005EDAEA /* traverse.h in Headers */,
 				CB913EA51EB9AF91005EDAEA /* bitree.h in Headers */,
@@ -287,7 +288,6 @@
 				CB9594181EADD6BF0006D375 /* dlist.h in Headers */,
 				CB9594141EADD0BC0006D375 /* frames.h in Headers */,
 				CB3173281E94E42F001E6998 /* list.h in Headers */,
-				CB4B679B1EBC50C3001FCC1A /* heap.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
