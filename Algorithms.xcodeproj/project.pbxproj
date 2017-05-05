@@ -17,6 +17,8 @@
 		CB3F0D811EB079DD008396F8 /* set.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D801EB079DD008396F8 /* set.c */; };
 		CB3F0D951EB08BA5008396F8 /* cover.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3F0D941EB08BA5008396F8 /* cover.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB3F0D971EB08BB5008396F8 /* cover.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D961EB08BB5008396F8 /* cover.c */; };
+		CB4B679B1EBC50C3001FCC1A /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4B679A1EBC50C3001FCC1A /* heap.h */; };
+		CB4B679D1EBC5294001FCC1A /* heap.c in Sources */ = {isa = PBXBuildFile; fileRef = CB4B679C1EBC5294001FCC1A /* heap.c */; };
 		CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = CB618EBB1EAF3CE4005BC240 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB618EBE1EAF3CF8005BC240 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = CB618EBD1EAF3CF8005BC240 /* stack.c */; };
 		CB913EA51EB9AF91005EDAEA /* bitree.h in Headers */ = {isa = PBXBuildFile; fileRef = CB913EA41EB9AF91005EDAEA /* bitree.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +58,8 @@
 		CB3F0D801EB079DD008396F8 /* set.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = set.c; sourceTree = "<group>"; };
 		CB3F0D941EB08BA5008396F8 /* cover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cover.h; sourceTree = "<group>"; };
 		CB3F0D961EB08BB5008396F8 /* cover.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cover.c; sourceTree = "<group>"; };
+		CB4B679A1EBC50C3001FCC1A /* heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heap.h; sourceTree = "<group>"; };
+		CB4B679C1EBC5294001FCC1A /* heap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = heap.c; sourceTree = "<group>"; };
 		CB618EBB1EAF3CE4005BC240 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
 		CB618EBD1EAF3CF8005BC240 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
 		CB913EA41EB9AF91005EDAEA /* bitree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitree.h; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 				CB3F0D7C1EB0798C008396F8 /* chapter07 */,
 				CBA147B21EB3176700765E81 /* chapter08 */,
 				CB913EA11EB9ABA5005EDAEA /* chapter09 */,
+				CB4B67971EBC5082001FCC1A /* chapter10 */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				CB3F0D7D1EB079AA008396F8 /* chapter07 */,
 				CBA147B31EB3178000765E81 /* chapter08 */,
 				CB913EA21EB9ABB3005EDAEA /* chapter09 */,
+				CB4B67981EBC508B001FCC1A /* chapter10 */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -151,6 +157,22 @@
 				CB3F0D961EB08BB5008396F8 /* cover.c */,
 			);
 			name = chapter07;
+			sourceTree = "<group>";
+		};
+		CB4B67971EBC5082001FCC1A /* chapter10 */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B679A1EBC50C3001FCC1A /* heap.h */,
+			);
+			name = chapter10;
+			sourceTree = "<group>";
+		};
+		CB4B67981EBC508B001FCC1A /* chapter10 */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B679C1EBC5294001FCC1A /* heap.c */,
+			);
+			name = chapter10;
 			sourceTree = "<group>";
 		};
 		CB618EB31EAF3C33005BC240 /* chapter05 */ = {
@@ -265,6 +287,7 @@
 				CB9594181EADD6BF0006D375 /* dlist.h in Headers */,
 				CB9594141EADD0BC0006D375 /* frames.h in Headers */,
 				CB3173281E94E42F001E6998 /* list.h in Headers */,
+				CB4B679B1EBC50C3001FCC1A /* heap.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +355,7 @@
 				CB95941A1EADD6CE0006D375 /* dlist.c in Sources */,
 				CBC6701F1EAF448800C0BDDF /* queue.c in Sources */,
 				CBA147B81EB3184400765E81 /* hashpjw.c in Sources */,
+				CB4B679D1EBC5294001FCC1A /* heap.c in Sources */,
 				CB1BD5101EBB057F00BCEE73 /* bistree.c in Sources */,
 				CB913EAB1EB9BCC2005EDAEA /* traverse.c in Sources */,
 				CB31732A1E94EC2E001E6998 /* list.c in Sources */,
