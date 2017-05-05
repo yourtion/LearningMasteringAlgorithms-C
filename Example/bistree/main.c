@@ -3,7 +3,7 @@
 //  MasteringAlgorithms
 //  Illustrates using a binary search tree (see Chapter 9).
 //
-//  Created by YourtionGuo on 03/05/2017.
+//  Created by YourtionGuo on 04/05/2017.
 //  Copyright © 2017 Yourtion. All rights reserved.
 //
 

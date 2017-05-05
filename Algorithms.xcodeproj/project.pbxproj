@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB13B0A21EB85D390091404B /* ohtbl.h in Headers */ = {isa = PBXBuildFile; fileRef = CB13B0A11EB85D390091404B /* ohtbl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB13B0A41EB85EC50091404B /* ohtbl.c in Sources */ = {isa = PBXBuildFile; fileRef = CB13B0A31EB85EC50091404B /* ohtbl.c */; };
-		CB1BD50E1EBAFE1C00BCEE73 /* bistree.h in Headers */ = {isa = PBXBuildFile; fileRef = CB1BD50D1EBAFE1C00BCEE73 /* bistree.h */; };
+		CB1BD50E1EBAFE1C00BCEE73 /* bistree.h in Headers */ = {isa = PBXBuildFile; fileRef = CB1BD50D1EBAFE1C00BCEE73 /* bistree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB1BD5101EBB057F00BCEE73 /* bistree.c in Sources */ = {isa = PBXBuildFile; fileRef = CB1BD50F1EBB057F00BCEE73 /* bistree.c */; };
 		CB3173281E94E42F001E6998 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3173271E94E42F001E6998 /* list.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB31732A1E94EC2E001E6998 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3173291E94EC2E001E6998 /* list.c */; };
@@ -247,6 +247,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1BD50E1EBAFE1C00BCEE73 /* bistree.h in Headers */,
 				CB913EA91EB9BAB9005EDAEA /* traverse.h in Headers */,
 				CB913EA51EB9AF91005EDAEA /* bitree.h in Headers */,
 				CB13B0A21EB85D390091404B /* ohtbl.h in Headers */,
@@ -258,7 +259,6 @@
 				CB3F0D7F1EB079CC008396F8 /* set.h in Headers */,
 				CBC670341EAF4C6300C0BDDF /* events.h in Headers */,
 				CBC6701D1EAF447900C0BDDF /* queue.h in Headers */,
-				CB1BD50E1EBAFE1C00BCEE73 /* bistree.h in Headers */,
 				CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */,
 				CB9594501EADF93E0006D375 /* page.h in Headers */,
 				CB95943B1EADEFF90006D375 /* clist.h in Headers */,

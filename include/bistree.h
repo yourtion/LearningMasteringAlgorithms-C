@@ -69,7 +69,7 @@ int bistree_insert(BisTree *tree, const void *data);
  在由参数 tree 所指定二叉搜索树中移除数据 data 相吻合的结点 - O(lg n)
 
  @param tree 二叉搜索树
- @param data 已移除元素的存储数据
+ @param data 已移除结点的存储数据
  @return 移除成功，返回0；否则返回-1
  */
 int bistree_remove(BisTree *tree, const void *data);
