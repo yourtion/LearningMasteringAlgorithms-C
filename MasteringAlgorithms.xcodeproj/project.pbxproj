@@ -21,6 +21,8 @@
 		CB4B67C11EBC6A8E001FCC1A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB4B67C01EBC6A8E001FCC1A /* main.c */; };
 		CB85F5251EC053D6001309B3 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB85F5281EC05C35001309B3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB85F5271EC05C35001309B3 /* main.c */; };
+		CB85F53A1EC06739001309B3 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
+		CB85F53D1EC068AF001309B3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB85F53C1EC068AF001309B3 /* main.c */; };
 		CB913EB91EB9BF4E005EDAEA /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB913EBC1EB9BF5A005EDAEA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB913EBB1EB9BF5A005EDAEA /* main.c */; };
 		CB9594341EADE0380006D375 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9594331EADE0380006D375 /* main.c */; };
@@ -90,6 +92,13 @@
 			remoteInfo = Algorithms;
 		};
 		CB85F5231EC053D2001309B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3172EF1E94DDDB001E6998;
+			remoteInfo = Algorithms;
+		};
+		CB85F5381EC06733001309B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
 			proxyType = 1;
@@ -218,6 +227,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		CB85F52F1EC06703001309B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		CB913EAE1EB9BF43005EDAEA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,6 +326,8 @@
 		CB4B67C01EBC6A8E001FCC1A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB85F51C1EC053BB001309B3 /* C11-Graph */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C11-Graph"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB85F5271EC05C35001309B3 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CB85F5311EC06703001309B3 /* C11-GraphBFS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C11-GraphBFS"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB85F53C1EC068AF001309B3 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB913EB01EB9BF43005EDAEA /* C09-BiTree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C09-BiTree"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB913EBB1EB9BF5A005EDAEA /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB95942B1EADE00D0006D375 /* C05-DList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C05-DList"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -380,6 +400,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB85F5251EC053D6001309B3 /* libAlgorithms.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB85F52E1EC06703001309B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB85F53A1EC06739001309B3 /* libAlgorithms.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +521,7 @@
 				CB4B67A21EBC5E4A001FCC1A /* C10-Heap */,
 				CB4B67B51EBC6A69001FCC1A /* C10-PQueue */,
 				CB85F51C1EC053BB001309B3 /* C11-Graph */,
+				CB85F5311EC06703001309B3 /* C11-GraphBFS */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -593,6 +622,7 @@
 			isa = PBXGroup;
 			children = (
 				CB85F5261EC05C35001309B3 /* graph */,
+				CB85F53B1EC068AF001309B3 /* bfs */,
 			);
 			name = chapter11;
 			sourceTree = "<group>";
@@ -603,6 +633,14 @@
 				CB85F5271EC05C35001309B3 /* main.c */,
 			);
 			path = graph;
+			sourceTree = "<group>";
+		};
+		CB85F53B1EC068AF001309B3 /* bfs */ = {
+			isa = PBXGroup;
+			children = (
+				CB85F53C1EC068AF001309B3 /* main.c */,
+			);
+			path = bfs;
 			sourceTree = "<group>";
 		};
 		CB913EA31EB9ABC3005EDAEA /* chapter09 */ = {
@@ -816,6 +854,24 @@
 			productReference = CB85F51C1EC053BB001309B3 /* C11-Graph */;
 			productType = "com.apple.product-type.tool";
 		};
+		CB85F5301EC06703001309B3 /* C11-GraphBFS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB85F5351EC06703001309B3 /* Build configuration list for PBXNativeTarget "C11-GraphBFS" */;
+			buildPhases = (
+				CB85F52D1EC06703001309B3 /* Sources */,
+				CB85F52E1EC06703001309B3 /* Frameworks */,
+				CB85F52F1EC06703001309B3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB85F5391EC06733001309B3 /* PBXTargetDependency */,
+			);
+			name = "C11-GraphBFS";
+			productName = "C11-GraphBFS";
+			productReference = CB85F5311EC06703001309B3 /* C11-GraphBFS */;
+			productType = "com.apple.product-type.tool";
+		};
 		CB913EAF1EB9BF43005EDAEA /* C09-BiTree */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB913EB41EB9BF43005EDAEA /* Build configuration list for PBXNativeTarget "C09-BiTree" */;
@@ -997,6 +1053,10 @@
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
+					CB85F5301EC06703001309B3 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
 					CB913EAF1EB9BF43005EDAEA = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
@@ -1060,6 +1120,7 @@
 				CB4B67A11EBC5E4A001FCC1A /* C10-Heap */,
 				CB4B67B41EBC6A69001FCC1A /* C10-PQueue */,
 				CB85F51B1EC053BB001309B3 /* C11-Graph */,
+				CB85F5301EC06703001309B3 /* C11-GraphBFS */,
 			);
 		};
 /* End PBXProject section */
@@ -1128,6 +1189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB85F5281EC05C35001309B3 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB85F52D1EC06703001309B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB85F53D1EC068AF001309B3 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1232,6 +1301,11 @@
 			isa = PBXTargetDependency;
 			name = Algorithms;
 			targetProxy = CB85F5231EC053D2001309B3 /* PBXContainerItemProxy */;
+		};
+		CB85F5391EC06733001309B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Algorithms;
+			targetProxy = CB85F5381EC06733001309B3 /* PBXContainerItemProxy */;
 		};
 		CB913EB81EB9BF4A005EDAEA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1477,6 +1551,22 @@
 			};
 			name = Release;
 		};
+		CB85F5361EC06703001309B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Debug;
+		};
+		CB85F5371EC06703001309B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Release;
+		};
 		CB913EB51EB9BF43005EDAEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1676,6 +1766,14 @@
 			buildConfigurations = (
 				CB85F5211EC053BB001309B3 /* Debug */,
 				CB85F5221EC053BB001309B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB85F5351EC06703001309B3 /* Build configuration list for PBXNativeTarget "C11-GraphBFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB85F5361EC06703001309B3 /* Debug */,
+				CB85F5371EC06703001309B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
