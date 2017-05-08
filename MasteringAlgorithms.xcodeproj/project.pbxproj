@@ -1562,6 +1562,7 @@
 				CB4B67A81EBC5E4A001FCC1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB4B67B91EBC6A69001FCC1A /* Build configuration list for PBXNativeTarget "C10-PQueue" */ = {
 			isa = XCConfigurationList;
@@ -1570,6 +1571,7 @@
 				CB4B67BB1EBC6A69001FCC1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB913EB41EB9BF43005EDAEA /* Build configuration list for PBXNativeTarget "C09-BiTree" */ = {
 			isa = XCConfigurationList;
