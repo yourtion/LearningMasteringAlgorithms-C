@@ -27,7 +27,7 @@ typedef struct BfsVertex_
 
 
 /**
- 在 graph 制定的图执行广度优先搜索 - O(V+E) V是图中顶点的个数，E是边的个数
+ 在 graph 指定的图执行广度优先搜索 - O(V+E) V是图中顶点的个数，E是边的个数
 
  @param graph 图
  @param start 起始的顶点
