@@ -127,5 +127,16 @@ int main(int argc, char **argv)
   fprintf(stdout, "After issort\n");
   print_idata(iarray, size);
 
+  fprintf(stdout, "\n");
+  /// 执行快速排序
+
+  fprintf(stdout, "Before qksort\n");
+  print_idata(qarray, size);
+
+  if (qksort(qarray, size, sizeof(int), 0, size - 1, compare_int) != 0) return 1;
+
+  fprintf(stdout, "After qksort\n");
+  print_idata(qarray, size);
+
   return 0;
 }
