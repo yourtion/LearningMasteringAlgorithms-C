@@ -11,7 +11,7 @@
 
 
 /**
- 二分查找
+ 二分查找 - O(lg n)
 
  @param sorted 已排序数据
  @param target 查找目标
