@@ -65,13 +65,13 @@ int ctsort(int *data, int size, int k);
 
 
 /**
- <#Description#>
+ 利用基数排序将数组 data 中的整数进行排序 - O(pn+pk)
 
- @param data <#data description#>
- @param size <#size description#>
- @param p <#p description#>
- @param k <#k description#>
- @return <#return value description#>
+ @param data 数据数组
+ @param size 元素的个数
+ @param p 每个整数包含的位数
+ @param k 基数
+ @return 成功返回 0；否则返回 -1
  */
 int rxsort(int *data, int size, int p, int k);
 

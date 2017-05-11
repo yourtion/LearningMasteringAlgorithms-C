@@ -160,5 +160,16 @@ int main(int argc, char **argv)
   fprintf(stdout, "After ctsort\n");
   print_idata(carray, size);
 
+  /// 执行基数排序
+  fprintf(stdout, "\n");
+
+  fprintf(stdout, "Before rxsort\n");
+  print_idata(rarray, size);
+
+  if (rxsort(rarray, size, 8, 10) != 0) return 1;
+
+  fprintf(stdout, "After rxsort\n");
+  print_idata(rarray, size);
+
   return 0;
 }
