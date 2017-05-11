@@ -54,12 +54,12 @@ int mgsort(void *data, int size, int esize, int i, int k,
 
 
 /**
- <#Description#>
+ 利用计数排序将数组 data 中的整数进行排序 - O(n+k)
 
- @param data <#data description#>
- @param size <#size description#>
- @param k <#k description#>
- @return <#return value description#>
+ @param data 数据数组
+ @param size 元素的个数
+ @param k data 中最大的整数加1
+ @return 成功返回 0；否则返回 -1
  */
 int ctsort(int *data, int size, int k);
 

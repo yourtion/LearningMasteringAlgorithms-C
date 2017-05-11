@@ -127,8 +127,8 @@ int main(int argc, char **argv)
   fprintf(stdout, "After issort\n");
   print_idata(iarray, size);
 
-  fprintf(stdout, "\n");
   /// 执行快速排序
+  fprintf(stdout, "\n");
 
   fprintf(stdout, "Before qksort\n");
   print_idata(qarray, size);
@@ -138,8 +138,8 @@ int main(int argc, char **argv)
   fprintf(stdout, "After qksort\n");
   print_idata(qarray, size);
 
-  fprintf(stdout, "\n");
   /// 执行归并排序
+  fprintf(stdout, "\n");
 
   fprintf(stdout, "Before mgsort\n");
   print_sdata(sarray, size);
@@ -148,6 +148,17 @@ int main(int argc, char **argv)
 
   fprintf(stdout, "After mgsort\n");
   print_sdata(sarray, size);
+
+  /// 执行计数排序
+  fprintf(stdout, "\n");
+
+  fprintf(stdout, "Before ctsort\n");
+  print_idata(carray, size);
+
+  if (ctsort(carray, size, 10) != 0) return 1;
+
+  fprintf(stdout, "After ctsort\n");
+  print_idata(carray, size);
 
   return 0;
 }
