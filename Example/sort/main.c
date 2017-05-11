@@ -138,5 +138,16 @@ int main(int argc, char **argv)
   fprintf(stdout, "After qksort\n");
   print_idata(qarray, size);
 
+  fprintf(stdout, "\n");
+  /// 执行归并排序
+
+  fprintf(stdout, "Before mgsort\n");
+  print_sdata(sarray, size);
+
+  if (mgsort(sarray, size, STRSIZ, 0, size - 1, compare_str) != 0) return 1;
+
+  fprintf(stdout, "After mgsort\n");
+  print_sdata(sarray, size);
+
   return 0;
 }

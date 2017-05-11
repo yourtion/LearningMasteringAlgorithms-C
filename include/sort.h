@@ -39,15 +39,15 @@ int qksort(void *data, int size, int esize, int i, int k,
 
 
 /**
- <#Description#>
+ 利用归并排序将数组 data 中的元素进行排序 - O(n lg n)
 
- @param data <#data description#>
- @param size <#size description#>
- @param esize <#esize description#>
- @param i <#i description#>
- @param k <#k description#>
- @param compare <#compare description#>
- @return <#return value description#>
+ @param data 数据数组
+ @param size 元素的个数
+ @param esize 每个元素的大小
+ @param i 元素分区起点（默认 0 ）
+ @param k 元素分区终点（默认 size-1 ）
+ @param compare 函数指针，用于比较两个成员大小（大于返回 1，小于返回 -1，等于返回 0）
+ @return 成功返回 0；否则返回 -1
  */
 int mgsort(void *data, int size, int esize, int i, int k,
            int (*compare)(const void *key1, const void *key2));

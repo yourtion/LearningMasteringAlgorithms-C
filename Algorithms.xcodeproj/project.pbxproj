@@ -55,6 +55,7 @@
 		CBC15B341EC2F14000C0500E /* qksort.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC15B331EC2F14000C0500E /* qksort.c */; };
 		CBC15B361EC304D000C0500E /* directls.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC15B351EC304D000C0500E /* directls.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBC15B381EC3059100C0500E /* directls.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC15B371EC3059100C0500E /* directls.c */; };
+		CBC15B4B1EC4455800C0500E /* mgsort.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC15B4A1EC4455800C0500E /* mgsort.c */; };
 		CBC6701D1EAF447900C0BDDF /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC6701C1EAF447900C0BDDF /* queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBC6701F1EAF448800C0BDDF /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC6701E1EAF448800C0BDDF /* queue.c */; };
 		CBC670341EAF4C6300C0BDDF /* events.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC670331EAF4C5700C0BDDF /* events.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -111,6 +112,7 @@
 		CBC15B331EC2F14000C0500E /* qksort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qksort.c; sourceTree = "<group>"; };
 		CBC15B351EC304D000C0500E /* directls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = directls.h; sourceTree = "<group>"; };
 		CBC15B371EC3059100C0500E /* directls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = directls.c; sourceTree = "<group>"; };
+		CBC15B4A1EC4455800C0500E /* mgsort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mgsort.c; sourceTree = "<group>"; };
 		CBC6701C1EAF447900C0BDDF /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
 		CBC6701E1EAF448800C0BDDF /* queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = queue.c; sourceTree = "<group>"; };
 		CBC670331EAF4C5700C0BDDF /* events.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = events.h; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 				CBC15B1F1EC2E9BB00C0500E /* issort.c */,
 				CBC15B331EC2F14000C0500E /* qksort.c */,
 				CBC15B371EC3059100C0500E /* directls.c */,
+				CBC15B4A1EC4455800C0500E /* mgsort.c */,
 			);
 			name = chapter12;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB85F52C1EC0646F001309B3 /* bfs.c in Sources */,
+				CBC15B4B1EC4455800C0500E /* mgsort.c in Sources */,
 				CBC15B201EC2E9BB00C0500E /* issort.c in Sources */,
 				CB3F0D811EB079DD008396F8 /* set.c in Sources */,
 				CBA147D41EB32C3A00765E81 /* lex.c in Sources */,
