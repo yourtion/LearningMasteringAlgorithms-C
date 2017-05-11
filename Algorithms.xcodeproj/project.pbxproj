@@ -58,7 +58,7 @@
 		CBC15B4B1EC4455800C0500E /* mgsort.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC15B4A1EC4455800C0500E /* mgsort.c */; };
 		CBC15B4D1EC4529000C0500E /* ctsort.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC15B4C1EC4529000C0500E /* ctsort.c */; };
 		CBC15B4F1EC4575E00C0500E /* rxsort.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC15B4E1EC4575E00C0500E /* rxsort.c */; };
-		CBC15B511EC45A3300C0500E /* search.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC15B501EC45A2C00C0500E /* search.h */; };
+		CBC15B511EC45A3300C0500E /* search.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC15B501EC45A2C00C0500E /* search.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBC15B531EC45AC300C0500E /* bisearch.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC15B521EC45AC300C0500E /* bisearch.c */; };
 		CBC6701D1EAF447900C0BDDF /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC6701C1EAF447900C0BDDF /* queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBC6701F1EAF448800C0BDDF /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC6701E1EAF448800C0BDDF /* queue.c */; };
@@ -361,6 +361,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC15B511EC45A3300C0500E /* search.h in Headers */,
 				CBC15B361EC304D000C0500E /* directls.h in Headers */,
 				CBC15B1E1EC2E85D00C0500E /* sort.h in Headers */,
 				CB85F53F1EC0747B001309B3 /* dfs.h in Headers */,
@@ -388,7 +389,6 @@
 				CB9594181EADD6BF0006D375 /* dlist.h in Headers */,
 				CB9594141EADD0BC0006D375 /* frames.h in Headers */,
 				CB3173281E94E42F001E6998 /* list.h in Headers */,
-				CBC15B511EC45A3300C0500E /* search.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
