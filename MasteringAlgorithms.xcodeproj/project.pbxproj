@@ -2307,6 +2307,7 @@
 				CBC15B2C1EC2EBF000C0500E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBC15B411EC3074F00C0500E /* Build configuration list for PBXNativeTarget "C12-DirectList" */ = {
 			isa = XCConfigurationList;
@@ -2315,6 +2316,7 @@
 				CBC15B431EC3074F00C0500E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBC15B671EC45CD400C0500E /* Build configuration list for PBXNativeTarget "C12-BISSearch" */ = {
 			isa = XCConfigurationList;
@@ -2323,6 +2325,7 @@
 				CBC15B691EC45CD400C0500E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBC15B7C1EC4615000C0500E /* Build configuration list for PBXNativeTarget "C12-Spell" */ = {
 			isa = XCConfigurationList;
@@ -2331,6 +2334,7 @@
 				CBC15B7E1EC4615000C0500E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBC670151EAF423000C0BDDF /* Build configuration list for PBXNativeTarget "C06-Stack" */ = {
 			isa = XCConfigurationList;
