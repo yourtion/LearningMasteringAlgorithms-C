@@ -43,6 +43,8 @@
 		CBC15B491EC3078200C0500E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC15B481EC3078200C0500E /* main.c */; };
 		CBC15B6A1EC45CF800C0500E /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CBC15B6F1EC45D3200C0500E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC15B6E1EC45D3200C0500E /* main.c */; };
+		CBC15B811EC4618400C0500E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC15B801EC4618400C0500E /* main.c */; };
+		CBC15B841EC4626100C0500E /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CBC670181EAF423E00C0BDDF /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CBC6701B1EAF424C00C0BDDF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC6701A1EAF424C00C0BDDF /* main.c */; };
 		CBC6702D1EAF485F00C0BDDF /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
@@ -177,6 +179,13 @@
 			remoteInfo = Algorithms;
 		};
 		CBC15B6B1EC45D0C00C0500E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3172EF1E94DDDB001E6998;
+			remoteInfo = Algorithms;
+		};
+		CBC15B821EC4625D00C0500E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
 			proxyType = 1;
@@ -362,6 +371,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		CBC15B761EC4615000C0500E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		CBC6700D1EAF423000C0BDDF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,6 +438,8 @@
 		CBC15B481EC3078200C0500E /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CBC15B631EC45CD300C0500E /* C12-BISSearch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C12-BISSearch"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC15B6E1EC45D3200C0500E /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CBC15B781EC4615000C0500E /* C12-Spell */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C12-Spell"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC15B801EC4618400C0500E /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CBC6700F1EAF423000C0BDDF /* C06-Stack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C06-Stack"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC6701A1EAF424C00C0BDDF /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CBC670241EAF484700C0BDDF /* C06-Queue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C06-Queue"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -571,6 +591,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBC15B751EC4615000C0500E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC15B841EC4626100C0500E /* libAlgorithms.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBC6700C1EAF423000C0BDDF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -638,6 +666,7 @@
 				CBC15B261EC2EBF000C0500E /* C12-Sort */,
 				CBC15B3D1EC3074E00C0500E /* C12-DirectList */,
 				CBC15B631EC45CD300C0500E /* C12-BISSearch */,
+				CBC15B781EC4615000C0500E /* C12-Spell */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -841,6 +870,7 @@
 				CBC15B301EC2EC2000C0500E /* sort */,
 				CBC15B471EC3078200C0500E /* directls */,
 				CBC15B6D1EC45D3200C0500E /* bissearch */,
+				CBC15B7F1EC4618400C0500E /* spell */,
 			);
 			name = chapter12;
 			sourceTree = "<group>";
@@ -867,6 +897,14 @@
 				CBC15B6E1EC45D3200C0500E /* main.c */,
 			);
 			path = bissearch;
+			sourceTree = "<group>";
+		};
+		CBC15B7F1EC4618400C0500E /* spell */ = {
+			isa = PBXGroup;
+			children = (
+				CBC15B801EC4618400C0500E /* main.c */,
+			);
+			path = spell;
 			sourceTree = "<group>";
 		};
 		CBC670191EAF424C00C0BDDF /* stack */ = {
@@ -1212,6 +1250,24 @@
 			productReference = CBC15B631EC45CD300C0500E /* C12-BISSearch */;
 			productType = "com.apple.product-type.tool";
 		};
+		CBC15B771EC4615000C0500E /* C12-Spell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC15B7C1EC4615000C0500E /* Build configuration list for PBXNativeTarget "C12-Spell" */;
+			buildPhases = (
+				CBC15B741EC4615000C0500E /* Sources */,
+				CBC15B751EC4615000C0500E /* Frameworks */,
+				CBC15B761EC4615000C0500E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBC15B831EC4625D00C0500E /* PBXTargetDependency */,
+			);
+			name = "C12-Spell";
+			productName = "C12-Spell";
+			productReference = CBC15B781EC4615000C0500E /* C12-Spell */;
+			productType = "com.apple.product-type.tool";
+		};
 		CBC6700E1EAF423000C0BDDF /* C06-Stack */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBC670151EAF423000C0BDDF /* Build configuration list for PBXNativeTarget "C06-Stack" */;
@@ -1325,6 +1381,10 @@
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
+					CBC15B771EC4615000C0500E = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
 					CBC6700E1EAF423000C0BDDF = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
@@ -1373,6 +1433,7 @@
 				CBC15B251EC2EBF000C0500E /* C12-Sort */,
 				CBC15B3C1EC3074E00C0500E /* C12-DirectList */,
 				CBC15B621EC45CD300C0500E /* C12-BISSearch */,
+				CBC15B771EC4615000C0500E /* C12-Spell */,
 			);
 		};
 /* End PBXProject section */
@@ -1532,6 +1593,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBC15B741EC4615000C0500E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC15B811EC4618400C0500E /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBC6700B1EAF423000C0BDDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1640,6 +1709,11 @@
 			isa = PBXTargetDependency;
 			name = Algorithms;
 			targetProxy = CBC15B6B1EC45D0C00C0500E /* PBXContainerItemProxy */;
+		};
+		CBC15B831EC4625D00C0500E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Algorithms;
+			targetProxy = CBC15B821EC4625D00C0500E /* PBXContainerItemProxy */;
 		};
 		CBC670171EAF423A00C0BDDF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2031,6 +2105,22 @@
 			};
 			name = Release;
 		};
+		CBC15B7D1EC4615000C0500E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Debug;
+		};
+		CBC15B7E1EC4615000C0500E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Release;
+		};
 		CBC670131EAF423000C0BDDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2231,6 +2321,14 @@
 			buildConfigurations = (
 				CBC15B681EC45CD400C0500E /* Debug */,
 				CBC15B691EC45CD400C0500E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBC15B7C1EC4615000C0500E /* Build configuration list for PBXNativeTarget "C12-Spell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC15B7D1EC4615000C0500E /* Debug */,
+				CBC15B7E1EC4615000C0500E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
