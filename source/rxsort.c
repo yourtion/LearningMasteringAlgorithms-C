@@ -13,6 +13,8 @@
 
 #include "sort.h"
 
+#pragma mark - Public
+
 int rxsort(int *data, int size, int p, int k)
 {
   int       *counts, *temp;

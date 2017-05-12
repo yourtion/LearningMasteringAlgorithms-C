@@ -3,7 +3,7 @@
 //  MasteringAlgorithms
 //  Description: Illustrates searching algorithms (see Chapter 12).
 //
-//  Created by YourtionGuo on 10/05/2017.
+//  Created by YourtionGuo on 11/05/2017.
 //  Copyright © 2017 Yourtion. All rights reserved.
 //
 
