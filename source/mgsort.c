@@ -120,3 +120,8 @@ int mgsort(void *data, int size, int esize, int i, int k,
   
   return 0;
 }
+
+int mgsrt(void *data, int size, int esize, int (*compare)(const void *key1, const void *key2)) {
+  return mgsort(data, size, esize, 0, size - 1, compare);
+}
+

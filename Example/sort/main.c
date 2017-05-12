@@ -68,8 +68,8 @@ static int compare_str(const void *str1, const void *str2)
 int main(int argc, char **argv)
 {
 
-  int       iarray[10], marray[10], qarray[10], carray[10], rarray[10];
-  char      sarray[10][STRSIZ];
+  int       iarray[10], marray[10], qarray[10], carray[10], rarray[10], qarray2[10];
+  char      sarray[10][STRSIZ], sarray2[10][STRSIZ];
   int       size = 10;
 
   /// 加载用于排序的数据
@@ -87,6 +87,7 @@ int main(int argc, char **argv)
 
   memcpy(marray, iarray, size * sizeof(int));
   memcpy(qarray, iarray, size * sizeof(int));
+  memcpy(qarray2, iarray, size * sizeof(int));
   memcpy(carray, iarray, size * sizeof(int));
 
   rarray[0] = 11111323;
@@ -110,6 +111,8 @@ int main(int argc, char **argv)
   strcpy(sarray[7], "ddaab");
   strcpy(sarray[8], "faeja");
   strcpy(sarray[9], "aaaaa");
+
+  memcpy(sarray2, sarray, size * STRSIZ * sizeof(char));
 
   /// 执行插入排序
 
@@ -164,6 +167,28 @@ int main(int argc, char **argv)
 
   fprintf(stdout, "After rxsort\n");
   print_idata(rarray, size);
+
+  /// 执行快速排序简化
+  fprintf(stdout, "\n");
+
+  fprintf(stdout, "Before qsrt\n");
+  print_idata(qarray2, size);
+
+  if (qsrt(qarray2, size, sizeof(int), compare_int) != 0) return 1;
+
+  fprintf(stdout, "After qsrt\n");
+  print_idata(qarray2, size);
+
+  /// 执行归并排序简化
+  fprintf(stdout, "\n");
+
+  fprintf(stdout, "Before mgsrt\n");
+  print_sdata(sarray2, size);
+
+  if (mgsrt(sarray2, size, STRSIZ, compare_str) != 0) return 1;
+
+  fprintf(stdout, "After mgsrt\n");
+  print_sdata(sarray2, size);
 
   return 0;
 }
