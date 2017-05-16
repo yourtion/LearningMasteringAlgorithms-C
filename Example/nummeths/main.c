@@ -89,5 +89,31 @@ int main(int argc, char **argv)
     fprintf(stdout, "-> z[%d]=%+1.6e, p(z[%d])=%+1.6e\n", i, z[i], i, pz[i]);
   }
 
+
+  /// 最小二乘估计法
+
+  fprintf(stdout, "Perform least-squares estimation\n");
+
+  x[0] =  4.0; y[0] =  197.0;
+  x[1] =  6.0; y[1] =  272.0;
+  x[2] =  2.0; y[2] =  100.0;
+  x[3] =  5.0; y[3] =  228.0;
+  x[4] =  7.0; y[4] =  327.0;
+  x[5] =  6.0; y[5] =  279.0;
+  x[6] =  3.0; y[6] =  148.0;
+  x[7] =  8.0; y[7] =  377.0;
+  x[8] =  5.0; y[8] =  238.0;
+  x[9] =  3.0; y[9] =  142.0;
+  x[10] = 1.0; y[10] =  66.0;
+  x[11] = 5.0; y[11] = 239.0;
+
+  for (i = 0; i < 12; i++) {
+    fprintf(stdout, "-> x[%02d]=%+1.6e, y[%02d]=%+1.6e\n", i, x[i], i, y[i]);
+  }
+
+  lsqe(x, y, 12, &b1, &b0);
+
+  fprintf(stdout, "-> b1=%+1.6e, b0=%+1.6e\n", b1, b0);
+
   return 0;
 }

@@ -9,7 +9,6 @@
 #ifndef NUMMETHS_H
 #define NUMMETHS_H
 
-
 /**
  采用多项式插值法来求得函数在某些特定点上的值 - O(mn2) m代表待求值的个数，n代表已知点的个数
 
@@ -23,6 +22,16 @@
  */
 int interpol(const double *x, const double *fx, int n, double *z, double *pz, int m);
 
+
+/**
+ 采用最小二乘估计法来计算出函数 y(x)=b1x+b0 中的系数 b1 和 b0 - O(n)
+
+ @param x 点集的横坐标
+ @param y 点集的纵坐标
+ @param n 代表点的个数
+ @param b1 合适的 b1
+ @param b0 合适的 b0
+ */
 void lsqe(const double *x, const double *y, int n, double *b1, double *b0);
 
 int root(double (*f)(double x), double (*g)(double x), double *x, int *n, double delta);
