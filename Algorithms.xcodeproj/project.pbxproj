@@ -54,6 +54,9 @@
 		CBA147D21EB32B9100765E81 /* lex.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA147D11EB32B9100765E81 /* lex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBA147D41EB32C3A00765E81 /* lex.c in Sources */ = {isa = PBXBuildFile; fileRef = CBA147D31EB32C3A00765E81 /* lex.c */; };
 		CBA147D61EB32C6100765E81 /* symbol.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA147D51EB32C6100765E81 /* symbol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBBBC1B51ECC236100B84835 /* compress.h in Headers */ = {isa = PBXBuildFile; fileRef = CBBBC1B41ECC236100B84835 /* compress.h */; };
+		CBBBC1B71ECC248600B84835 /* bit.h in Headers */ = {isa = PBXBuildFile; fileRef = CBBBC1B61ECC248600B84835 /* bit.h */; };
+		CBBBC1B91ECC26C800B84835 /* bit.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBBC1B81ECC26C800B84835 /* bit.c */; };
 		CBC15B1E1EC2E85D00C0500E /* sort.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC15B1D1EC2E85D00C0500E /* sort.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBC15B201EC2E9BB00C0500E /* issort.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC15B1F1EC2E9BB00C0500E /* issort.c */; };
 		CBC15B341EC2F14000C0500E /* qksort.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC15B331EC2F14000C0500E /* qksort.c */; };
@@ -121,6 +124,9 @@
 		CBA147D11EB32B9100765E81 /* lex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lex.h; sourceTree = "<group>"; };
 		CBA147D31EB32C3A00765E81 /* lex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lex.c; sourceTree = "<group>"; };
 		CBA147D51EB32C6100765E81 /* symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symbol.h; sourceTree = "<group>"; };
+		CBBBC1B41ECC236100B84835 /* compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compress.h; sourceTree = "<group>"; };
+		CBBBC1B61ECC248600B84835 /* bit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit.h; sourceTree = "<group>"; };
+		CBBBC1B81ECC26C800B84835 /* bit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bit.c; sourceTree = "<group>"; };
 		CBC15B1D1EC2E85D00C0500E /* sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sort.h; sourceTree = "<group>"; };
 		CBC15B1F1EC2E9BB00C0500E /* issort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = issort.c; sourceTree = "<group>"; };
 		CBC15B331EC2F14000C0500E /* qksort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qksort.c; sourceTree = "<group>"; };
@@ -197,6 +203,7 @@
 				CB85F5111EC047DC001309B3 /* chapter11 */,
 				CBC15B1B1EC2E80F00C0500E /* chapter12 */,
 				CB26A5A31ECAE7C40025ACC4 /* chapter13 */,
+				CBBBC1B11ECC231100B84835 /* chapter14 */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -213,6 +220,7 @@
 				CB85F5121EC047E4001309B3 /* chapter11 */,
 				CBC15B1C1EC2E82300C0500E /* chapter12 */,
 				CB26A5A41ECAE7D10025ACC4 /* chapter13 */,
+				CBBBC1B21ECC232D00B84835 /* chapter14 */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -362,6 +370,23 @@
 			name = chapter08;
 			sourceTree = "<group>";
 		};
+		CBBBC1B11ECC231100B84835 /* chapter14 */ = {
+			isa = PBXGroup;
+			children = (
+				CBBBC1B41ECC236100B84835 /* compress.h */,
+				CBBBC1B61ECC248600B84835 /* bit.h */,
+			);
+			name = chapter14;
+			sourceTree = "<group>";
+		};
+		CBBBC1B21ECC232D00B84835 /* chapter14 */ = {
+			isa = PBXGroup;
+			children = (
+				CBBBC1B81ECC26C800B84835 /* bit.c */,
+			);
+			name = chapter14;
+			sourceTree = "<group>";
+		};
 		CBC15B1B1EC2E80F00C0500E /* chapter12 */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +425,7 @@
 				CBC15B361EC304D000C0500E /* directls.h in Headers */,
 				CBC15B1E1EC2E85D00C0500E /* sort.h in Headers */,
 				CB85F53F1EC0747B001309B3 /* dfs.h in Headers */,
+				CBBBC1B51ECC236100B84835 /* compress.h in Headers */,
 				CB85F52A1EC06391001309B3 /* bfs.h in Headers */,
 				CB85F5151EC04840001309B3 /* graph.h in Headers */,
 				CB4B67C51EBC6C36001FCC1A /* parcels.h in Headers */,
@@ -420,6 +446,7 @@
 				CBC6701D1EAF447900C0BDDF /* queue.h in Headers */,
 				CB26A5A71ECAE8090025ACC4 /* nummeths.h in Headers */,
 				CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */,
+				CBBBC1B71ECC248600B84835 /* bit.h in Headers */,
 				CB9594501EADF93E0006D375 /* page.h in Headers */,
 				CB95943B1EADEFF90006D375 /* clist.h in Headers */,
 				CB9594181EADD6BF0006D375 /* dlist.h in Headers */,
@@ -502,6 +529,7 @@
 				CBA147B81EB3184400765E81 /* hashpjw.c in Sources */,
 				CB4B679D1EBC5294001FCC1A /* heap.c in Sources */,
 				CB1BD5101EBB057F00BCEE73 /* bistree.c in Sources */,
+				CBBBC1B91ECC26C800B84835 /* bit.c in Sources */,
 				CB913EAB1EB9BCC2005EDAEA /* traverse.c in Sources */,
 				CB85F5411EC07514001309B3 /* dfs.c in Sources */,
 				CB85F5171EC04BC1001309B3 /* graph.c in Sources */,
