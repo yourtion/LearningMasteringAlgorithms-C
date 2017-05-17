@@ -34,6 +34,17 @@ int interpol(const double *x, const double *fx, int n, double *z, double *pz, in
  */
 void lsqe(const double *x, const double *y, int n, double *b1, double *b0);
 
+
+/**
+ 采用牛顿迭代法根据给定的初始值来计算方程 f 的根 - O(n)
+
+ @param f 计算方程
+ @param g 函数 f 的导数
+ @param x 计算出的近似值数组
+ @param n x 中的元素个数
+ @param delta 逐次逼近的差值
+ @return 找到根返回0；否则返回-1
+ */
 int root(double (*f)(double x), double (*g)(double x), double *x, int *n, double delta);
 
 #endif /* NUMMETHS_H */

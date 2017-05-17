@@ -115,5 +115,51 @@ int main(int argc, char **argv)
 
   fprintf(stdout, "-> b1=%+1.6e, b0=%+1.6e\n", b1, b0);
 
+
+  /// 采用牛顿迭代法找方程的根
+
+  fprintf(stdout, "Finding the roots of an equation\n");
+
+  n = 10;
+  x[0] = -2.0;
+  retval = root(f, g, x, &n, 0.0001);
+
+  for (i = 0; i < n; i++) {
+    fprintf(stdout, "-> x[%d]=%+1.6e\n", i, x[i]);
+  }
+
+  if (retval != 0) {
+    fprintf(stdout, "Did not find a root\n");
+  } else {
+    fprintf(stdout, "Found a root at %+1.6e\n", x[n - 1]);
+  }
+
+  n = 10;
+  x[0] = 0.5;
+  retval = root(f, g, x, &n, 0.0001);
+
+  for (i = 0; i < n; i++) {
+    fprintf(stdout, "-> x[%d]=%+1.6e\n", i, x[i]);
+  }
+
+  if (retval != 0) {
+    fprintf(stdout, "Did not find a root\n");
+  } else {
+    fprintf(stdout, "Found a root at %+1.6e\n", x[n - 1]);
+  }
+
+  n = 10;
+  x[0] = 2.0;
+  retval = root(f, g, x, &n, 0.0001);
+
+  for (i = 0; i < n; i++)
+    fprintf(stdout, "x[%d]=%+1.6e\n", i, x[i]);
+
+  if (retval != 0) {
+    fprintf(stdout, "Did not find a root\n");
+  } else {
+    fprintf(stdout, "Found a root at %+1.6e\n", x[n - 1]);
+  }
+
   return 0;
 }
