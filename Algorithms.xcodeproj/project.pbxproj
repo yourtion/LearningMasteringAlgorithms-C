@@ -11,7 +11,7 @@
 		CB13B0A41EB85EC50091404B /* ohtbl.c in Sources */ = {isa = PBXBuildFile; fileRef = CB13B0A31EB85EC50091404B /* ohtbl.c */; };
 		CB1BD50E1EBAFE1C00BCEE73 /* bistree.h in Headers */ = {isa = PBXBuildFile; fileRef = CB1BD50D1EBAFE1C00BCEE73 /* bistree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB1BD5101EBB057F00BCEE73 /* bistree.c in Sources */ = {isa = PBXBuildFile; fileRef = CB1BD50F1EBB057F00BCEE73 /* bistree.c */; };
-		CB26A5A71ECAE8090025ACC4 /* nummeths.h in Headers */ = {isa = PBXBuildFile; fileRef = CB26A5A61ECAE8090025ACC4 /* nummeths.h */; };
+		CB26A5A71ECAE8090025ACC4 /* nummeths.h in Headers */ = {isa = PBXBuildFile; fileRef = CB26A5A61ECAE8090025ACC4 /* nummeths.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB26A5A91ECAE8DE0025ACC4 /* interpol.c in Sources */ = {isa = PBXBuildFile; fileRef = CB26A5A81ECAE8DE0025ACC4 /* interpol.c */; };
 		CB26A5BC1ECAEF430025ACC4 /* lsqe.c in Sources */ = {isa = PBXBuildFile; fileRef = CB26A5BB1ECAEF430025ACC4 /* lsqe.c */; };
 		CB26A5BE1ECAF3950025ACC4 /* root.c in Sources */ = {isa = PBXBuildFile; fileRef = CB26A5BD1ECAF3950025ACC4 /* root.c */; };
@@ -55,8 +55,8 @@
 		CBA147D21EB32B9100765E81 /* lex.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA147D11EB32B9100765E81 /* lex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBA147D41EB32C3A00765E81 /* lex.c in Sources */ = {isa = PBXBuildFile; fileRef = CBA147D31EB32C3A00765E81 /* lex.c */; };
 		CBA147D61EB32C6100765E81 /* symbol.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA147D51EB32C6100765E81 /* symbol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBBBC1B51ECC236100B84835 /* compress.h in Headers */ = {isa = PBXBuildFile; fileRef = CBBBC1B41ECC236100B84835 /* compress.h */; };
-		CBBBC1B71ECC248600B84835 /* bit.h in Headers */ = {isa = PBXBuildFile; fileRef = CBBBC1B61ECC248600B84835 /* bit.h */; };
+		CBBBC1B51ECC236100B84835 /* compress.h in Headers */ = {isa = PBXBuildFile; fileRef = CBBBC1B41ECC236100B84835 /* compress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBBBC1B71ECC248600B84835 /* bit.h in Headers */ = {isa = PBXBuildFile; fileRef = CBBBC1B61ECC248600B84835 /* bit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBBBC1B91ECC26C800B84835 /* bit.c in Sources */ = {isa = PBXBuildFile; fileRef = CBBBC1B81ECC26C800B84835 /* bit.c */; };
 		CBC15B1E1EC2E85D00C0500E /* sort.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC15B1D1EC2E85D00C0500E /* sort.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBC15B201EC2E9BB00C0500E /* issort.c in Sources */ = {isa = PBXBuildFile; fileRef = CBC15B1F1EC2E9BB00C0500E /* issort.c */; };
@@ -423,12 +423,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB26A5A71ECAE8090025ACC4 /* nummeths.h in Headers */,
+				CBBBC1B51ECC236100B84835 /* compress.h in Headers */,
+				CBBBC1B71ECC248600B84835 /* bit.h in Headers */,
 				CBC15B711EC45F8100C0500E /* spell.h in Headers */,
 				CBC15B511EC45A3300C0500E /* search.h in Headers */,
 				CBC15B361EC304D000C0500E /* directls.h in Headers */,
 				CBC15B1E1EC2E85D00C0500E /* sort.h in Headers */,
 				CB85F53F1EC0747B001309B3 /* dfs.h in Headers */,
-				CBBBC1B51ECC236100B84835 /* compress.h in Headers */,
 				CB85F52A1EC06391001309B3 /* bfs.h in Headers */,
 				CB85F5151EC04840001309B3 /* graph.h in Headers */,
 				CB4B67C51EBC6C36001FCC1A /* parcels.h in Headers */,
@@ -447,9 +449,7 @@
 				CB3F0D7F1EB079CC008396F8 /* set.h in Headers */,
 				CBC670341EAF4C6300C0BDDF /* events.h in Headers */,
 				CBC6701D1EAF447900C0BDDF /* queue.h in Headers */,
-				CB26A5A71ECAE8090025ACC4 /* nummeths.h in Headers */,
 				CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */,
-				CBBBC1B71ECC248600B84835 /* bit.h in Headers */,
 				CB9594501EADF93E0006D375 /* page.h in Headers */,
 				CB95943B1EADEFF90006D375 /* clist.h in Headers */,
 				CB9594181EADD6BF0006D375 /* dlist.h in Headers */,
