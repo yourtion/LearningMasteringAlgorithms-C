@@ -24,7 +24,7 @@ typedef struct HuffNode_
 
 
 /**
- 霍夫曼树
+ 霍夫曼编码表
  */
 typedef struct HuffCode_
 {
@@ -36,22 +36,22 @@ typedef struct HuffCode_
 
 
 /**
- <#Description#>
+ 用霍夫曼编码的方法压缩缓冲区 original 中的数据 - O(n) n 是原始数据中符号的个数
 
- @param original <#original description#>
- @param compressed <#compressed description#>
- @param size <#size description#>
- @return <#return value description#>
+ @param original 原始数据缓冲区
+ @param compressed 压缩后的数据
+ @param size 缓冲区包含字节
+ @return 压缩数据成功返回压缩后数据的字节数；否则，返回-1
  */
 int huffman_compress(const unsigned char *original, unsigned char **compressed, int size);
 
 
 /**
- <#Description#>
+ 用霍夫曼编码的方法解压缩缓冲区 compressed 中的数据 - O(n) n 是原始数据中符号的个数
 
- @param compressed <#compressed description#>
- @param original <#original description#>
- @return <#return value description#>
+ @param compressed 压缩缓冲区
+ @param original 恢复后数据
+ @return 解压缩数据成功返回恢复后数据的字节数；否则，返回-1
  */
 int huffman_uncompress(const unsigned char *compressed, unsigned char **original);
 
