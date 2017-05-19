@@ -50,6 +50,7 @@
 		CB9B76F91ECD73840000C464 /* huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9B76F81ECD73840000C464 /* huffman.c */; };
 		CB9B770E1ECD83EE0000C464 /* transfer.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9B770D1ECD83EE0000C464 /* transfer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB9B77101ECD890B0000C464 /* transfer.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9B770F1ECD890B0000C464 /* transfer.c */; };
+		CB9B77121ECEC8740000C464 /* lz77.c in Sources */ = {isa = PBXBuildFile; fileRef = CB9B77111ECEC8740000C464 /* lz77.c */; };
 		CBA147B51EB317B200765E81 /* hashpjw.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA147B41EB317B200765E81 /* hashpjw.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBA147B81EB3184400765E81 /* hashpjw.c in Sources */ = {isa = PBXBuildFile; fileRef = CBA147B71EB3184400765E81 /* hashpjw.c */; };
 		CBA147BA1EB3198B00765E81 /* chtbl.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA147B91EB3198B00765E81 /* chtbl.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -123,6 +124,7 @@
 		CB9B76F81ECD73840000C464 /* huffman.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = huffman.c; sourceTree = "<group>"; };
 		CB9B770D1ECD83EE0000C464 /* transfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transfer.h; sourceTree = "<group>"; };
 		CB9B770F1ECD890B0000C464 /* transfer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transfer.c; sourceTree = "<group>"; };
+		CB9B77111ECEC8740000C464 /* lz77.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lz77.c; sourceTree = "<group>"; };
 		CBA147B41EB317B200765E81 /* hashpjw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashpjw.h; sourceTree = "<group>"; };
 		CBA147B71EB3184400765E81 /* hashpjw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hashpjw.c; sourceTree = "<group>"; };
 		CBA147B91EB3198B00765E81 /* chtbl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chtbl.h; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 				CBBBC1B81ECC26C800B84835 /* bit.c */,
 				CB9B76F81ECD73840000C464 /* huffman.c */,
 				CB9B770F1ECD890B0000C464 /* transfer.c */,
+				CB9B77111ECEC8740000C464 /* lz77.c */,
 			);
 			name = chapter14;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				CBC15B531EC45AC300C0500E /* bisearch.c in Sources */,
 				CBC15B4B1EC4455800C0500E /* mgsort.c in Sources */,
 				CBC15B201EC2E9BB00C0500E /* issort.c in Sources */,
+				CB9B77121ECEC8740000C464 /* lz77.c in Sources */,
 				CBC15B4F1EC4575E00C0500E /* rxsort.c in Sources */,
 				CB3F0D811EB079DD008396F8 /* set.c in Sources */,
 				CB26A5A91ECAE8DE0025ACC4 /* interpol.c in Sources */,
@@ -656,6 +660,7 @@
 		CB3172F51E94DDDB001E6998 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				EXECUTABLE_PREFIX = lib;
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -666,6 +671,7 @@
 		CB3172F61E94DDDB001E6998 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				EXECUTABLE_PREFIX = lib;
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
