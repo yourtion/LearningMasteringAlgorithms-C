@@ -18,6 +18,7 @@
 		CB3173281E94E42F001E6998 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3173271E94E42F001E6998 /* list.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB31732A1E94EC2E001E6998 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3173291E94EC2E001E6998 /* list.c */; };
 		CB3891841ED2DA7D00A177F9 /* cbc.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891831ED2DA7D00A177F9 /* cbc.c */; };
+		CB3891971ED2DFA600A177F9 /* rea.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891961ED2DFA600A177F9 /* rea.c */; };
 		CB3F0D7F1EB079CC008396F8 /* set.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3F0D7E1EB079CC008396F8 /* set.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB3F0D811EB079DD008396F8 /* set.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D801EB079DD008396F8 /* set.c */; };
 		CB3F0D951EB08BA5008396F8 /* cover.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3F0D941EB08BA5008396F8 /* cover.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -96,6 +97,7 @@
 		CB3173271E94E42F001E6998 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
 		CB3173291E94EC2E001E6998 /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
 		CB3891831ED2DA7D00A177F9 /* cbc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cbc.c; sourceTree = "<group>"; };
+		CB3891961ED2DFA600A177F9 /* rea.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rea.c; sourceTree = "<group>"; };
 		CB3F0D7E1EB079CC008396F8 /* set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = set.h; sourceTree = "<group>"; };
 		CB3F0D801EB079DD008396F8 /* set.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = set.c; sourceTree = "<group>"; };
 		CB3F0D941EB08BA5008396F8 /* cover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cover.h; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 			children = (
 				CB7193391ED2C77800790252 /* des.c */,
 				CB3891831ED2DA7D00A177F9 /* cbc.c */,
+				CB3891961ED2DFA600A177F9 /* rea.c */,
 			);
 			name = chapter15;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				CBC15B341EC2F14000C0500E /* qksort.c in Sources */,
 				CBC15B381EC3059100C0500E /* directls.c in Sources */,
 				CB13B0A41EB85EC50091404B /* ohtbl.c in Sources */,
+				CB3891971ED2DFA600A177F9 /* rea.c in Sources */,
 				CB913EA71EB9B3CC005EDAEA /* bitree.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

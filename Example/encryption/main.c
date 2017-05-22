@@ -19,7 +19,7 @@ int main(int argc, char **argv)
   Huge            rsatmp, rsaptx, rsactx;
   RsaPubKey       rsapubkey;
   RsaPriKey       rsaprikey;
-  int             i;
+  int             i, error = 0;
 
   /// 执行 DES 加解密操作
   fprintf(stdout, "Enciphering with DES\n");
@@ -77,6 +77,38 @@ int main(int argc, char **argv)
 
   fprintf(stdout, "-> desptx: %02x %02x %02x %02x %02x %02x %02x %02x\n",
           desptx[0], desptx[1], desptx[2], desptx[3], desptx[4], desptx[5], desptx[6], desptx[7]);
+
+
+  /// 执行 RSA 加解密操作
+
+  fprintf(stdout, "Enciphering with RSA\n");
+
+  rsapubkey.e = 17;
+  rsapubkey.n = 209;
+  rsaprikey.d = 53;
+  rsaprikey.n = 209;
+
+  fprintf(stdout, "-> d=%lu, e=%lu, n=%lu\n", rsaprikey.d, rsapubkey.e, rsapubkey.n);
+
+  for (i = 0; i < 128; i++) {
+
+    rsatmp = i;
+    rsa_encipher(rsatmp, &rsactx, rsapubkey);
+    rsa_decipher(rsactx, &rsaptx, rsaprikey);
+
+    if (rsatmp == rsaptx) {
+      fprintf(stdout, "--> rsatmp=%5lu, rsactx=%5lu, rsaptx=%5lu (OK)\n", rsatmp, rsactx, rsaptx);
+    } else {
+      error++;
+      fprintf(stdout, "--> rsatmp=%5lu, rsactx=%5lu, rsaptx=%5lu (ERROR)\n", rsatmp, rsactx, rsaptx);
+    }
+  }
+
+  if (error == 0) {
+    fprintf(stdout, "RSA Enciphering OK\n");
+  } else {
+    fprintf(stdout, "RSA Enciphering Error: %d\n", error);
+  }
 
   return 0;
 }
