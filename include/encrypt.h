@@ -31,43 +31,48 @@ void des_encipher(const unsigned char *plaintext, unsigned char *ciphertext,
 void des_decipher(const unsigned char *ciphertext, unsigned char *plaintext,
                   const unsigned char *key);
 
-/*****************************************************************************
- *                                                                            *
- *  In a secure implementation, Huge should be at least 400 decimal digits,   *
- *  instead of the 10 below (ULONG_MAX = 4294967295).                         *
- *                                                                            *
- *****************************************************************************/
 
+/// 定义大数，在实际实现中需为 400 位以上的大数，Demo 中使用 unsigned long 替代
 typedef unsigned long Huge;
 
-/*****************************************************************************
- *                                                                            *
- *  Define a structure for RSA public keys.                                   *
- *                                                                            *
- *****************************************************************************/
-
-typedef struct RsaPubKey_ {
-
+/**
+ RSA 公钥
+ */
+typedef struct RsaPubKey_
+{
   Huge               e;
   Huge               n;
 
 } RsaPubKey;
 
-/*****************************************************************************
- *                                                                            *
- *  Define a structure for RSA private keys.                                  *
- *                                                                            *
- *****************************************************************************/
-
-typedef struct RsaPriKey_ {
-
+/**
+ RSA 私钥
+ */
+typedef struct RsaPriKey_
+{
   Huge               d;
   Huge               n;
 
 } RsaPriKey;
 
+
+/**
+ 采用 RSA 算法来加密由 plaintext 所指定的明文分组 - O(1)
+
+ @param plaintext 明文组
+ @param ciphertext 返回的密文组
+ @param pubkey 公钥
+ */
 void rsa_encipher(Huge plaintext, Huge *ciphertext, RsaPubKey pubkey);
 
+
+/**
+ 采用 RSA 算法来解密由 ciphertext 所指定的密文分组 - O(1)
+
+ @param ciphertext 通过 rsa_encipher 加密过的密文
+ @param plaintext 返回的明文分组
+ @param prikey 私钥
+ */
 void rsa_decipher(Huge ciphertext, Huge *plaintext, RsaPriKey prikey);
 
 #endif /* ENCRYPT_H */
