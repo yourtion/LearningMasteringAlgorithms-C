@@ -182,8 +182,8 @@ static void permute(unsigned char *bits, const int *mapping, int n)
  @return 执行成功返回 0
  */
 static int des_main(const unsigned char *source, unsigned char *target,
-                    const unsigned char *key, DesEorD direction) {
-
+                    const unsigned char *key, DesEorD direction)
+{
   static unsigned char subkeys[16][7];
   unsigned char         temp[8], lkey[4], rkey[4], lblk[6], rblk[6], fblk[6], xblk[6], sblk;
   int                   row, col, i, j, k, p;
@@ -203,9 +203,6 @@ static int des_main(const unsigned char *source, unsigned char *target,
 
     for (j = 0; j < 28; j++) {
       bit_set(lkey, j, bit_get(temp, j));
-    }
-
-    for (j = 0; j < 28; j++) {
       bit_set(rkey, j, bit_get(temp, j + 28));
     }
 
@@ -219,9 +216,6 @@ static int des_main(const unsigned char *source, unsigned char *target,
       /// 重新合并各个组到一个 subkey
       for (j = 0; j < 28; j++) {
         bit_set(subkeys[i], j, bit_get(lkey, j));
-      }
-
-      for (j = 0; j < 28; j++) {
         bit_set(subkeys[i], j + 28, bit_get(rkey, j));
       }
 
@@ -255,15 +249,15 @@ static int des_main(const unsigned char *source, unsigned char *target,
 
       /// 如果是加密，子密钥按顺序执行
       bit_xor(fblk, subkeys[i], xblk, 48);
-      memcpy(fblk, xblk, 6);
 
     } else {
 
       /// 如果是解密，子密钥按逆序执行
       bit_xor(fblk, subkeys[15 - i], xblk, 48);
-      memcpy(fblk, xblk, 6);
 
     }
+    
+    memcpy(fblk, xblk, 6);
 
     /// 执行一系列的 S 盒替换操作
 
