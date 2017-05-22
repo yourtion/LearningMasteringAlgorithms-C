@@ -29,6 +29,8 @@
 		CB4B67C71EBC6CF5001FCC1A /* parcels.c in Sources */ = {isa = PBXBuildFile; fileRef = CB4B67C61EBC6CF5001FCC1A /* parcels.c */; };
 		CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = CB618EBB1EAF3CE4005BC240 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB618EBE1EAF3CF8005BC240 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = CB618EBD1EAF3CF8005BC240 /* stack.c */; };
+		CB7193381ED2C2C600790252 /* encrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7193371ED2C2C600790252 /* encrypt.h */; };
+		CB71933A1ED2C77800790252 /* des.c in Sources */ = {isa = PBXBuildFile; fileRef = CB7193391ED2C77800790252 /* des.c */; };
 		CB85F5151EC04840001309B3 /* graph.h in Headers */ = {isa = PBXBuildFile; fileRef = CB85F5141EC04840001309B3 /* graph.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB85F5171EC04BC1001309B3 /* graph.c in Sources */ = {isa = PBXBuildFile; fileRef = CB85F5161EC04BC1001309B3 /* graph.c */; };
 		CB85F52A1EC06391001309B3 /* bfs.h in Headers */ = {isa = PBXBuildFile; fileRef = CB85F5291EC06391001309B3 /* bfs.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -103,6 +105,8 @@
 		CB4B67C61EBC6CF5001FCC1A /* parcels.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parcels.c; sourceTree = "<group>"; };
 		CB618EBB1EAF3CE4005BC240 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
 		CB618EBD1EAF3CF8005BC240 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
+		CB7193371ED2C2C600790252 /* encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encrypt.h; sourceTree = "<group>"; };
+		CB7193391ED2C77800790252 /* des.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = des.c; sourceTree = "<group>"; };
 		CB85F5141EC04840001309B3 /* graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
 		CB85F5161EC04BC1001309B3 /* graph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = graph.c; sourceTree = "<group>"; };
 		CB85F5291EC06391001309B3 /* bfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bfs.h; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 				CBC15B1B1EC2E80F00C0500E /* chapter12 */,
 				CB26A5A31ECAE7C40025ACC4 /* chapter13 */,
 				CBBBC1B11ECC231100B84835 /* chapter14 */,
+				CB7193341ED2C0E800790252 /* chapter15 */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 				CBC15B1C1EC2E82300C0500E /* chapter12 */,
 				CB26A5A41ECAE7D10025ACC4 /* chapter13 */,
 				CBBBC1B21ECC232D00B84835 /* chapter14 */,
+				CB7193351ED2C0FB00790252 /* chapter15 */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -313,6 +319,22 @@
 				CBC670351EAF4C8900C0BDDF /* events.c */,
 			);
 			name = chapter06;
+			sourceTree = "<group>";
+		};
+		CB7193341ED2C0E800790252 /* chapter15 */ = {
+			isa = PBXGroup;
+			children = (
+				CB7193371ED2C2C600790252 /* encrypt.h */,
+			);
+			name = chapter15;
+			sourceTree = "<group>";
+		};
+		CB7193351ED2C0FB00790252 /* chapter15 */ = {
+			isa = PBXGroup;
+			children = (
+				CB7193391ED2C77800790252 /* des.c */,
+			);
+			name = chapter15;
 			sourceTree = "<group>";
 		};
 		CB85F5111EC047DC001309B3 /* chapter11 */ = {
@@ -444,6 +466,7 @@
 				CB85F52A1EC06391001309B3 /* bfs.h in Headers */,
 				CB85F5151EC04840001309B3 /* graph.h in Headers */,
 				CB4B67C51EBC6C36001FCC1A /* parcels.h in Headers */,
+				CB7193381ED2C2C600790252 /* encrypt.h in Headers */,
 				CB4B67C31EBC6C25001FCC1A /* parcel.h in Headers */,
 				CB4B67B01EBC6780001FCC1A /* pqueue.h in Headers */,
 				CB4B679B1EBC50C3001FCC1A /* heap.h in Headers */,
@@ -539,6 +562,7 @@
 				CB95941A1EADD6CE0006D375 /* dlist.c in Sources */,
 				CBC6701F1EAF448800C0BDDF /* queue.c in Sources */,
 				CB26A5BC1ECAEF430025ACC4 /* lsqe.c in Sources */,
+				CB71933A1ED2C77800790252 /* des.c in Sources */,
 				CBC15B4D1EC4529000C0500E /* ctsort.c in Sources */,
 				CBA147B81EB3184400765E81 /* hashpjw.c in Sources */,
 				CB9B76F91ECD73840000C464 /* huffman.c in Sources */,

@@ -21,6 +21,8 @@
 		CB4B67AE1EBC5E84001FCC1A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB4B67AD1EBC5E84001FCC1A /* main.c */; };
 		CB4B67BE1EBC6A81001FCC1A /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB4B67C11EBC6A8E001FCC1A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB4B67C01EBC6A8E001FCC1A /* main.c */; };
+		CB7193481ED2D16F00790252 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
+		CB71934B1ED2D18800790252 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB71934A1ED2D18800790252 /* main.c */; };
 		CB85F5251EC053D6001309B3 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB85F5281EC05C35001309B3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB85F5271EC05C35001309B3 /* main.c */; };
 		CB85F53A1EC06739001309B3 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
@@ -109,6 +111,13 @@
 			remoteInfo = Algorithms;
 		};
 		CB4B67BC1EBC6A7C001FCC1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3172EF1E94DDDB001E6998;
+			remoteInfo = Algorithms;
+		};
+		CB7193461ED2D16B00790252 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
 			proxyType = 1;
@@ -300,6 +309,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		CB71933D1ED2D14B00790252 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		CB85F51A1EC053BB001309B3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,6 +490,8 @@
 		CB4B67AD1EBC5E84001FCC1A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB4B67B51EBC6A69001FCC1A /* C10-PQueue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C10-PQueue"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4B67C01EBC6A8E001FCC1A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CB71933F1ED2D14B00790252 /* C15-Encryption */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C15-Encryption"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB71934A1ED2D18800790252 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB85F51C1EC053BB001309B3 /* C11-Graph */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C11-Graph"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB85F5271EC05C35001309B3 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB85F5311EC06703001309B3 /* C11-GraphBFS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C11-GraphBFS"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -563,6 +583,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB4B67BE1EBC6A81001FCC1A /* libAlgorithms.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB71933C1ED2D14B00790252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7193481ED2D16F00790252 /* libAlgorithms.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,6 +801,7 @@
 				CB26A5AE1ECAEA9B0025ACC4 /* C13-Nummeths */,
 				CBBBC1BE1ECC2C9400B84835 /* C14-Bit */,
 				CB9B76FE1ECD80CD0000C464 /* C14-Compress */,
+				CB71933F1ED2D14B00790252 /* C15-Encryption */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -790,6 +819,7 @@
 				CBC15B211EC2EBAD00C0500E /* chapter12 */,
 				CB26A5A51ECAE7E00025ACC4 /* chapter13 */,
 				CBBBC1B31ECC233B00B84835 /* chapter14 */,
+				CB7193361ED2C10600790252 /* chapter15 */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -870,6 +900,22 @@
 				CBC6702E1EAF487000C0BDDF /* queue */,
 			);
 			name = chapter06;
+			sourceTree = "<group>";
+		};
+		CB7193361ED2C10600790252 /* chapter15 */ = {
+			isa = PBXGroup;
+			children = (
+				CB7193491ED2D18800790252 /* encryption */,
+			);
+			name = chapter15;
+			sourceTree = "<group>";
+		};
+		CB7193491ED2D18800790252 /* encryption */ = {
+			isa = PBXGroup;
+			children = (
+				CB71934A1ED2D18800790252 /* main.c */,
+			);
+			path = encryption;
 			sourceTree = "<group>";
 		};
 		CB85F5131EC047EB001309B3 /* chapter11 */ = {
@@ -1184,6 +1230,24 @@
 			name = "C10-PQueue";
 			productName = "C10-PQueue";
 			productReference = CB4B67B51EBC6A69001FCC1A /* C10-PQueue */;
+			productType = "com.apple.product-type.tool";
+		};
+		CB71933E1ED2D14B00790252 /* C15-Encryption */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB7193431ED2D14B00790252 /* Build configuration list for PBXNativeTarget "C15-Encryption" */;
+			buildPhases = (
+				CB71933B1ED2D14B00790252 /* Sources */,
+				CB71933C1ED2D14B00790252 /* Frameworks */,
+				CB71933D1ED2D14B00790252 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB7193471ED2D16B00790252 /* PBXTargetDependency */,
+			);
+			name = "C15-Encryption";
+			productName = "C15-Encryption";
+			productReference = CB71933F1ED2D14B00790252 /* C15-Encryption */;
 			productType = "com.apple.product-type.tool";
 		};
 		CB85F51B1EC053BB001309B3 /* C11-Graph */ = {
@@ -1529,6 +1593,10 @@
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
+					CB71933E1ED2D14B00790252 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
 					CB85F51B1EC053BB001309B3 = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
@@ -1637,6 +1705,7 @@
 				CB26A5AD1ECAEA9B0025ACC4 /* C13-Nummeths */,
 				CBBBC1BD1ECC2C9400B84835 /* C14-Bit */,
 				CB9B76FD1ECD80CD0000C464 /* C14-Compress */,
+				CB71933E1ED2D14B00790252 /* C15-Encryption */,
 			);
 		};
 /* End PBXProject section */
@@ -1705,6 +1774,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB4B67C11EBC6A8E001FCC1A /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB71933B1ED2D14B00790252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB71934B1ED2D18800790252 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1881,6 +1958,11 @@
 			isa = PBXTargetDependency;
 			name = Algorithms;
 			targetProxy = CB4B67BC1EBC6A7C001FCC1A /* PBXContainerItemProxy */;
+		};
+		CB7193471ED2D16B00790252 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Algorithms;
+			targetProxy = CB7193461ED2D16B00790252 /* PBXContainerItemProxy */;
 		};
 		CB85F5241EC053D2001309B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2166,6 +2248,24 @@
 		CB4B67BB1EBC6A69001FCC1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Release;
+		};
+		CB7193441ED2D14B00790252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Debug;
+		};
+		CB7193451ED2D14B00790252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
 			};
@@ -2520,6 +2620,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CB7193431ED2D14B00790252 /* Build configuration list for PBXNativeTarget "C15-Encryption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7193441ED2D14B00790252 /* Debug */,
+				CB7193451ED2D14B00790252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CB85F5201EC053BB001309B3 /* Build configuration list for PBXNativeTarget "C11-Graph" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2590,6 +2698,7 @@
 				CB9B77041ECD80CD0000C464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB9EA9191EA5F4DD00D9C05E /* Build configuration list for PBXNativeTarget "C05-List" */ = {
 			isa = XCConfigurationList;
