@@ -19,6 +19,8 @@
 		CB31732A1E94EC2E001E6998 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3173291E94EC2E001E6998 /* list.c */; };
 		CB3891841ED2DA7D00A177F9 /* cbc.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891831ED2DA7D00A177F9 /* cbc.c */; };
 		CB3891971ED2DFA600A177F9 /* rea.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891961ED2DFA600A177F9 /* rea.c */; };
+		CB38919B1ED4123800A177F9 /* graphalg.h in Headers */ = {isa = PBXBuildFile; fileRef = CB38919A1ED4123800A177F9 /* graphalg.h */; };
+		CB38919E1ED41D3300A177F9 /* mst.c in Sources */ = {isa = PBXBuildFile; fileRef = CB38919D1ED41D3300A177F9 /* mst.c */; };
 		CB3F0D7F1EB079CC008396F8 /* set.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3F0D7E1EB079CC008396F8 /* set.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB3F0D811EB079DD008396F8 /* set.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D801EB079DD008396F8 /* set.c */; };
 		CB3F0D951EB08BA5008396F8 /* cover.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3F0D941EB08BA5008396F8 /* cover.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -98,6 +100,8 @@
 		CB3173291E94EC2E001E6998 /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
 		CB3891831ED2DA7D00A177F9 /* cbc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cbc.c; sourceTree = "<group>"; };
 		CB3891961ED2DFA600A177F9 /* rea.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rea.c; sourceTree = "<group>"; };
+		CB38919A1ED4123800A177F9 /* graphalg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graphalg.h; sourceTree = "<group>"; };
+		CB38919D1ED41D3300A177F9 /* mst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mst.c; sourceTree = "<group>"; };
 		CB3F0D7E1EB079CC008396F8 /* set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = set.h; sourceTree = "<group>"; };
 		CB3F0D801EB079DD008396F8 /* set.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = set.c; sourceTree = "<group>"; };
 		CB3F0D941EB08BA5008396F8 /* cover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cover.h; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 				CB26A5A31ECAE7C40025ACC4 /* chapter13 */,
 				CBBBC1B11ECC231100B84835 /* chapter14 */,
 				CB7193341ED2C0E800790252 /* chapter15 */,
+				CB3891991ED4122500A177F9 /* chapter16 */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -241,8 +246,25 @@
 				CB26A5A41ECAE7D10025ACC4 /* chapter13 */,
 				CBBBC1B21ECC232D00B84835 /* chapter14 */,
 				CB7193351ED2C0FB00790252 /* chapter15 */,
+				CB38919C1ED41D2300A177F9 /* chapter16 */,
 			);
 			path = source;
+			sourceTree = "<group>";
+		};
+		CB3891991ED4122500A177F9 /* chapter16 */ = {
+			isa = PBXGroup;
+			children = (
+				CB38919A1ED4123800A177F9 /* graphalg.h */,
+			);
+			name = chapter16;
+			sourceTree = "<group>";
+		};
+		CB38919C1ED41D2300A177F9 /* chapter16 */ = {
+			isa = PBXGroup;
+			children = (
+				CB38919D1ED41D3300A177F9 /* mst.c */,
+			);
+			name = chapter16;
 			sourceTree = "<group>";
 		};
 		CB3F0D7C1EB0798C008396F8 /* chapter07 */ = {
@@ -497,6 +519,7 @@
 				CB95943B1EADEFF90006D375 /* clist.h in Headers */,
 				CB9594181EADD6BF0006D375 /* dlist.h in Headers */,
 				CB9594141EADD0BC0006D375 /* frames.h in Headers */,
+				CB38919B1ED4123800A177F9 /* graphalg.h in Headers */,
 				CB3173281E94E42F001E6998 /* list.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,6 +620,7 @@
 				CBC15B381EC3059100C0500E /* directls.c in Sources */,
 				CB13B0A41EB85EC50091404B /* ohtbl.c in Sources */,
 				CB3891971ED2DFA600A177F9 /* rea.c in Sources */,
+				CB38919E1ED41D3300A177F9 /* mst.c in Sources */,
 				CB913EA71EB9B3CC005EDAEA /* bitree.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,8 @@
 		CB26A5BA1ECAEACC0025ACC4 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB26A5B91ECAEACC0025ACC4 /* main.c */; };
 		CB3891921ED2DC2200A177F9 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB3891951ED2DC2900A177F9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891941ED2DC2900A177F9 /* main.c */; };
+		CB3891AC1ED4212D00A177F9 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
+		CB3891B11ED4215200A177F9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891AF1ED4215200A177F9 /* main.c */; };
 		CB3F0D8F1EB08474008396F8 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB3F0D931EB084A9008396F8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D921EB084A9008396F8 /* main.c */; };
 		CB3F0DA51EB09028008396F8 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
@@ -92,6 +94,13 @@
 			remoteInfo = Algorithms;
 		};
 		CB3891901ED2DC1E00A177F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3172EF1E94DDDB001E6998;
+			remoteInfo = Algorithms;
+		};
+		CB3891AA1ED4212100A177F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */;
 			proxyType = 1;
@@ -283,6 +292,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		CB3891871ED2DC0300A177F9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		CB3891A11ED4211600A177F9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -502,6 +520,8 @@
 		CB3172F91E94DE1A001E6998 /* Algorithms.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Algorithms.xcodeproj; sourceTree = "<group>"; };
 		CB3891891ED2DC0300A177F9 /* C15-DES_CBC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C15-DES_CBC"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3891941ED2DC2900A177F9 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CB3891A31ED4211600A177F9 /* C16-GraphAlg */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C16-GraphAlg"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3891AF1ED4215200A177F9 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB3F0D861EB08467008396F8 /* C07-Set */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C07-Set"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3F0D921EB084A9008396F8 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB3F0D9C1EB09016008396F8 /* C07-Cover */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C07-Cover"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -579,6 +599,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3891921ED2DC2200A177F9 /* libAlgorithms.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3891A01ED4211600A177F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3891AC1ED4212D00A177F9 /* libAlgorithms.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,6 +859,7 @@
 				CB9B76FE1ECD80CD0000C464 /* C14-Compress */,
 				CB71933F1ED2D14B00790252 /* C15-Encryption */,
 				CB3891891ED2DC0300A177F9 /* C15-DES_CBC */,
+				CB3891A31ED4211600A177F9 /* C16-GraphAlg */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -849,6 +878,7 @@
 				CB26A5A51ECAE7E00025ACC4 /* chapter13 */,
 				CBBBC1B31ECC233B00B84835 /* chapter14 */,
 				CB7193361ED2C10600790252 /* chapter15 */,
+				CB3891AD1ED4214300A177F9 /* chapter16 */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -867,6 +897,22 @@
 				CB3891941ED2DC2900A177F9 /* main.c */,
 			);
 			path = cbc;
+			sourceTree = "<group>";
+		};
+		CB3891AD1ED4214300A177F9 /* chapter16 */ = {
+			isa = PBXGroup;
+			children = (
+				CB3891AE1ED4215200A177F9 /* graphalg */,
+			);
+			name = chapter16;
+			sourceTree = "<group>";
+		};
+		CB3891AE1ED4215200A177F9 /* graphalg */ = {
+			isa = PBXGroup;
+			children = (
+				CB3891AF1ED4215200A177F9 /* main.c */,
+			);
+			path = graphalg;
 			sourceTree = "<group>";
 		};
 		CB3F0D901EB08497008396F8 /* chapter07 */ = {
@@ -1214,6 +1260,24 @@
 			name = "C15-DES_CBC";
 			productName = "C15-DES_CBC";
 			productReference = CB3891891ED2DC0300A177F9 /* C15-DES_CBC */;
+			productType = "com.apple.product-type.tool";
+		};
+		CB3891A21ED4211600A177F9 /* C16-GraphAlg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3891A71ED4211600A177F9 /* Build configuration list for PBXNativeTarget "C16-GraphAlg" */;
+			buildPhases = (
+				CB38919F1ED4211600A177F9 /* Sources */,
+				CB3891A01ED4211600A177F9 /* Frameworks */,
+				CB3891A11ED4211600A177F9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB3891AB1ED4212100A177F9 /* PBXTargetDependency */,
+			);
+			name = "C16-GraphAlg";
+			productName = "C16-GraphAlg";
+			productReference = CB3891A31ED4211600A177F9 /* C16-GraphAlg */;
 			productType = "com.apple.product-type.tool";
 		};
 		CB3F0D851EB08467008396F8 /* C07-Set */ = {
@@ -1637,6 +1701,10 @@
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
+					CB3891A21ED4211600A177F9 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
 					CB3F0D851EB08467008396F8 = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
@@ -1767,6 +1835,7 @@
 				CB9B76FD1ECD80CD0000C464 /* C14-Compress */,
 				CB71933E1ED2D14B00790252 /* C15-Encryption */,
 				CB3891881ED2DC0300A177F9 /* C15-DES_CBC */,
+				CB3891A21ED4211600A177F9 /* C16-GraphAlg */,
 			);
 		};
 /* End PBXProject section */
@@ -1811,6 +1880,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3891951ED2DC2900A177F9 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB38919F1ED4211600A177F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3891B11ED4215200A177F9 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2012,6 +2089,11 @@
 			isa = PBXTargetDependency;
 			name = Algorithms;
 			targetProxy = CB3891901ED2DC1E00A177F9 /* PBXContainerItemProxy */;
+		};
+		CB3891AB1ED4212100A177F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Algorithms;
+			targetProxy = CB3891AA1ED4212100A177F9 /* PBXContainerItemProxy */;
 		};
 		CB3F0D8E1EB0846E008396F8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2272,6 +2354,22 @@
 			name = Debug;
 		};
 		CB38918F1ED2DC0300A177F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Release;
+		};
+		CB3891A81ED4211600A177F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+			};
+			name = Debug;
+		};
+		CB3891A91ED4211600A177F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2679,6 +2777,15 @@
 			buildConfigurations = (
 				CB38918E1ED2DC0300A177F9 /* Debug */,
 				CB38918F1ED2DC0300A177F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB3891A71ED4211600A177F9 /* Build configuration list for PBXNativeTarget "C16-GraphAlg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3891A81ED4211600A177F9 /* Debug */,
+				CB3891A91ED4211600A177F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
