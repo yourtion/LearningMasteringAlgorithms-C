@@ -22,6 +22,8 @@
 		CB38919B1ED4123800A177F9 /* graphalg.h in Headers */ = {isa = PBXBuildFile; fileRef = CB38919A1ED4123800A177F9 /* graphalg.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB38919E1ED41D3300A177F9 /* mst.c in Sources */ = {isa = PBXBuildFile; fileRef = CB38919D1ED41D3300A177F9 /* mst.c */; };
 		CB3891B31ED55DF500A177F9 /* shortest.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891B21ED55DF500A177F9 /* shortest.c */; };
+		CB3891B51ED5687000A177F9 /* route.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3891B41ED5687000A177F9 /* route.h */; };
+		CB3891B71ED56A0D00A177F9 /* route.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891B61ED56A0D00A177F9 /* route.c */; };
 		CB3F0D7F1EB079CC008396F8 /* set.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3F0D7E1EB079CC008396F8 /* set.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB3F0D811EB079DD008396F8 /* set.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D801EB079DD008396F8 /* set.c */; };
 		CB3F0D951EB08BA5008396F8 /* cover.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3F0D941EB08BA5008396F8 /* cover.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -104,6 +106,8 @@
 		CB38919A1ED4123800A177F9 /* graphalg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graphalg.h; sourceTree = "<group>"; };
 		CB38919D1ED41D3300A177F9 /* mst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mst.c; sourceTree = "<group>"; };
 		CB3891B21ED55DF500A177F9 /* shortest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shortest.c; sourceTree = "<group>"; };
+		CB3891B41ED5687000A177F9 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		CB3891B61ED56A0D00A177F9 /* route.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = route.c; sourceTree = "<group>"; };
 		CB3F0D7E1EB079CC008396F8 /* set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = set.h; sourceTree = "<group>"; };
 		CB3F0D801EB079DD008396F8 /* set.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = set.c; sourceTree = "<group>"; };
 		CB3F0D941EB08BA5008396F8 /* cover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cover.h; sourceTree = "<group>"; };
@@ -257,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				CB38919A1ED4123800A177F9 /* graphalg.h */,
+				CB3891B41ED5687000A177F9 /* route.h */,
 			);
 			name = chapter16;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 			children = (
 				CB38919D1ED41D3300A177F9 /* mst.c */,
 				CB3891B21ED55DF500A177F9 /* shortest.c */,
+				CB3891B61ED56A0D00A177F9 /* route.c */,
 			);
 			name = chapter16;
 			sourceTree = "<group>";
@@ -519,6 +525,7 @@
 				CBC670341EAF4C6300C0BDDF /* events.h in Headers */,
 				CBC6701D1EAF447900C0BDDF /* queue.h in Headers */,
 				CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */,
+				CB3891B51ED5687000A177F9 /* route.h in Headers */,
 				CB9594501EADF93E0006D375 /* page.h in Headers */,
 				CB95943B1EADEFF90006D375 /* clist.h in Headers */,
 				CB9594181EADD6BF0006D375 /* dlist.h in Headers */,
@@ -584,6 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3891B71ED56A0D00A177F9 /* route.c in Sources */,
 				CB85F52C1EC0646F001309B3 /* bfs.c in Sources */,
 				CBC15B531EC45AC300C0500E /* bisearch.c in Sources */,
 				CBC15B4B1EC4455800C0500E /* mgsort.c in Sources */,
