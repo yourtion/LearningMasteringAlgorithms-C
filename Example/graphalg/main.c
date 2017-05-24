@@ -79,11 +79,7 @@ static EdgeData MstTestE[MSTECT] =
   {"i", "h", 7.0}
 };
 
-/*****************************************************************************
- *                                                                            *
- *  Define data for computing shortest paths.                                 *
- *                                                                            *
- *****************************************************************************/
+/// 定义最短边计算数据
 
 #define     PTHVCT      6
 #define     PTHECT      11
@@ -131,7 +127,7 @@ static void print_graph_mst(const Graph *graph)
   ListElmt    *element, *member;
   int         i, j;
 
-  /// 打印图的最小生成树
+  /// 打印最小生成树的图
 
   fprintf(stdout, "-> Vertices=%d, edges=%d\n", graph_vcount(graph), graph_ecount(graph));
 
@@ -171,32 +167,17 @@ static int match_mst(const void *mst1, const void *mst2)
   return !strcmp(((const MstVertex *)mst1)->data, ((const MstVertex *)mst2)->data);
 }
 
-/*****************************************************************************
- *                                                                            *
- *  ---------------------------- print_graph_pth ---------------------------  *
- *                                                                            *
- *****************************************************************************/
 
-static void print_graph_pth(const Graph *graph) {
+static void print_graph_pth(const Graph *graph)
+{
+  Set           *adjacent;
+  PathVertex    *vertex;
+  ListElmt      *element, *member;
+  int           i, j;
 
-  Set                *adjacent;
+  /// 打印最短边计算的图
 
-  PathVertex         *vertex;
-
-  ListElmt           *element,
-  *member;
-
-  int                i,
-  j;
-
-  /*****************************************************************************
-   *                                                                            *
-   *  Display the graph for computing shortest paths.                           *
-   *                                                                            *
-   *****************************************************************************/
-
-  fprintf(stdout, "Vertices=%d, edges=%d\n", graph_vcount(graph), graph_ecount
-          (graph));
+  fprintf(stdout, "-> Vertices=%d, edges=%d\n", graph_vcount(graph), graph_ecount(graph));
 
   i = 0;
   element = list_head(&graph_adjlists(graph));
@@ -204,7 +185,7 @@ static void print_graph_pth(const Graph *graph) {
   while (i < list_size(&graph_adjlists(graph))) {
 
     vertex = ((AdjList *)list_data(element))->vertex;
-    fprintf(stdout, "graph[%03d]=%s: ", i, (char *)vertex->data);
+    fprintf(stdout, "--> graph[%03d]=%s: ", i, (char *)vertex->data);
 
     j = 0;
     adjacent = &((AdjList *)list_data(element))->adjacent;
@@ -227,25 +208,12 @@ static void print_graph_pth(const Graph *graph) {
   }
 
   return;
-
 }
 
-/*****************************************************************************
- *                                                                            *
- *  ------------------------------- match_pth ------------------------------  *
- *                                                                            *
- *****************************************************************************/
-
-static int match_pth(const void *pth1, const void *pth2) {
-
-  /*****************************************************************************
-   *                                                                            *
-   *  Determine whether the data in two PathVertex vertices match.              *
-   *                                                                            *
-   *****************************************************************************/
-
+static int match_pth(const void *pth1, const void *pth2)
+{
+  /// 确定两个 PathVertex 顶点是否相等
   return !strcmp(((const PathVertex *)pth1)->data, ((const PathVertex *)pth2)->data);
-
 }
 
 /*****************************************************************************
@@ -371,6 +339,55 @@ int main(int argc, char **argv)
   }
 
   list_destroy(&span);
+  graph_destroy(&graph);
+
+  /// 计算最短路径
+
+  graph_init(&graph, match_pth, free);
+
+  fprintf(stdout, "Computing shortest paths\n");
+
+  for (i = 0; i < PTHVCT; i++) {
+
+    if ((pth_vertex = (PathVertex *)malloc(sizeof(PathVertex))) == NULL) return 1;
+
+    if (i == 1) {
+      pth_start = pth_vertex;
+    }
+
+    pth_vertex->data = PthTestV[i];
+
+    if (graph_ins_vertex(&graph, pth_vertex) != 0) return 1;
+
+  }
+
+  for (i = 0; i < PTHECT; i++) {
+
+    if ((pth_vertex2 = (PathVertex *)malloc(sizeof(PathVertex))) == NULL) return 1;
+
+    pth_vertex1.data = PthTestE[i].vertex1;
+    pth_vertex2->data = PthTestE[i].vertex2;
+    pth_vertex2->weight = PthTestE[i].weight;
+
+    if (graph_ins_edge(&graph, &pth_vertex1, pth_vertex2) != 0) return 1;
+  }
+
+  print_graph_pth(&graph);
+
+  if (shortest(&graph, pth_start, &paths, match_pth) != 0) return 1;
+
+  for (element = list_head(&paths); element != NULL; element = list_next(element)) {
+
+    pth_vertex = list_data(element);
+
+    fprintf(stdout, "vertex=%s, parent=%s, d=%.1lf\n",
+            (char *)pth_vertex->data,
+            pth_vertex->parent != NULL ? (char *)pth_vertex->parent->data :"*",
+            pth_vertex->d);
+    
+  }
+  
+  list_destroy(&paths);
   graph_destroy(&graph);
 
   return 0;
