@@ -12,12 +12,10 @@
 #include "graph.h"
 #include "list.h"
 
-/*****************************************************************************
- *                                                                            *
- *  Define a structure for vertices in minimum spanning trees.                *
- *                                                                            *
- *****************************************************************************/
 
+/**
+ 最小生成树顶点
+ */
 typedef struct MstVertex_
 {
   void               *data;
@@ -30,12 +28,10 @@ typedef struct MstVertex_
 
 } MstVertex;
 
-/*****************************************************************************
- *                                                                            *
- *  Define a structure for vertices in shortest-path problems.                *
- *                                                                            *
- *****************************************************************************/
 
+/**
+ 最短路径顶点
+ */
 typedef struct PathVertex_
 {
   void               *data;
@@ -48,18 +44,14 @@ typedef struct PathVertex_
 
 } PathVertex;
 
-/*****************************************************************************
- *                                                                            *
- *  Define a structure for vertices in traveling-salesman problems.           *
- *                                                                            *
- *****************************************************************************/
-
+/**
+ 旅行商问题顶点
+ */
 typedef struct TspVertex_
 {
   void               *data;
 
-  double             x,
-  y;
+  double             x, y;
 
   VertexColor        color;
 
