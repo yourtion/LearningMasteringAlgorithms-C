@@ -23,7 +23,7 @@ int mst(Graph *graph, const MstVertex *start, List *span,
   double      minimum;
   int         found, i;
 
-  /// 初始化图的所以顶点
+  /// 初始化图的所有顶点
 
   found = 0;
 
