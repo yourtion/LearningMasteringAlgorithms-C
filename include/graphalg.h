@@ -18,13 +18,13 @@
  */
 typedef struct MstVertex_
 {
-  void               *data;
-  double             weight;
+  void               *data;   // 顶点的数据
+  double             weight;  // 边的权值
 
-  VertexColor        color;
-  double             key;
+  VertexColor        color;   // 顶点的色值
+  double             key;     // 顶点的键值
 
-  struct MstVertex_  *parent;
+  struct MstVertex_  *parent; // 顶点的父结点
 
 } MstVertex;
 
@@ -34,13 +34,13 @@ typedef struct MstVertex_
  */
 typedef struct PathVertex_
 {
-  void               *data;
-  double             weight;
+  void               *data;   // 顶点的数据
+  double             weight;  // 边的权值
 
-  VertexColor        color;
-  double             d;
+  VertexColor        color;   // 顶点的色值
+  double             d;       // 顶点的最短路径估计
 
-  struct PathVertex_ *parent;
+  struct PathVertex_ *parent; // 顶点的父结点
 
 } PathVertex;
 
@@ -72,13 +72,13 @@ int mst(Graph *graph, const MstVertex *start, List *span,
 
 
 /**
- <#Description#>
+ 计算顶点 start 与有向带权图 graph 中其他所有顶点之间的最短路径 - O(EV^2) V是图中顶点的个数，E是边的条数
 
- @param graph <#graph description#>
- @param start <#start description#>
- @param paths <#paths description#>
- @param match <#match description#>
- @return <#return value description#>
+ @param graph 有向带权图
+ @param start 顶点
+ @param paths 最短路径的相关数据
+ @param match 函数指针，用于判断两个成员是否相匹配（等于返回 1，否则返回 0）
+ @return 计算最短路径成功返回0；否则，返回-1
  */
 int shortest(Graph *graph, const PathVertex *start, List *paths,
              int (*match)(const void *key1, const void *key2));
