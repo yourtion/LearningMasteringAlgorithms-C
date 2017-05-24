@@ -33,9 +33,9 @@
 		CB4B67C71EBC6CF5001FCC1A /* parcels.c in Sources */ = {isa = PBXBuildFile; fileRef = CB4B67C61EBC6CF5001FCC1A /* parcels.c */; };
 		CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = CB618EBB1EAF3CE4005BC240 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB618EBE1EAF3CF8005BC240 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = CB618EBD1EAF3CF8005BC240 /* stack.c */; };
-		CB7193381ED2C2C600790252 /* encrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7193371ED2C2C600790252 /* encrypt.h */; };
+		CB7193381ED2C2C600790252 /* encrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7193371ED2C2C600790252 /* encrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB71933A1ED2C77800790252 /* des.c in Sources */ = {isa = PBXBuildFile; fileRef = CB7193391ED2C77800790252 /* des.c */; };
-		CB71934D1ED2D77000790252 /* cbc.h in Headers */ = {isa = PBXBuildFile; fileRef = CB71934C1ED2D77000790252 /* cbc.h */; };
+		CB71934D1ED2D77000790252 /* cbc.h in Headers */ = {isa = PBXBuildFile; fileRef = CB71934C1ED2D77000790252 /* cbc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB85F5151EC04840001309B3 /* graph.h in Headers */ = {isa = PBXBuildFile; fileRef = CB85F5141EC04840001309B3 /* graph.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB85F5171EC04BC1001309B3 /* graph.c in Sources */ = {isa = PBXBuildFile; fileRef = CB85F5161EC04BC1001309B3 /* graph.c */; };
 		CB85F52A1EC06391001309B3 /* bfs.h in Headers */ = {isa = PBXBuildFile; fileRef = CB85F5291EC06391001309B3 /* bfs.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -485,6 +485,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB71934D1ED2D77000790252 /* cbc.h in Headers */,
+				CB7193381ED2C2C600790252 /* encrypt.h in Headers */,
 				CB9B770E1ECD83EE0000C464 /* transfer.h in Headers */,
 				CB26A5A71ECAE8090025ACC4 /* nummeths.h in Headers */,
 				CBBBC1B51ECC236100B84835 /* compress.h in Headers */,
@@ -497,10 +499,8 @@
 				CB85F52A1EC06391001309B3 /* bfs.h in Headers */,
 				CB85F5151EC04840001309B3 /* graph.h in Headers */,
 				CB4B67C51EBC6C36001FCC1A /* parcels.h in Headers */,
-				CB7193381ED2C2C600790252 /* encrypt.h in Headers */,
 				CB4B67C31EBC6C25001FCC1A /* parcel.h in Headers */,
 				CB4B67B01EBC6780001FCC1A /* pqueue.h in Headers */,
-				CB71934D1ED2D77000790252 /* cbc.h in Headers */,
 				CB4B679B1EBC50C3001FCC1A /* heap.h in Headers */,
 				CB1BD50E1EBAFE1C00BCEE73 /* bistree.h in Headers */,
 				CB913EA91EB9BAB9005EDAEA /* traverse.h in Headers */,
