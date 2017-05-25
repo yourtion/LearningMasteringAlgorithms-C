@@ -1,6 +1,6 @@
 //
 //  lint.c
-//  Algorithms
+//  Algorithms - Two line segments intersect
 //
 //  Created by YourtionGuo on 25/05/2017.
 //  Copyright © 2017 Yourtion. All rights reserved.
