@@ -55,6 +55,14 @@ typedef struct SPoint_
  */
 int lint(Point p1, Point p2, Point p3, Point p4);
 
+
+/**
+ 函数计算出由 P 所指定的点集的凸包 - O(nh) n表示点集中总的元素个数，h表示凸包中点的个数
+
+ @param P 点集
+ @param polygon 计算结果链表
+ @return 成功计算出凸包返回0；否则返回-1
+ */
 int cvxhull(const List *P, List *polygon);
 
 void arclen(SPoint p1, SPoint p2, double *length);
