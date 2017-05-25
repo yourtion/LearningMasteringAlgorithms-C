@@ -49,11 +49,11 @@ typedef struct PathVertex_
  */
 typedef struct TspVertex_
 {
-  void               *data;
+  void          *data;  // 顶点的数据
 
-  double             x, y;
+  double        x, y;   // 顶点的坐标
 
-  VertexColor        color;
+  VertexColor   color;  // 顶点的色值
 
 } TspVertex;
 
@@ -85,13 +85,13 @@ int shortest(Graph *graph, const PathVertex *start, List *paths,
 
 
 /**
- <#Description#>
+ 为存储在 vertices 中的顶点计算一条近似旅行商的路线 - O(V^2) V是路线中要访问顶点的个数
 
- @param vertices <#vertices description#>
- @param start <#start description#>
- @param tour <#tour description#>
- @param match <#match description#>
- @return <#return value description#>
+ @param vertices 顶点列表
+ @param start 顶点
+ @param tour 计算得到的路线
+ @param match 函数指针，用于判断两个成员是否相匹配（等于返回 1，否则返回 0）
+ @return 计算近似旅行商路线成功返回0；否则，返回-1
  */
 int tsp(List *vertices, const TspVertex *start, List *tour,
         int (*match)(const void *key1, const void *key2));
