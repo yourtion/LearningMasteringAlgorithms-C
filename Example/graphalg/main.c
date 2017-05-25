@@ -101,11 +101,7 @@ static EdgeData PthTestE[PTHECT] =
   {"f", "e", 4.0}
 };
 
-/*****************************************************************************
- *                                                                            *
- *  Define data for traveling-salesman problems.                              *
- *                                                                            *
- *****************************************************************************/
+/// 定义旅行商问题数据
 
 #define     TSPVCT      7
 
@@ -216,27 +212,15 @@ static int match_pth(const void *pth1, const void *pth2)
   return !strcmp(((const PathVertex *)pth1)->data, ((const PathVertex *)pth2)->data);
 }
 
-/*****************************************************************************
- *                                                                            *
- *  ---------------------------- print_list_tsp ----------------------------  *
- *                                                                            *
- *****************************************************************************/
+static void print_list_tsp(List *vertices)
+{
+  TspVertex   *vertex;
+  ListElmt    *element;
+  int         i;
 
-static void print_list_tsp(List *vertices) {
+  /// 打印旅行商问题列表顶点
 
-  TspVertex          *vertex;
-
-  ListElmt           *element;
-
-  int                i;
-
-  /*****************************************************************************
-   *                                                                            *
-   *  Display the list of vertices in a traveling-salesman problem.             *
-   *                                                                            *
-   *****************************************************************************/
-
-  fprintf(stdout, "Vertices=%d\n", list_size(vertices));
+  fprintf(stdout, "-> Vertices=%d\n", list_size(vertices));
 
   i = 0;
   element = list_head(vertices);
@@ -244,43 +228,26 @@ static void print_list_tsp(List *vertices) {
   while (1) {
 
     vertex = list_data(element);
-    fprintf(stdout, "vertices[%03d]=%s: (%.1lf, %.1lf)\n", i, (char *)vertex->
-            data, vertex->x, vertex->y);
+    fprintf(stdout, "--> vertices[%03d]=%s: (%.1lf, %.1lf)\n", i, (char *)vertex->data, vertex->x, vertex->y);
 
     i++;
 
-    if (list_is_tail(element))
+    if (list_is_tail(element)) {
       break;
-    else
+    } else {
       element = list_next(element);
-
+    }
   }
 
   return;
 }
 
-/*****************************************************************************
- *                                                                            *
- *  ------------------------------- match_tsp ------------------------------  *
- *                                                                            *
- *****************************************************************************/
-
-static int match_tsp(const void *tsp1, const void *tsp2) {
-
-  /*****************************************************************************
-   *                                                                            *
-   *  Determine whether the data in two TspVertex vertices match.               *
-   *                                                                            *
-   *****************************************************************************/
-
+static int match_tsp(const void *tsp1, const void *tsp2)
+{
+  /// 确定两个 TspVertex 顶点是否相等
   return !strcmp(((const TspVertex *)tsp1)->data, ((const TspVertex *)tsp2)->data);
 }
 
-/*****************************************************************************
- *                                                                            *
- *  --------------------------------- main ---------------------------------  *
- *                                                                            *
- *****************************************************************************/
 
 int main(int argc, char **argv)
 {
@@ -291,7 +258,7 @@ int main(int argc, char **argv)
   TspVertex   *tsp_start, *tsp_vertex;
   List        span, paths, vertices, tour;
   ListElmt    *element;
-  double      distance, total, x, y;
+  double      distance = 0.0, total, x = 0.0, y = 0.0;
   int         i;
 
   /// 计算最小生成树
@@ -389,6 +356,61 @@ int main(int argc, char **argv)
   
   list_destroy(&paths);
   graph_destroy(&graph);
+
+  /// 解决旅行商问题
+
+  list_init(&vertices, free);
+
+  fprintf(stdout, "Solving a traveling-salesman problem\n");
+
+  for (i = 0; i < TSPVCT; i++) {
+
+    if ((tsp_vertex = (TspVertex *)malloc(sizeof(TspVertex))) == NULL) return 1;
+
+    if (i == 0) {
+      tsp_start = tsp_vertex;
+    }
+
+    tsp_vertex->data = TspTestV[i].vertex;
+    tsp_vertex->x = TspTestV[i].x;
+    tsp_vertex->y = TspTestV[i].y;
+
+    if (list_ins_next(&vertices, list_tail(&vertices), tsp_vertex) != 0) return 1;
+
+  }
+
+  print_list_tsp(&vertices);
+
+  if (tsp(&vertices, tsp_start, &tour, match_tsp) != 0) return 1;
+
+  total = 0;
+
+  for (element = list_head(&tour); element != NULL; element = list_next(element)) {
+
+    tsp_vertex = list_data(element);
+
+    if (!list_is_head(&tour, element)) {
+
+      distance = sqrt(pow(tsp_vertex->x-x, 2.0) + pow(tsp_vertex->y-y, 2.0));
+      total = total + distance;
+
+    }
+
+    x = tsp_vertex->x;
+    y = tsp_vertex->y;
+
+    if (!list_is_head(&tour, element)) {
+      fprintf(stdout, "vertex=%s, distance=%.2lf\n", (char *)tsp_vertex->data, distance);
+    } else {
+      fprintf(stdout, "vertex=%s\n", (char *)tsp_vertex->data);
+    }
+
+  }
+  
+  fprintf(stdout, "total=%.2lf\n", total);
+  
+  list_destroy(&vertices);
+  list_destroy(&tour);
 
   return 0;
 }
