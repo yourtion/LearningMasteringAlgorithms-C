@@ -13,12 +13,7 @@
 #include "geometry.h"
 #include "list.h"
 
-/*****************************************************************************
- *                                                                            *
- *  Define data for computing convex hulls.                                   *
- *                                                                            *
- *****************************************************************************/
-
+/// 定义凸包检测数据
 #define     CVXPCT      10
 
 static Point CvxTestP[CVXPCT] =
@@ -45,12 +40,6 @@ int main(int argc, char **argv)
   SPoint    p1_sph, p2_sph;
   double    length;
   int       actual, i;
-
-  /*****************************************************************************
-   *                                                                            *
-   *  Determine whether two line segments intersect.                            *
-   *                                                                            *
-   *****************************************************************************/
 
   /// 判断两条直线是否相交
 
@@ -385,6 +374,45 @@ int main(int argc, char **argv)
   }
 
   fprintf(stdout, " (N=OK)\n");
+
+  /// 执行凸包检测
+
+  fprintf(stdout, "Computing a convex hull\n");
+  fprintf(stdout, "Points in P\n");
+
+  list_init(&P, NULL);
+
+  for (i = 0; i < CVXPCT; i++) {
+
+    if (list_ins_next(&P, list_tail(&P), &CvxTestP[i]) != 0) {
+
+      list_destroy(&P);
+      return 1;
+    }
+
+    fprintf(stdout, "-> P[%03d]=(%+.1lf,%+.1lf,%+.1lf)\n", i, CvxTestP[i].x, CvxTestP[i].y, CvxTestP[i].z);
+  }
+
+  if (cvxhull(&P, &polygon) != 0) {
+
+    list_destroy(&P);
+    return 1;
+  }
+
+  fprintf(stdout, "Points in the convex hull\n");
+
+  i = 0;
+
+  for (element = list_head(&polygon); element != NULL; element = list_next(element)) {
+
+    i++;
+    point = list_data(element);
+
+    fprintf(stdout, "-> polygon[%03d]=(%+.1lf,%+.1lf,%+.1lf)\n", i, point->x, point->y, point->z);
+  }
+  
+  list_destroy(&P);
+  list_destroy(&polygon);
 
   return 0;
 }
