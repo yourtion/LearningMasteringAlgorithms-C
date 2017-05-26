@@ -65,6 +65,14 @@ int lint(Point p1, Point p2, Point p3, Point p4);
  */
 int cvxhull(const List *P, List *polygon);
 
+
+/**
+ 计算球面上的点 P1 和 P2 之间的弧长
+
+ @param p1 球坐标系中的点 1
+ @param p2 球坐标系中的点 2
+ @param length 弧长
+ */
 void arclen(SPoint p1, SPoint p2, double *length);
 
 #endif /* GEOMETRY_H */
