@@ -25,11 +25,11 @@
 		CB3891B51ED5687000A177F9 /* route.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3891B41ED5687000A177F9 /* route.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB3891B71ED56A0D00A177F9 /* route.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891B61ED56A0D00A177F9 /* route.c */; };
 		CB3891CA1ED572E400A177F9 /* tsp.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891C91ED572E400A177F9 /* tsp.c */; };
-		CB3891D01ED6C60200A177F9 /* geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3891CF1ED6C60200A177F9 /* geometry.h */; };
+		CB3891D01ED6C60200A177F9 /* geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3891CF1ED6C60200A177F9 /* geometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB3891D21ED6CA8900A177F9 /* lint.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891D11ED6CA8900A177F9 /* lint.c */; };
 		CB3891E51ED6D06500A177F9 /* cvxhull.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891E41ED6D06500A177F9 /* cvxhull.c */; };
 		CB3891E71ED6DE1800A177F9 /* arclen.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891E61ED6DE1800A177F9 /* arclen.c */; };
-		CB3891E91ED6DF4500A177F9 /* geodist.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3891E81ED6DF4500A177F9 /* geodist.h */; };
+		CB3891E91ED6DF4500A177F9 /* geodist.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3891E81ED6DF4500A177F9 /* geodist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB3891EB1ED6E00600A177F9 /* geodist.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891EA1ED6E00600A177F9 /* geodist.c */; };
 		CB3F0D7F1EB079CC008396F8 /* set.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3F0D7E1EB079CC008396F8 /* set.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB3F0D811EB079DD008396F8 /* set.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D801EB079DD008396F8 /* set.c */; };
@@ -531,11 +531,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3891E91ED6DF4500A177F9 /* geodist.h in Headers */,
+				CB3891D01ED6C60200A177F9 /* geometry.h in Headers */,
 				CB3891B51ED5687000A177F9 /* route.h in Headers */,
 				CB38919B1ED4123800A177F9 /* graphalg.h in Headers */,
 				CB71934D1ED2D77000790252 /* cbc.h in Headers */,
 				CB7193381ED2C2C600790252 /* encrypt.h in Headers */,
-				CB3891E91ED6DF4500A177F9 /* geodist.h in Headers */,
 				CB9B770E1ECD83EE0000C464 /* transfer.h in Headers */,
 				CB26A5A71ECAE8090025ACC4 /* nummeths.h in Headers */,
 				CBBBC1B51ECC236100B84835 /* compress.h in Headers */,
@@ -566,7 +567,6 @@
 				CB618EBC1EAF3CE4005BC240 /* stack.h in Headers */,
 				CB9594501EADF93E0006D375 /* page.h in Headers */,
 				CB95943B1EADEFF90006D375 /* clist.h in Headers */,
-				CB3891D01ED6C60200A177F9 /* geometry.h in Headers */,
 				CB9594181EADD6BF0006D375 /* dlist.h in Headers */,
 				CB9594141EADD0BC0006D375 /* frames.h in Headers */,
 				CB3173281E94E42F001E6998 /* list.h in Headers */,
