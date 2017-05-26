@@ -20,7 +20,7 @@
 		CB3891C51ED56C5400A177F9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891C41ED56C5400A177F9 /* main.c */; };
 		CB3891C81ED56C6200A177F9 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB3891E01ED6CCC800A177F9 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
-		CB3891E31ED6CCE400A177F9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891E21ED6CCE400A177F9 /* main.c */; };
+		CB3891EF1ED7FFD100A177F9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891EE1ED7FFD100A177F9 /* main.c */; };
 		CB3F0D8F1EB08474008396F8 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
 		CB3F0D931EB084A9008396F8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D921EB084A9008396F8 /* main.c */; };
 		CB3F0DA51EB09028008396F8 /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3172FE1E94DE1A001E6998 /* libAlgorithms.a */; };
@@ -561,7 +561,7 @@
 		CB3891BC1ED56C2B00A177F9 /* C16-Routing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C16-Routing"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3891C41ED56C5400A177F9 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB3891D71ED6CCAA00A177F9 /* C17-Geometry */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C17-Geometry"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB3891E21ED6CCE400A177F9 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CB3891EE1ED7FFD100A177F9 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB3F0D861EB08467008396F8 /* C07-Set */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C07-Set"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3F0D921EB084A9008396F8 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		CB3F0D9C1EB09016008396F8 /* C07-Cover */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C07-Cover"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -986,15 +986,15 @@
 		CB3891CE1ED6C41900A177F9 /* chapter17 */ = {
 			isa = PBXGroup;
 			children = (
-				CB3891E11ED6CCE400A177F9 /* geometry */,
+				CB3891ED1ED7FFD100A177F9 /* geometry */,
 			);
 			name = chapter17;
 			sourceTree = "<group>";
 		};
-		CB3891E11ED6CCE400A177F9 /* geometry */ = {
+		CB3891ED1ED7FFD100A177F9 /* geometry */ = {
 			isa = PBXGroup;
 			children = (
-				CB3891E21ED6CCE400A177F9 /* main.c */,
+				CB3891EE1ED7FFD100A177F9 /* main.c */,
 			);
 			path = geometry;
 			sourceTree = "<group>";
@@ -2033,7 +2033,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB3891E31ED6CCE400A177F9 /* main.c in Sources */,
+				CB3891EF1ED7FFD100A177F9 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2994,6 +2994,7 @@
 				CB3891DD1ED6CCAA00A177F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB3F0D8A1EB08467008396F8 /* Build configuration list for PBXNativeTarget "C07-Set" */ = {
 			isa = XCConfigurationList;

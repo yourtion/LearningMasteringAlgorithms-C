@@ -28,6 +28,9 @@
 		CB3891D01ED6C60200A177F9 /* geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3891CF1ED6C60200A177F9 /* geometry.h */; };
 		CB3891D21ED6CA8900A177F9 /* lint.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891D11ED6CA8900A177F9 /* lint.c */; };
 		CB3891E51ED6D06500A177F9 /* cvxhull.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891E41ED6D06500A177F9 /* cvxhull.c */; };
+		CB3891E71ED6DE1800A177F9 /* arclen.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891E61ED6DE1800A177F9 /* arclen.c */; };
+		CB3891E91ED6DF4500A177F9 /* geodist.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3891E81ED6DF4500A177F9 /* geodist.h */; };
+		CB3891EB1ED6E00600A177F9 /* geodist.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891EA1ED6E00600A177F9 /* geodist.c */; };
 		CB3F0D7F1EB079CC008396F8 /* set.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3F0D7E1EB079CC008396F8 /* set.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB3F0D811EB079DD008396F8 /* set.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3F0D801EB079DD008396F8 /* set.c */; };
 		CB3F0D951EB08BA5008396F8 /* cover.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3F0D941EB08BA5008396F8 /* cover.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -116,6 +119,9 @@
 		CB3891CF1ED6C60200A177F9 /* geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geometry.h; sourceTree = "<group>"; };
 		CB3891D11ED6CA8900A177F9 /* lint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lint.c; sourceTree = "<group>"; };
 		CB3891E41ED6D06500A177F9 /* cvxhull.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cvxhull.c; sourceTree = "<group>"; };
+		CB3891E61ED6DE1800A177F9 /* arclen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arclen.c; sourceTree = "<group>"; };
+		CB3891E81ED6DF4500A177F9 /* geodist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geodist.h; sourceTree = "<group>"; };
+		CB3891EA1ED6E00600A177F9 /* geodist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = geodist.c; sourceTree = "<group>"; };
 		CB3F0D7E1EB079CC008396F8 /* set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = set.h; sourceTree = "<group>"; };
 		CB3F0D801EB079DD008396F8 /* set.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = set.c; sourceTree = "<group>"; };
 		CB3F0D941EB08BA5008396F8 /* cover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cover.h; sourceTree = "<group>"; };
@@ -291,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				CB3891CF1ED6C60200A177F9 /* geometry.h */,
+				CB3891E81ED6DF4500A177F9 /* geodist.h */,
 			);
 			name = chapter17;
 			sourceTree = "<group>";
@@ -300,6 +307,8 @@
 			children = (
 				CB3891D11ED6CA8900A177F9 /* lint.c */,
 				CB3891E41ED6D06500A177F9 /* cvxhull.c */,
+				CB3891E61ED6DE1800A177F9 /* arclen.c */,
+				CB3891EA1ED6E00600A177F9 /* geodist.c */,
 			);
 			name = chapter17;
 			sourceTree = "<group>";
@@ -526,6 +535,7 @@
 				CB38919B1ED4123800A177F9 /* graphalg.h in Headers */,
 				CB71934D1ED2D77000790252 /* cbc.h in Headers */,
 				CB7193381ED2C2C600790252 /* encrypt.h in Headers */,
+				CB3891E91ED6DF4500A177F9 /* geodist.h in Headers */,
 				CB9B770E1ECD83EE0000C464 /* transfer.h in Headers */,
 				CB26A5A71ECAE8090025ACC4 /* nummeths.h in Headers */,
 				CBBBC1B51ECC236100B84835 /* compress.h in Headers */,
@@ -645,6 +655,7 @@
 				CB4B679D1EBC5294001FCC1A /* heap.c in Sources */,
 				CB1BD5101EBB057F00BCEE73 /* bistree.c in Sources */,
 				CBBBC1B91ECC26C800B84835 /* bit.c in Sources */,
+				CB3891EB1ED6E00600A177F9 /* geodist.c in Sources */,
 				CB913EAB1EB9BCC2005EDAEA /* traverse.c in Sources */,
 				CB85F5411EC07514001309B3 /* dfs.c in Sources */,
 				CB85F5171EC04BC1001309B3 /* graph.c in Sources */,
@@ -662,6 +673,7 @@
 				CBC15B341EC2F14000C0500E /* qksort.c in Sources */,
 				CBC15B381EC3059100C0500E /* directls.c in Sources */,
 				CB3891D21ED6CA8900A177F9 /* lint.c in Sources */,
+				CB3891E71ED6DE1800A177F9 /* arclen.c in Sources */,
 				CB13B0A41EB85EC50091404B /* ohtbl.c in Sources */,
 				CB3891971ED2DFA600A177F9 /* rea.c in Sources */,
 				CB38919E1ED41D3300A177F9 /* mst.c in Sources */,

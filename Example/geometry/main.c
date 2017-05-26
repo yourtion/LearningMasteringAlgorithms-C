@@ -10,6 +10,7 @@
 #include <math.h>
 #include <stdio.h>
 
+#include "geodist.h"
 #include "geometry.h"
 #include "list.h"
 
@@ -410,9 +411,99 @@ int main(int argc, char **argv)
 
     fprintf(stdout, "-> polygon[%03d]=(%+.1lf,%+.1lf,%+.1lf)\n", i, point->x, point->y, point->z);
   }
-  
+
   list_destroy(&P);
   list_destroy(&polygon);
 
+  /// 计算球面上两点的距离
+
+  fprintf(stdout, "Computing arc lengths on spherical surfaces\n");
+
+  p1_sph.phi = DEGTORAD(90.0);
+  p1_sph.theta = DEGTORAD(0.0);
+  p1_sph.rho = EARTH_RADIUS;
+
+  p2_sph.phi = DEGTORAD(90.0);
+  p2_sph.theta = DEGTORAD(60.0);
+  p2_sph.rho = EARTH_RADIUS;
+
+  arclen(p1_sph, p2_sph, &length);
+  actual = 3606;
+
+  fprintf(stdout, "Simple: phi=%+07.2lf, theta=%+07.2lf, rho=%.3lf\n",
+          RADTODEG(p1_sph.phi), RADTODEG(p1_sph.theta), p1_sph.rho);
+
+  fprintf(stdout, "Simple: phi=%+07.2lf, theta=%+07.2lf, rho=%.3lf\n",
+          RADTODEG(p2_sph.phi), RADTODEG(p2_sph.theta), p2_sph.rho);
+
+  fprintf(stdout, "length=%d, actual=%d, error=%6.4lf\n", (int)length,
+          actual, fabs(1.0 - (floor(length) / actual)));
+
+  /* SFO (San Francisco) */
+  p1_sph.phi = DEGTORAD(90 - 37.62);
+  p1_sph.theta = DEGTORAD(-122.38);
+  p1_sph.rho = EARTH_RADIUS;
+
+  /* LAX (Los Angeles) */
+  p2_sph.phi = DEGTORAD(90.0 - 33.94);
+  p2_sph.theta = DEGTORAD(-118.41);
+  p2_sph.rho = EARTH_RADIUS;
+
+  arclen(p1_sph, p2_sph, &length);
+  actual = 293;
+
+  fprintf(stdout, "SFO: phi=%+07.2lf, theta=%+07.2lf, rho=%.3lf\n",
+          RADTODEG(p1_sph.phi), RADTODEG(p1_sph.theta), p1_sph.rho);
+
+  fprintf(stdout, "LAX: phi=%+07.2lf, theta=%+07.2lf, rho=%.3lf\n",
+          RADTODEG(p2_sph.phi), RADTODEG(p2_sph.theta), p2_sph.rho);
+
+  fprintf(stdout, "length=%d, actual=%d, error=%6.4lf\n", (int)length,
+          actual, fabs(1.0 - (floor(length) / actual)));
+
+  /* SFO (San Francisco) */
+  p1_sph.phi = DEGTORAD(90 - 37.62);
+  p1_sph.theta = DEGTORAD(-122.38);
+  p1_sph.rho = EARTH_RADIUS;
+
+  /* HKG (Hong Kong) */
+  p2_sph.phi = DEGTORAD(90.0 - 22.31);
+  p2_sph.theta = DEGTORAD(113.92);
+  p2_sph.rho = EARTH_RADIUS;
+
+  arclen(p1_sph, p2_sph, &length);
+  actual = 6159;
+
+  fprintf(stdout, "SFO: phi=%+07.2lf, theta=%+07.2lf, rho=%.3lf\n",
+          RADTODEG(p1_sph.phi), RADTODEG(p1_sph.theta), p1_sph.rho);
+
+  fprintf(stdout, "HKG: phi=%+07.2lf, theta=%+07.2lf, rho=%.3lf\n",
+          RADTODEG(p2_sph.phi), RADTODEG(p2_sph.theta), p2_sph.rho);
+
+  fprintf(stdout, "length=%d, actual=%d, error=%6.4lf\n", (int)length,
+          actual, fabs(1.0 - (floor(length) / actual)));
+
+  /* CDG (Paris) */
+  p1_sph.phi = DEGTORAD(90 - 49.01);
+  p1_sph.theta = DEGTORAD(2.55);
+  p1_sph.rho = EARTH_RADIUS;
+
+  /* PER (Perth) */
+  p2_sph.phi = DEGTORAD(90.0 + 31.94);
+  p2_sph.theta = DEGTORAD(115.97);
+  p2_sph.rho = EARTH_RADIUS;
+
+  arclen(p1_sph, p2_sph, &length);
+  actual = 7733;
+
+  fprintf(stdout, "CDG: phi=%+07.2lf, theta=%+07.2lf, rho=%.3lf\n",
+          RADTODEG(p1_sph.phi), RADTODEG(p1_sph.theta), p1_sph.rho);
+  
+  fprintf(stdout, "PER: phi=%+07.2lf, theta=%+07.2lf, rho=%.3lf\n",
+          RADTODEG(p2_sph.phi), RADTODEG(p2_sph.theta), p2_sph.rho);
+  
+  fprintf(stdout, "length=%d, actual=%d, error=%6.4lf\n", (int)length,
+          actual, fabs(1.0 - (floor(length) / actual)));
+  
   return 0;
 }
