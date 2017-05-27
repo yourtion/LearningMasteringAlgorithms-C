@@ -1,5 +1,7 @@
 # 《算法精解：C语言描述》源码及Xcode工程、Linux工程
 
+打开 `MasteringAlgorithms.xcodeproj` 即可。`Algorithms.xcodeproj` 为算法库文件工程
+
 ![ScreenShot](ScreenShot.png)
 
 ## 数据结构
