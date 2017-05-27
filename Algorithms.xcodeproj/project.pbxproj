@@ -18,7 +18,7 @@
 		CB3173281E94E42F001E6998 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3173271E94E42F001E6998 /* list.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB31732A1E94EC2E001E6998 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3173291E94EC2E001E6998 /* list.c */; };
 		CB3891841ED2DA7D00A177F9 /* cbc.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891831ED2DA7D00A177F9 /* cbc.c */; };
-		CB3891971ED2DFA600A177F9 /* rea.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891961ED2DFA600A177F9 /* rea.c */; };
+		CB3891971ED2DFA600A177F9 /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891961ED2DFA600A177F9 /* rsa.c */; };
 		CB38919B1ED4123800A177F9 /* graphalg.h in Headers */ = {isa = PBXBuildFile; fileRef = CB38919A1ED4123800A177F9 /* graphalg.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB38919E1ED41D3300A177F9 /* mst.c in Sources */ = {isa = PBXBuildFile; fileRef = CB38919D1ED41D3300A177F9 /* mst.c */; };
 		CB3891B31ED55DF500A177F9 /* shortest.c in Sources */ = {isa = PBXBuildFile; fileRef = CB3891B21ED55DF500A177F9 /* shortest.c */; };
@@ -109,7 +109,7 @@
 		CB3173271E94E42F001E6998 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
 		CB3173291E94EC2E001E6998 /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
 		CB3891831ED2DA7D00A177F9 /* cbc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cbc.c; sourceTree = "<group>"; };
-		CB3891961ED2DFA600A177F9 /* rea.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rea.c; sourceTree = "<group>"; };
+		CB3891961ED2DFA600A177F9 /* rsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rsa.c; sourceTree = "<group>"; };
 		CB38919A1ED4123800A177F9 /* graphalg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graphalg.h; sourceTree = "<group>"; };
 		CB38919D1ED41D3300A177F9 /* mst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mst.c; sourceTree = "<group>"; };
 		CB3891B21ED55DF500A177F9 /* shortest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shortest.c; sourceTree = "<group>"; };
@@ -409,7 +409,7 @@
 			children = (
 				CB7193391ED2C77800790252 /* des.c */,
 				CB3891831ED2DA7D00A177F9 /* cbc.c */,
-				CB3891961ED2DFA600A177F9 /* rea.c */,
+				CB3891961ED2DFA600A177F9 /* rsa.c */,
 			);
 			name = chapter15;
 			sourceTree = "<group>";
@@ -675,7 +675,7 @@
 				CB3891D21ED6CA8900A177F9 /* lint.c in Sources */,
 				CB3891E71ED6DE1800A177F9 /* arclen.c in Sources */,
 				CB13B0A41EB85EC50091404B /* ohtbl.c in Sources */,
-				CB3891971ED2DFA600A177F9 /* rea.c in Sources */,
+				CB3891971ED2DFA600A177F9 /* rsa.c in Sources */,
 				CB38919E1ED41D3300A177F9 /* mst.c in Sources */,
 				CB913EA71EB9B3CC005EDAEA /* bitree.c in Sources */,
 			);

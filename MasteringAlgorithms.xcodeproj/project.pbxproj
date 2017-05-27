@@ -3093,6 +3093,7 @@
 				CB3891FA1ED801EC00A177F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB3F0D8A1EB08467008396F8 /* Build configuration list for PBXNativeTarget "C07-Set" */ = {
 			isa = XCConfigurationList;

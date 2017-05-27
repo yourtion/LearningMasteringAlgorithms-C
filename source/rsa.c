@@ -1,5 +1,5 @@
 //
-//  rea.c
+//  rsa.c
 //  Algorithms - RSA
 //
 //  Created by YourtionGuo on 22/05/2017.
