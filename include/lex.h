@@ -15,7 +15,7 @@ typedef enum Token_ {lexit, error, digit, other} Token;
 
 
 /**
- <#Description#>
+ 根据输入流生成符号表
 
  @param istream 输入流
  @param symtbl 符号表
