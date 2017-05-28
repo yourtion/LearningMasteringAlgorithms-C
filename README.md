@@ -2,6 +2,14 @@
 
 打开 `MasteringAlgorithms.xcodeproj` 即可。`Algorithms.xcodeproj` 为算法库文件工程
 
+## Mac 或者 Linux 命令行
+
+只需要有简单的 c 编译环境`cc`
+
+然后执行 `./run bfs`，其中 `bfs` 为 `Example` 中的示例目录。
+
+也可以自己使用`cc` `gcc` 等，`gcc source/*.c Example/bfs/main.c -I ./include -o bfs && ./bfs`
+
 ![ScreenShot](ScreenShot.png)
 
 ## 数据结构
