@@ -1,6 +1,6 @@
 # 《算法精解：C语言描述》源码及Xcode工程、Linux工程
 
-打开 `MasteringAlgorithms.xcodeproj` 即可。`Algorithms.xcodeproj` 为算法库文件工程
+Mac 下使用 Xcode 打开 `MasteringAlgorithms.xcodeproj` 即可。`Algorithms.xcodeproj` 为算法库文件工程。每个 Example 都是单独的运行文件。
 
 ## Mac 或者 Linux 命令行
 
@@ -102,3 +102,5 @@
 - [凸包计算](source/cvxhull.c)
 - [球面弧长](source/arclen.c)
 - [地球上两点之间的近似距离](source/geodist.c)
+
+
