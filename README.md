@@ -1,6 +1,14 @@
 # 《算法精解：C语言描述》源码及Xcode工程、Linux工程
 
-打开 `MasteringAlgorithms.xcodeproj` 即可。`Algorithms.xcodeproj` 为算法库文件工程
+Mac 下使用 Xcode 打开 `MasteringAlgorithms.xcodeproj` 即可。`Algorithms.xcodeproj` 为算法库文件工程。每个 Example 都是单独的运行文件。
+
+## Mac 或者 Linux 命令行
+
+只需要有简单的 c 编译环境`cc`
+
+然后执行 `./run bfs`，其中 `bfs` 为 `Example` 中的示例目录。
+
+也可以自己使用`cc` `gcc` 等，`gcc source/*.c Example/bfs/main.c -I ./include -o bfs && ./bfs`
 
 ![ScreenShot](ScreenShot.png)
 
@@ -94,3 +102,5 @@
 - [凸包计算](source/cvxhull.c)
 - [球面弧长](source/arclen.c)
 - [地球上两点之间的近似距离](source/geodist.c)
+
+
