@@ -15,12 +15,6 @@
 #pragma mark - Public
 
 
-/*****************************************************************************
- *                                                                            *
- *  --------------------------------- cover --------------------------------  *
- *                                                                            *
- *****************************************************************************/
-
 int cover(Set *members, Set *subsets, Set *covering)
 {
   Set       intersection;
@@ -31,7 +25,6 @@ int cover(Set *members, Set *subsets, Set *covering)
   
   /// 初始化覆盖集合
   set_init(covering, subsets->match, NULL);
-  
  
   /// 当还有成员未覆盖同时还有候选集合成员
   while (set_size(members) > 0 && set_size(subsets) > 0) {
