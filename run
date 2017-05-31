@@ -10,5 +10,7 @@ then
   cd build
   ./$1
 else
-  echo "Example does not exists"
+  echo "Example does not exists."
+  echo "Example list :"
+  echo `ls Example`
 fi
