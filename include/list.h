@@ -54,9 +54,9 @@ void list_destroy(List *list);
 
 
 /**
- 在指定链表 list 中 element 后面插入一个新元素
+ 在指定链表 list 中 element 后面插入一个新元素 - O(1)
 
- @param list 指定的链表 - O(1)
+ @param list 指定的链表
  @param element 新元素，如果为 NULL 则插入头部
  @param data 元素数据
  @return 成功返回 1，否则返回 -1
@@ -65,10 +65,10 @@ int list_ins_next(List *list, ListElmt *element, const void *data);
 
 
 /**
- 在指定链表 list 中移除 element 元素 - O(1)
+ 在指定链表 list 中移除 element 后的元素 - O(1)
 
  @param list 指定的链表
- @param element 待移除元素，如果为 NULL 则移除头部
+ @param element 待移除元素前的元素，如果为 NULL 则移除头部
  @param data 已移除元素的存储数据
  @return 成功返回 0，否则返回 -1
  */

@@ -64,10 +64,10 @@ int clist_ins_next(CList *list, CListElmt *element, const void *data);
 
 
 /**
- 在指定链表 list 中移除 element 元素 - O(1)
+ 在指定链表 list 中移除 element 后的元素 - O(1)
  
  @param list 指定的循环链表
- @param element 待移除元素，如果为 NULL 则移除头部
+ @param element 待移除元素前面的元素，如果为 NULL 则移除头部
  @param data 已移除元素的存储数据
  @return 成功返回 0，否则返回 -1
  */
