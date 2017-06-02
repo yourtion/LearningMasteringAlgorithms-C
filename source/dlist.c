@@ -153,7 +153,7 @@ int dlist_remove(DList *list, DListElmt *element, void **data)
     }
   } else {
     
-    /// 处理删除尾部元素
+    /// 处理删除非头部元素
     
     element->prev->next = element->next;
     

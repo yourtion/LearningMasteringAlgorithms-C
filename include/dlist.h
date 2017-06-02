@@ -153,6 +153,6 @@ int dlist_remove(DList *list, DListElmt *element, void **data);
  @param element 指定的元素
  @return 结点的上一个节点
  */
-#define dlist_prev(element) ((element)->next)
+#define dlist_prev(element) ((element)->prev)
 
 #endif /* DLIST_H */
