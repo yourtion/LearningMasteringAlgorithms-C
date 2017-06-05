@@ -73,7 +73,7 @@ int main(int argc, char **argv)
   }
   
   data = dlist_data(element);
-  fprintf(stdout, "Removing an element after the one containing %03d\n", *data);
+  fprintf(stdout, "Removing an elementn containing %03d\n", *data);
   
   if (dlist_remove(&list, element, (void **)&data) != 0) return 1;
   

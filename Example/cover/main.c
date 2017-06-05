@@ -209,7 +209,7 @@ int main(int argc, char **argv)
   }
   
   /// 销毁相关集合
-  
+
   fprintf(stdout, "Destroying the sets\n");
   
   for (i = 0; i < PLAYER_COUNT; i++) {

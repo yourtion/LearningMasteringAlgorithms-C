@@ -85,7 +85,7 @@ int set_union(Set *setu, const Set *set1, const Set *set2)
     
     if (set_is_member(set1, list_data(member))) {
       
-      /// 不插入 set1 不存在的元素
+      /// 不插入 set1 存在的元素
       continue;
       
     } else {
