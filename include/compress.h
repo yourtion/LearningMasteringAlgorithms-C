@@ -59,7 +59,7 @@ int huffman_uncompress(const unsigned char *compressed, unsigned char **original
 /// 类型长度
 #define     LZ77_TYPE_BITS        1
 /// 滑动窗口偏移量长度
-#define     LZ77_WINOFF_BITS     12
+#define     LZ77_WINOFF_BITS     13
 /// 短语标志长度
 #define     LZ77_BUFLEN_BITS      5
 /// 下一个匹配符号长度
