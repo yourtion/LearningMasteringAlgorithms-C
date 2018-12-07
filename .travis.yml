@@ -16,63 +16,63 @@ branches:
 
 jobs:
   include:
-    - stage: bfs
-      script: ./run bfs
-    - stage: bissearch
-      script: ./run bissearch
-    - stage: bistree
-      script: ./run bistree
-    - stage: bit
-      script: ./run bit
-    - stage: bitree
-      script: ./run bitree
-    - stage: cbc
-      script: ./run cbc
-    - stage: chtbl
-      script: ./run chtbl
-    - stage: clist
-      script: ./run clist
-    - stage: compress
-      script: ./run compress
-    - stage: cover
-      script: ./run cover
-    - stage: dfs
-      script: ./run dfs
-    - stage: directls
-      script: ./run directls
-    - stage: dlist
-      script: ./run dlist
-    - stage: encryption
-      script: ./run encryption
-    - stage: geodist
-      script: ./run geodist
-    - stage: geometry
-      script: ./run geometry
-    - stage: graph
-      script: ./run graph
-    - stage: graphalg
-      script: ./run graphalg
-    - stage: heap
-      script: ./run heap
-    - stage: list
-      script: ./run list
-    - stage: nummeths
-      script: ./run nummeths
-    - stage: ohtbl
-      script: ./run ohtbl
-    - stage: page
-      script: ./run page
-    - stage: pqueue
-      script: ./run pqueue
-    - stage: queue
-      script: ./run queue
-    - stage: routing
-      script: ./run routing
-    - stage: set
-      script: ./run set
-    - stage: sort
-      script: ./run sort
-    - stage: spell
-      script: ./run spell
-    - stage: stack
-      script: ./run stack
+    - script: ./run bfs
+      name: bfs
+    - script: ./run bissearch
+      name: bissearch
+    - script: ./run bistree
+      name: bistree
+    - script: ./run bit
+      name: bit
+    - script: ./run bitree
+      name: bitree
+    - script: ./run cbc
+      name: cbc
+    - script: ./run chtbl
+      name: chtbl
+    - script: ./run clist
+      name: clist
+    - script: ./run compress
+      name: compress
+    - script: ./run cover
+      name: cover
+    - script: ./run dfs
+      name: dfs
+    - script: ./run directls
+      name: directls
+    - script: ./run dlist
+      name: dlist
+    - script: ./run encryption
+      name: encryption
+    - script: ./run geodist
+      name: geodist
+    - script: ./run geometry
+      name: geometry
+    - script: ./run graph
+      name: graph
+    - script: ./run graphalg
+      name: graphalg
+    - script: ./run heap
+      name: heap
+    - script: ./run list
+      name: list
+    - script: ./run nummeths
+      name: nummeths
+    - script: ./run ohtbl
+      name: ohtbl
+    - script: ./run page
+      name: page
+    - script: ./run pqueue
+      name: pqueue
+    - script: ./run queue
+      name: queue
+    - script: ./run routing
+      name: routing
+    - script: ./run set
+      name: set
+    - script: ./run sort
+      name: sort
+    - script: ./run spell
+      name: spell
+    - script: ./run stack
+      name: stack
