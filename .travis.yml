@@ -1,0 +1,78 @@
+language: c
+
+compiler: gcc
+
+os:
+  # - osx
+  - linux
+
+before_install:
+  - mkdir -p build
+  - cp Example/compress/sample.txt build/sample.txt
+
+branches:
+  only:
+    - master
+
+jobs:
+  include:
+    - stage: bfs
+      script: ./run bfs
+    - stage: bissearch
+      script: ./run bissearch
+    - stage: bistree
+      script: ./run bistree
+    - stage: bit
+      script: ./run bit
+    - stage: bitree
+      script: ./run bitree
+    - stage: cbc
+      script: ./run cbc
+    - stage: chtbl
+      script: ./run chtbl
+    - stage: clist
+      script: ./run clist
+    - stage: compress
+      script: ./run compress
+    - stage: cover
+      script: ./run cover
+    - stage: dfs
+      script: ./run dfs
+    - stage: directls
+      script: ./run directls
+    - stage: dlist
+      script: ./run dlist
+    - stage: encryption
+      script: ./run encryption
+    - stage: geodist
+      script: ./run geodist
+    - stage: geometry
+      script: ./run geometry
+    - stage: graph
+      script: ./run graph
+    - stage: graphalg
+      script: ./run graphalg
+    - stage: heap
+      script: ./run heap
+    - stage: list
+      script: ./run list
+    - stage: nummeths
+      script: ./run nummeths
+    - stage: ohtbl
+      script: ./run ohtbl
+    - stage: page
+      script: ./run page
+    - stage: pqueue
+      script: ./run pqueue
+    - stage: queue
+      script: ./run queue
+    - stage: routing
+      script: ./run routing
+    - stage: set
+      script: ./run set
+    - stage: sort
+      script: ./run sort
+    - stage: spell
+      script: ./run spell
+    - stage: stack
+      script: ./run stack
