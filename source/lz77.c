@@ -77,7 +77,7 @@ static int compare_win(const unsigned char *window,
 
 int lz77_compress(const unsigned char *original, unsigned char **compressed, int size)
 {
-  unsigned long   token;
+  unsigned int   token;
   unsigned char   window[LZ77_WINDOW_SIZE], buffer[LZ77_BUFFER_SIZE], *comp, *temp, next;
   int             offset, length, remaining, tbits, hsize, ipos, opos, tpos, i;
 
@@ -86,6 +86,8 @@ int lz77_compress(const unsigned char *original, unsigned char **compressed, int
 
   /// 写入头部数据
   hsize = sizeof(int);
+
+  printf("dddddddddd:%d", hsize);
 
   if ((comp = (unsigned char *)malloc(hsize)) == NULL) return -1;
 
@@ -160,7 +162,7 @@ int lz77_compress(const unsigned char *original, unsigned char **compressed, int
         comp = temp;
       }
 
-      tpos = (sizeof(unsigned long) * 8) - tbits + i;
+      tpos = (sizeof(unsigned int) * 8) - tbits + i;
       bit_set(comp, opos,  bit_get((unsigned char *)&token, tpos));
       opos++;
     }
