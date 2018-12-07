@@ -6,7 +6,7 @@ fi
 
 if [ -d "Example/$1" ]
 then
-  cc source/*.c Example/$1/main.c -I ./include -o build/$1
+  cc source/*.c Example/$1/main.c -I ./include -lm -o build/$1
   cd build
   ./$1
 else
