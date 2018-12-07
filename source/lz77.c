@@ -87,8 +87,6 @@ int lz77_compress(const unsigned char *original, unsigned char **compressed, int
   /// 写入头部数据
   hsize = sizeof(int);
 
-  printf("dddddddddd:%d", hsize);
-
   if ((comp = (unsigned char *)malloc(hsize)) == NULL) return -1;
 
   memcpy(comp, &size, sizeof(int));
