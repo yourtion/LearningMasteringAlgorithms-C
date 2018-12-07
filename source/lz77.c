@@ -77,7 +77,7 @@ static int compare_win(const unsigned char *window,
 
 int lz77_compress(const unsigned char *original, unsigned char **compressed, int size)
 {
-  unsigned int   token;
+  unsigned long   token;
   unsigned char   window[LZ77_WINDOW_SIZE], buffer[LZ77_BUFFER_SIZE], *comp, *temp, next;
   int             offset, length, remaining, tbits, hsize, ipos, opos, tpos, i;
 
@@ -276,11 +276,11 @@ int lz77_uncompress(const unsigned char *compressed, unsigned char **original) {
 
       while (i < length && remaining > 0) {
 
-        orig[opos] = window[offset + i - 1];
+        orig[opos] = window[offset + i];
         opos++;
 
         /// 记录前向缓冲区中的符号直到更新入滑动窗口
-        buffer[i] = window[offset + i - 1];
+        buffer[i] = window[offset + i];
         i++;
 
         /// 更新生于的需要处理的符号数量
