@@ -22,7 +22,7 @@ int bit_get(const unsigned char *bits, int pos)
   mask = 0x80;
 
   for (i = 0; i < (pos % 8); i++) {
-    mask = mask >> 1;
+    mask >>= 1;
   }
 
   /// 获取位
